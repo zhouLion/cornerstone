@@ -1,4 +1,4 @@
-import LookupTable from './lookupTable.js';
+import LookupTable from './lookupTable';
 
 const COLOR_TRANSPARENT = [0, 0, 0, 0];
 
@@ -10,8 +10,57 @@ const COLOR_TRANSPARENT = [0, 0, 0, 0];
 //
 // All Linear Segmented Colormaps were copied from matplotlib
 // https://github.com/stefanv/matplotlib/blob/master/lib/matplotlib/_cm.py
+interface ColormapColorsType {
+  name: string;
+  numColors?: number;
+  numOfColors?: number;
+  colors: Array<number[]>
+}
 
-const colormapsData = {
+interface SegmentedData {
+  red: Array<number[]>;
+  green: Array<number[]>;
+  blue: Array<number[]>;
+}
+
+interface ColormapSegmentedDataType {
+  name: string;
+  numColors: number;
+  gamma: number;
+  segmentedData: SegmentedData;
+}
+
+type ColorsTypeKeyBuildIn = 'hotIron' |
+  'pet' |
+  'hotMetalBlue' |
+  'pet20Step'
+
+type SegmentedDataTypeKeyBuildIn = 'gray' |
+  'jet' |
+  'hsv' |
+  'hot' |
+  'cool' |
+  'spring' |
+  'summer' |
+  'autumn' |
+  'winter' |
+  'bone' |
+  'copper' |
+  'spectral' |
+  'coolwarm' |
+  'blues'
+
+// type ColormapsData = Record<ColorsTypeKeyBuildIn, ColormapColorsType> 
+//   & Record<SegmentedDataTypeKeyBuildIn, ColormapSegmentedDataType>
+//   | Record<string, ()>
+
+
+type ColormapsData = (Record<ColorsTypeKeyBuildIn, ColormapColorsType> |
+  Record<SegmentedDataTypeKeyBuildIn, ColormapSegmentedDataType>) | {
+    [s: string]: ColormapColorsType | ColormapSegmentedDataType
+}
+
+const colormapsData: ColormapsData = {
   hotIron: {
     name: 'Hot Iron',
     numOfColors: 256,
@@ -476,7 +525,7 @@ const colormapsData = {
  * @returns {Array} An array of points representing linear spaced vectors.
  * @memberof Colors
  */
-function linspace (a, b, n) {
+function linspace (a: number, b: number, n: number) {
   n = n === null ? 100 : n;
 
   const increment = (b - a) / (n - 1);
@@ -501,7 +550,7 @@ function linspace (a, b, n) {
  * @returns {number} The rank/index of the element in the given array
  * @memberof Colors
  */
-function getRank (array, elem) {
+function getRank (array: Array<number>, elem: number) {
   let left = 0;
   let right = array.length - 1;
 
@@ -530,7 +579,7 @@ function getRank (array, elem) {
  * @returns {Array} The indices where elements should be inserted to maintain order.
  * @memberof Colors
  */
-function searchSorted (inputArray, values) {
+function searchSorted (inputArray: Array<number>, values: Array<number>) {
   let i;
   const indexes = [];
   const len = values.length;
@@ -563,7 +612,7 @@ function searchSorted (inputArray, values) {
  * Values of x between 0 and 1.
  * @memberof Colors
  */
-function makeMappingArray (N, data, gamma) {
+function makeMappingArray (N: number, data: Array<number[]>, gamma: number) {
   let i;
   const x = [];
   const y0 = [];
@@ -616,7 +665,7 @@ function makeMappingArray (N, data, gamma) {
  * https://github.com/stefanv/matplotlib/blob/3f1a23755e86fef97d51e30e106195f34425c9e3/lib/matplotlib/colors.py#L663
  * @memberof Colors
  */
-function createLinearSegmentedColormap (segmentedData, N, gamma) {
+function createLinearSegmentedColormap (segmentedData: SegmentedData, N: number, gamma: number) {
   let i;
   const lut = [];
 
@@ -645,7 +694,10 @@ function createLinearSegmentedColormap (segmentedData, N, gamma) {
  * @memberof Colors
  */
 export function getColormapsList () {
-  const colormaps = [];
+  const colormaps: Array<{
+    id: string;
+    name: string;
+  }> = [];
   const keys = Object.keys(colormapsData);
 
   keys.forEach(function (key) {
@@ -682,16 +734,14 @@ export function getColormapsList () {
  * @returns {*} The Colormap Object
  * @memberof Colors
 */
-export function getColormap (id, colormapData) {
+export function getColormap (
+  id: ColorsTypeKeyBuildIn | SegmentedDataTypeKeyBuildIn | string,
+  colormapData: (ColormapColorsType | ColormapSegmentedDataType)
+) {
   let colormap = colormapsData[id];
-
   if (!colormap) {
-    colormap = colormapsData[id] = colormapData || {
-      name: '',
-      colors: []
-    };
+    colormap = colormapsData[id] = colormapData;
   }
-
   if (!colormap.colors && colormap.segmentedData) {
     colormap.colors = createLinearSegmentedColormap(colormap.segmentedData, colormap.numColors, colormap.gamma);
   }
@@ -705,7 +755,7 @@ export function getColormap (id, colormapData) {
       return colormap.name;
     },
 
-    setColorSchemeName (name) {
+    setColorSchemeName (name: string) {
       colormap.name = name;
     },
 

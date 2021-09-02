@@ -28,12 +28,14 @@ export default EVENTS;
  * @memberof Polyfills
  */
 class EventTarget {
+  private namespaces: Record<string, EventListener> = {};
+  private listeners: Record<string, EventListener[]>;
   constructor () {
     this.listeners = {};
     this.namespaces = {};
   }
 
-  addEventNamespaceListener (type, callback) {
+  addEventNamespaceListener (type: string, callback: EventListener) {
     if (type.indexOf('.') <= 0) {
       return;
     }
@@ -42,7 +44,7 @@ class EventTarget {
     this.addEventListener(type.split('.')[0], callback);
   }
 
-  removeEventNamespaceListener (type) {
+  removeEventNamespaceListener (type: string) {
     if (type.indexOf('.') <= 0 || !this.namespaces[type]) {
       return;
     }
@@ -51,7 +53,7 @@ class EventTarget {
     delete this.namespaces[type];
   }
 
-  addEventListener (type, callback) {
+  addEventListener (type: string, callback: EventListener) {
     // Check if it is an event namespace
     if (type.indexOf('.') > 0) {
       this.addEventNamespaceListener(type, callback);
@@ -66,7 +68,7 @@ class EventTarget {
     this.listeners[type].push(callback);
   }
 
-  removeEventListener (type, callback) {
+  removeEventListener (type: string, callback: EventListener) {
     // Check if it is an event namespace
     if (type.indexOf('.') > 0) {
       this.removeEventNamespaceListener(type);
@@ -89,7 +91,7 @@ class EventTarget {
     }
   }
 
-  dispatchEvent (event) {
+  dispatchEvent (event: Event) {
     if (!(event.type in this.listeners)) {
       return true;
     }

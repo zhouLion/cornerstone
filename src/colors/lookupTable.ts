@@ -12,7 +12,7 @@ const NAN_COLOR_INDEX = 2;
  * @param {any} val A number representing the value color value
  * @returns {Numberp[]} An RGB color array
  */
-function HSVToRGB (hue, sat, val) {
+function HSVToRGB (hue: number, sat: number, val: number) {
   if (hue > 1) {
     throw new Error('HSVToRGB expects hue < 1');
   }
@@ -90,7 +90,7 @@ function HSVToRGB (hue, sat, val) {
  * @returns {Number} The mapped index in the table
  * @memberof Colors
  */
-function linearIndexLookupMain (v, p) {
+function linearIndexLookupMain (v: number, p: { Range?: any; MaxIndex?: any; Shift?: any; Scale?: any; }) {
   let dIndex;
 
   // NOTE: Added Math.floor since values were not integers? Check VTK source
@@ -111,6 +111,20 @@ function linearIndexLookupMain (v, p) {
  * or rgba into scalar values. The color table can be created by direct insertion of color values, or by specifying hue, saturation, value, and alpha range and generating a table
  */
 class LookupTable {
+  NumberOfColors: number;
+  Ramp: string;
+  TableRange: number[];
+  HueRange: number[];
+  SaturationRange: number[];
+  ValueRange: number[];
+  AlphaRange: number[];
+  NaNColor: number[];
+  BelowRangeColor: number[];
+  UseBelowRangeColor: boolean;
+  AboveRangeColor: number[];
+  UseAboveRangeColor: boolean;
+  InputRange: number[];
+  Table: never[];
 
   /**
    * Creates a default linear LookupTable object with 256 colors.
@@ -138,7 +152,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  setNumberOfTableValues (number) {
+  setNumberOfTableValues (number: number) {
     this.NumberOfColors = number;
   }
 
@@ -148,7 +162,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  setRamp (ramp) {
+  setRamp (ramp: string) {
     this.Ramp = ramp;
   }
 
@@ -161,7 +175,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  setTableRange (start, end) {
+  setTableRange (start: number, end: number) {
     this.TableRange[0] = start;
     this.TableRange[1] = end;
   }
@@ -173,7 +187,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  setHueRange (start, end) {
+  setHueRange (start: number, end: number) {
     this.HueRange[0] = start;
     this.HueRange[1] = end;
   }
@@ -185,7 +199,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  setSaturationRange (start, end) {
+  setSaturationRange (start: number, end: number) {
     this.SaturationRange[0] = start;
     this.SaturationRange[1] = end;
   }
@@ -197,7 +211,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  setValueRange (start, end) {
+  setValueRange (start: number, end: number) {
     // Set the range in value (using automatic generation). Value ranges between [0,1].
     this.ValueRange[0] = start;
     this.ValueRange[1] = end;
@@ -210,7 +224,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  setRange (start, end) {
+  setRange (start: number, end: number) {
     this.InputRange[0] = start;
     this.InputRange[1] = end;
   }
@@ -222,7 +236,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  setAlphaRange (start, end) {
+  setAlphaRange (start: number, end: number) {
     // Set the range in alpha (using automatic generation). Alpha ranges from [0,1].
     this.AlphaRange[0] = start;
     this.AlphaRange[1] = end;
@@ -235,7 +249,7 @@ class LookupTable {
    * @returns {Number[]} An RGBA array of doubles between 0 and 1
    * @memberof Colors
    */
-  getColor (scalar) {
+  getColor (scalar: any) {
 
     return this.mapValue(scalar);
   }
@@ -247,7 +261,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  build (force) {
+  build (force: undefined) {
     if (this.Table.length > 1 && !force) {
       return;
     }
@@ -344,7 +358,7 @@ class LookupTable {
    * @returns {Number[]} An RGBA array of doubles between 0 and 1
    * @memberof Colors
    */
-  mapValue (v) {
+  mapValue (v: number) {
     const index = this.getIndex(v);
 
     if (index < 0) {
@@ -368,7 +382,7 @@ class LookupTable {
    * @returns {Number} The index in the LookupTable
    * @memberof Colors
    */
-  getIndex (v) {
+  getIndex (v: number) {
     const p = {};
 
     p.Range = [];
@@ -414,7 +428,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  setTableValue (index, rgba) {
+  setTableValue (index: number, rgba: any[]) {
     // Check if it index, red, green, blue and alpha were passed as parameter
     if (arguments.length === 5) {
       rgba = Array.prototype.slice.call(arguments, 1);

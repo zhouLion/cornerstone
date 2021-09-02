@@ -1,5 +1,5 @@
-import { getEnabledElement } from './enabledElements.js';
-import drawImage from './internal/drawImage.js';
+import { getEnabledElement } from './enabledElements';
+import drawImage from './internal/drawImage';
 
 /**
  * Forces the image to be updated/redrawn for the specified enabled element
@@ -9,7 +9,7 @@ import drawImage from './internal/drawImage.js';
  * @returns {void}
  * @memberof Drawing
  */
-export default function (element, invalidated = false) {
+export default function (element: HTMLElement, invalidated = false) {
   const enabledElement = getEnabledElement(element);
 
   if (enabledElement.image === undefined && !enabledElement.layers.length) {

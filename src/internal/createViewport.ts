@@ -1,4 +1,5 @@
-import { state } from './setDefaultViewport.js';
+import { Viewport } from 'src/enabledElements';
+import { state } from './setDefaultViewport';
 
 // eslint-disable-next-line valid-jsdoc
 /**
@@ -32,7 +33,7 @@ function createDefaultDisplayedArea () {
  * @returns {Viewport} viewport object
  * @memberof Internal
  */
-export default function () {
+export default function (): Viewport {
   const displayedArea = createDefaultDisplayedArea();
   const initialDefaultViewport = {
     scale: 1,

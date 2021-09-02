@@ -1,6 +1,6 @@
-import { getEnabledElement } from './enabledElements.js';
-import pixelDataToFalseColorData from './pixelDataToFalseColorData.js';
-import { getColormap } from './colors/colormap.js';
+import { Colormap, getEnabledElement, Image } from './enabledElements';
+import pixelDataToFalseColorData from './pixelDataToFalseColorData';
+import { getColormap } from './colors/colormap';
 
 /**
  * Retrieves the minimum and maximum pixel values from an Array of pixel data
@@ -9,7 +9,7 @@ import { getColormap } from './colors/colormap.js';
  *
  * @returns {{minPixelValue: Number, maxPixelValue: Number}} The minimum and maximum pixel values in the input Array
  */
-function getPixelValues (pixelData) {
+function getPixelValues (pixelData: ArrayLike<number>) {
   let minPixelValue = Number.MAX_VALUE;
   let maxPixelValue = Number.MIN_VALUE;
   const len = pixelData.length;
@@ -35,7 +35,7 @@ function getPixelValues (pixelData) {
  *
  * @return {Function} A function for resetting an Image Object to its original form
  */
-function getRestoreImageMethod (image) {
+function getRestoreImageMethod (image: Image) {
   if (image.restore) {
     return image.restore;
   }
@@ -82,7 +82,7 @@ function getRestoreImageMethod (image) {
  * @param {*} colormap A colormap ID or Object
  * @return {*} The colormap
  */
-function ensuresColormap (colormap) {
+function ensuresColormap (colormap: string | Colormap) {
   if (colormap && (typeof colormap === 'string')) {
     colormap = getColormap(colormap);
   }
@@ -96,7 +96,7 @@ function ensuresColormap (colormap) {
  * @param {Image} image A Cornerstone Image Object
  * @returns {Boolean} True if the image object had a valid restore function, which was run. Otherwise, false.
  */
-function restoreImage (image) {
+function restoreImage (image: Image) {
   if (image.restore && (typeof image.restore === 'function')) {
     image.restore();
 
@@ -114,7 +114,7 @@ function restoreImage (image) {
  *
  * @returns {Boolean} - Whether or not the image has been converted to a false color image
  */
-function convertImageToFalseColorImage (image, colormap) {
+function convertImageToFalseColorImage (image: Image, colormap: string | Colormap) {
   if (image.color && !image.falseColor) {
     throw new Error('Color transforms are not implemented yet');
   }
@@ -175,7 +175,7 @@ function convertImageToFalseColorImage (image, colormap) {
  *
  * @returns {void}
  */
-function convertToFalseColorImage (element, colormap) {
+function convertToFalseColorImage (element: HTMLElement, colormap: string | Colormap) {
   const enabledElement = getEnabledElement(element);
 
 

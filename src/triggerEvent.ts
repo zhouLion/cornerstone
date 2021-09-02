@@ -6,7 +6,7 @@
  * @param {Object|null} detail=null The event data to be sent
  * @returns {Boolean} The return value is false if at least one event listener called preventDefault(). Otherwise it returns true.
  */
-export default function triggerEvent (el, type, detail = null) {
+export default function triggerEvent (el: EventTarget, type: string, detail: any = null) {
   let event;
 
   // This check is needed to polyfill CustomEvent on IE11-

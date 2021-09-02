@@ -1,3 +1,5 @@
+import { EnabledElement } from "src/enabledElements";
+
 /**
  * Internal API function to draw an image to a given enabled element
  *
@@ -6,7 +8,7 @@
  * @returns {void}
  * @memberof Internal
  */
-export default function (enabledElement, invalidated = false) {
+export default function (enabledElement: EnabledElement, invalidated = false) {
   enabledElement.needsRedraw = true;
   if (invalidated) {
     enabledElement.invalid = true;

@@ -1,4 +1,4 @@
-const enabledElements = [];
+const enabledElements: EnabledElement[] = [];
 
 /**
  * @module EnabledElements
@@ -16,6 +16,10 @@ const enabledElements = [];
  * @param {Number} x - The x distance
  * @param {Number} y - The y distance
  */
+export interface vec2 {
+  x: number;
+  y: number;
+}
 
 /**
  * VOI
@@ -25,6 +29,10 @@ const enabledElements = [];
  * @param {Number} windowWidth - Window Width for display
  * @param {Number} windowCenter - Window Center for display
  */
+export interface VOI {
+  windowWidth: number;
+  windowCenter: number;
+}
 
 /**
  * Lookup Table Array
@@ -35,6 +43,11 @@ const enabledElements = [];
  * @property {Number} numBitsPerEntry
  * @property {Array} lut
  */
+export interface LUT {
+  firstValueMapped: number;
+  numBitsPerEntry: number;
+  lut: number[];
+}
 
 /**
  * Image Statistics Object
@@ -47,6 +60,13 @@ const enabledElements = [];
  * @property {Number} [lastRenderTime] The total time in ms taken for the entire rendering function to run
  * @property {Number} [lastLutGenerateTime] The time in ms taken to generate the lookup table for the image
  */
+export interface ImageStats {
+  lastGetPixelDataTime?: number;
+  lastStoredPixelDataToCanvasImageDataTime?: number;
+  lastPutImageDataTime?: number;
+  lastRenderTime?: number;
+  lastLutGenerateTime?: number;
+}
 
 /**
  * An Image Object in Cornerstone
@@ -82,6 +102,44 @@ const enabledElements = [];
  * @property {String|Colormap} [colormap] - Depreacted. Use viewport.colormap instead. an optional colormap ID or colormap object (from colors/colormap.js). This will be applied during rendering to convert the image to pseudocolor
  * @property {Boolean} [labelmap=false] - whether or not to render this image as a label map (i.e. skip modality and VOI LUT pipelines and use only a color lookup table)
  */
+export interface Image {
+  imageId: string;
+  minPixelValue: number;
+  maxPixelValue: number;
+  slope: number;
+  intercept: number;
+  windowCenter: number;
+  windowWidth: number;
+  getPixelData: () => any;
+  getImageData: () => any;
+  getCanvas: () => any;
+  getImage: () => any;
+  rows: number;
+  columns: number;
+  height: number;
+  width: number;
+  color: boolean;
+  lut: LUT;
+  rgba: boolean;
+  columnPixelSpacing: number;
+  rowPixelSpacing: number;
+  invert: boolean;
+  sizeInBytes: number;
+  falseColor?: boolean;
+  origPixelData?: ArrayLike<number>;
+  colormap?: string | Colormap;
+  labelmap?: boolean;
+  [s: string]: any;
+}
+
+// TODO: Remove this when we remove the deprecated colormap property
+export interface Colormap {
+  id: string;
+  name: string;
+  min: number;
+  max: number;
+  colors: string[];
+}
 
 /**
  * A Viewport Settings Object Cornerstone
@@ -101,6 +159,21 @@ const enabledElements = [];
  * @property {String|Colormap} [colormap] - an optional colormap ID or colormap object (from colors/colormap.js). This will be applied during rendering to convert the image to pseudocolor
  * @property {Boolean} [labelmap=false] - whether or not to render this image as a label map (i.e. skip modality and VOI LUT pipelines and use only a color lookup table)
  */
+export interface Viewport {
+  scale?: number;
+  translation?: vec2;
+  voi?: VOI;
+  invert?: boolean;
+  pixelReplication?: boolean;
+  hflip?: boolean;
+  vflip?: boolean;
+  rotation?: number;
+  modalityLUT?: LUT;
+  voiLUT?: LUT;
+  colormap?: string | Colormap;
+  labelmap?: boolean;
+  [s: string]: any;
+}
 
 /**
  * An Enabled Element in Cornerstone
@@ -118,6 +191,18 @@ const enabledElements = [];
  * for each of the enabled element's layers
  * @property {Boolean} [lastSyncViewportsState] - The previous state for the sync viewport boolean
  */
+export interface EnabledElement {
+  element: HTMLElement;
+  image: Image;
+  viewport: Viewport | undefined;
+  canvas: HTMLCanvasElement;
+  invalid: boolean;
+  needsRedraw: boolean;
+  layers: EnabledElementLayer[];
+  syncViewports: boolean;
+  lastSyncViewportsState?: boolean;
+  activeLayerId?: string;
+}
 
 /**
  * An Enabled Element Layer in Cornerstone
@@ -132,6 +217,16 @@ const enabledElements = [];
  * @property {Boolean} invalid - Whether or not the image pixel data underlying the enabledElement has been changed, necessitating a redraw
  * @property {Boolean} needsRedraw - A flag for triggering a redraw of the canvas without re-retrieving the pixel data, since it remains valid
  */
+export interface EnabledElementLayer {
+  element?: HTMLElement;
+  image: Image;
+  viewport: Viewport | undefined;
+  canvas?: HTMLCanvasElement;
+  options: any;
+  invalid?: boolean;
+  needsRedraw?: boolean;
+  [s: string]: any;
+}
 
 /**
  * An Image Load Object
@@ -141,6 +236,10 @@ const enabledElements = [];
  * @property {Promise} promise - The Promise tracking the loading of this image
  * @property {Function|undefined} cancelFn - A function to cancel the image load request
  */
+export interface ImageLoadObject {
+  promise: Promise<Image>;
+  cancelFn?: Function;
+}
 
 /**
  * Retrieves a Cornerstone Enabled Element object
@@ -150,7 +249,7 @@ const enabledElements = [];
  * @returns {EnabledElement} A Cornerstone Enabled Element
  * @memberof EnabledElements
  */
-export function getEnabledElement (element) {
+export function getEnabledElement (element: HTMLElement) {
   if (element === undefined) {
     throw new Error('getEnabledElement: parameter element must not be undefined');
   }
@@ -159,7 +258,6 @@ export function getEnabledElement (element) {
       return enabledElements[i];
     }
   }
-
   throw new Error('element not enabled');
 }
 
@@ -170,7 +268,7 @@ export function getEnabledElement (element) {
  * @returns {void}
  * @memberof EnabledElements
  */
-export function addEnabledElement (enabledElement) {
+export function addEnabledElement (enabledElement: EnabledElement) {
   if (enabledElement === undefined) {
     throw new Error('getEnabledElement: enabledElement element must not be undefined');
   }
@@ -185,8 +283,8 @@ export function addEnabledElement (enabledElement) {
  * @returns {EnabledElement[]} An Array of Cornerstone enabledElement Objects
  * @memberof EnabledElements
  */
-export function getEnabledElementsByImageId (imageId) {
-  const ees = [];
+export function getEnabledElementsByImageId (imageId: string) {
+  const ees: EnabledElement[] = [];
 
   enabledElements.forEach(function (enabledElement) {
     if (enabledElement.image && enabledElement.image.imageId === imageId) {

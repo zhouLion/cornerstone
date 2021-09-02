@@ -1,5 +1,6 @@
-import createViewport from './createViewport.js';
-import getImageFitScale from './getImageFitScale.js';
+import { Image, Viewport } from 'src/enabledElements';
+import createViewport from './createViewport';
+import getImageFitScale from './getImageFitScale';
 
 /**
  * Creates a new viewport object containing default values for the image and canvas
@@ -9,7 +10,7 @@ import getImageFitScale from './getImageFitScale.js';
  * @returns {Viewport} viewport object
  * @memberof Internal
  */
-export default function (canvas, image) {
+export default function (canvas: HTMLCanvasElement, image: Image): Viewport {
   if (canvas === undefined) {
     throw new Error('getDefaultViewport: parameter canvas must not be undefined');
   }

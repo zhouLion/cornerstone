@@ -18,3 +18,7 @@ test/
 changelog.md
 documentation.yml
 karma.conf.js
+
+## Generated Files
+
+compiled/

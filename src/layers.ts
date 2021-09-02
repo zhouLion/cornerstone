@@ -1,9 +1,9 @@
-import guid from './internal/guid.js';
-import { getEnabledElement } from './enabledElements.js';
-import getDefaultViewport from './internal/getDefaultViewport.js';
-import updateImage from './updateImage.js';
-import triggerCustomEvent from './triggerEvent.js';
-import EVENTS from './events.js';
+import guid from './internal/guid';
+import { getEnabledElement, EnabledElement, EnabledElementLayer, Image } from './enabledElements';
+import getDefaultViewport from './internal/getDefaultViewport';
+import updateImage from './updateImage';
+import triggerCustomEvent from './triggerEvent';
+import EVENTS from './events';
 
 /**
  * @module EnabledElementLayers
@@ -19,7 +19,7 @@ import EVENTS from './events.js';
  * @returns {void}
  * @memberof EnabledElementLayers
  */
-function triggerEventForLayer (eventName, enabledElement, layerId) {
+function triggerEventForLayer (eventName: string, enabledElement: EnabledElement, layerId?: string) {
   const element = enabledElement.element;
   const eventData = {
     viewport: enabledElement.viewport,
@@ -44,7 +44,7 @@ function triggerEventForLayer (eventName, enabledElement, layerId) {
  * @returns {void}
  * @memberof EnabledElementLayers
  */
-export function rescaleImage (baseLayer, targetLayer) {
+export function rescaleImage (baseLayer: EnabledElementLayer, targetLayer: EnabledElementLayer) {
   if (baseLayer.layerId === targetLayer.layerId) {
     throw new Error('rescaleImage: both arguments represent the same layer');
   }
@@ -59,8 +59,8 @@ export function rescaleImage (baseLayer, targetLayer) {
 
   // Column pixel spacing need to be considered when calculating the
   // ratio between the layer added and base layer images
-  const colRelative = (targetLayer.viewport.displayedArea.columnPixelSpacing * targetImage.width) /
-                      (baseLayer.viewport.displayedArea.columnPixelSpacing * baseImage.width);
+  const colRelative = (targetLayer.viewport?.displayedArea?.columnPixelSpacing * targetImage.width) /
+                      (baseLayer?.viewport?.displayedArea?.columnPixelSpacing * baseImage.width);
   const viewportRatio = targetLayer.viewport.scale / baseLayer.viewport.scale * colRelative;
 
   targetLayer.viewport.scale = baseLayer.viewport.scale * viewportRatio;
@@ -76,7 +76,11 @@ export function rescaleImage (baseLayer, targetLayer) {
  * @returns {String} layerId The new layer's unique identifier
  * @memberof EnabledElementLayers
  */
-export function addLayer (element, image, options) {
+export function addLayer (
+  element: HTMLElement,
+  image: Image,
+  options: any,
+) {
   const layerId = guid();
   const enabledElement = getEnabledElement(element);
   const layers = enabledElement.layers;
@@ -97,7 +101,7 @@ export function addLayer (element, image, options) {
     enabledElement.syncViewports = true;
   }
 
-  const newLayer = {
+  const newLayer: EnabledElementLayer = {
     image,
     layerId,
     viewport,
@@ -131,7 +135,7 @@ export function addLayer (element, image, options) {
  * @returns {void}
  * @memberof EnabledElementLayers
  */
-export function removeLayer (element, layerId) {
+export function removeLayer (element: HTMLElement, layerId: string | undefined) {
   const enabledElement = getEnabledElement(element);
   const layers = enabledElement.layers;
   const index = enabledElement.layers.findIndex((layer) => layer.layerId === layerId);
@@ -157,7 +161,7 @@ export function removeLayer (element, layerId) {
  * @return {EnabledElementLayer} The layer
  * @memberof EnabledElementLayers
  */
-export function getLayer (element, layerId) {
+export function getLayer (element: HTMLElement, layerId: string) {
   const enabledElement = getEnabledElement(element);
 
 
@@ -172,7 +176,7 @@ export function getLayer (element, layerId) {
  * @return {EnabledElementLayer[]} An array of layers
  * @memberof EnabledElementLayers
  */
-export function getLayers (element) {
+export function getLayers (element: HTMLElement) {
   const enabledElement = getEnabledElement(element);
 
 
@@ -187,7 +191,7 @@ export function getLayers (element) {
  * @return {EnabledElementLayer[]} An array of layers
  * @memberof EnabledElementLayers
  */
-export function getVisibleLayers (element) {
+export function getVisibleLayers (element: HTMLElement) {
   const enabledElement = getEnabledElement(element);
 
   return enabledElement.layers.filter((layer) => layer.options &&
@@ -203,7 +207,7 @@ export function getVisibleLayers (element) {
  * @returns {void}
  * @memberof EnabledElementLayers
  */
-export function setActiveLayer (element, layerId) {
+export function setActiveLayer (element: HTMLElement, layerId: string) {
   const enabledElement = getEnabledElement(element);
 
   // Stop here if this layer is already active
@@ -240,7 +244,7 @@ export function setActiveLayer (element, layerId) {
  * @returns {void}
  * @memberof EnabledElementLayers
  */
-export function setLayerImage (element, image, layerId) {
+export function setLayerImage (element: HTMLElement, image: Image, layerId: string) {
   const enabledElement = getEnabledElement(element);
   const baseLayer = enabledElement.layers[0];
 
@@ -286,7 +290,7 @@ export function setLayerImage (element, image, layerId) {
  * @return {EnabledElementLayer} The currently active layer
  * @memberof EnabledElementLayers
  */
-export function getActiveLayer (element) {
+export function getActiveLayer (element: HTMLElement) {
   const enabledElement = getEnabledElement(element);
 
 
@@ -300,7 +304,7 @@ export function getActiveLayer (element) {
  *
  * @returns {void}
  */
-export function purgeLayers (element) {
+export function purgeLayers (element: HTMLElement) {
   const enabledElement = getEnabledElement(element);
 
   enabledElement.layers = [];
