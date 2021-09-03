@@ -12,4 +12,4 @@
  * @return {void}
  * @memberof Enable
  */
-export default function _default(element: HTMLElement, options: Object): void;
+export default function (element: HTMLElement, options: Record<"renderer" & string, any>): void;

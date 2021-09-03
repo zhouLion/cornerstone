@@ -10,7 +10,7 @@ import getImageFitScale from './getImageFitScale';
  * @returns {Viewport} viewport object
  * @memberof Internal
  */
-export default function (canvas: HTMLCanvasElement, image: Image): Viewport {
+export default function (canvas?: HTMLCanvasElement, image?: Image): Viewport {
   if (canvas === undefined) {
     throw new Error('getDefaultViewport: parameter canvas must not be undefined');
   }

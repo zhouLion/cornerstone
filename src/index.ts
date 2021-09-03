@@ -23,31 +23,31 @@ import {
   convertToFalseColorImage,
   restoreImage
 } from './falseColorMapping';
-import { getElementData, removeElementData } from './enabledElementData.js';
+import { getElementData, removeElementData } from './enabledElementData';
 import {
   loadAndCacheImage,
   loadImage,
   registerImageLoader,
   registerUnknownImageLoader
-} from './imageLoader.js';
+} from './imageLoader';
 
-import { default as canvasToPixel } from './canvasToPixel.js';
-import { default as colors } from './colors/index.js';
-import { default as disable } from './disable.js';
-import { default as displayImage } from './displayImage.js';
-import { default as draw } from './draw.js';
-import { default as drawImage } from './internal/drawImage.js';
-import { default as drawInvalidated } from './drawInvalidated.js';
-import { default as enable } from './enable.js';
-import { default as fitToWindow } from './fitToWindow.js';
-import { default as generateLut } from './internal/generateLut.js';
-import { default as getDefaultViewport } from './internal/getDefaultViewport.js';
-import { default as getDefaultViewportForImage } from './getDefaultViewportForImage.js';
-import { default as getImage } from './getImage.js';
-import { default as getPixels } from './getPixels.js';
-import { default as getStoredPixels } from './getStoredPixels.js';
-import { default as getViewport } from './getViewport.js';
-import { default as imageCache } from './imageCache.js';
+import { default as canvasToPixel } from './canvasToPixel';
+import { default as colors } from './colors/index';
+import { default as disable } from './disable';
+import { default as displayImage } from './displayImage';
+import { default as draw } from './draw';
+import { default as drawImage } from './internal/drawImage';
+import { default as drawInvalidated } from './drawInvalidated';
+import { default as enable } from './enable';
+import { default as fitToWindow } from './fitToWindow';
+import { default as generateLut } from './internal/generateLut';
+import { default as getDefaultViewport } from './internal/getDefaultViewport';
+import { default as getDefaultViewportForImage } from './getDefaultViewportForImage';
+import { default as getImage } from './getImage';
+import { default as getPixels } from './getPixels';
+import { default as getStoredPixels } from './getStoredPixels';
+import { default as getViewport } from './getViewport';
+import { default as imageCache } from './imageCache';
 import { default as internal } from './internal/index.js';
 import { default as invalidate } from './invalidate.js';
 import { default as invalidateImageId } from './invalidateImageId.js';

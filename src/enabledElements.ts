@@ -193,15 +193,16 @@ export interface Viewport {
  */
 export interface EnabledElement {
   element: HTMLElement;
-  image: Image;
-  viewport: Viewport | undefined;
-  canvas: HTMLCanvasElement;
+  image: Image | undefined;
+  viewport?: Viewport | undefined;
+  canvas: HTMLCanvasElement | undefined;
   invalid: boolean;
   needsRedraw: boolean;
   layers: EnabledElementLayer[];
-  syncViewports: boolean;
+  syncViewports?: boolean;
   lastSyncViewportsState?: boolean;
   activeLayerId?: string;
+  [s: string]: any;
 }
 
 /**

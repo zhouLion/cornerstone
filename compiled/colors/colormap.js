@@ -638,7 +638,8 @@ export function getColormapsList() {
 export function getColormap(id, colormapData) {
     let colormap = colormapsData[id];
     if (!colormap) {
-        colormap = colormapsData[id] = colormapData;
+        colormapsData[id] = colormapData;
+        colormap = colormapData;
     }
     if (!colormap.colors && colormap.segmentedData) {
         colormap.colors = createLinearSegmentedColormap(colormap.segmentedData, colormap.numColors, colormap.gamma);

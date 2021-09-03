@@ -59,8 +59,14 @@ export function rescaleImage (baseLayer: EnabledElementLayer, targetLayer: Enabl
 
   // Column pixel spacing need to be considered when calculating the
   // ratio between the layer added and base layer images
-  const colRelative = (targetLayer.viewport?.displayedArea?.columnPixelSpacing * targetImage.width) /
-                      (baseLayer?.viewport?.displayedArea?.columnPixelSpacing * baseImage.width);
+  if (!targetLayer.viewport || !targetLayer.viewport.columnPixelSpacing || !targetLayer.viewport.scale ){
+    return;
+  }
+  if (!baseLayer.viewport || !baseLayer.viewport.columnPixelSpacing || !baseLayer.viewport.scale) {
+    return;
+  }
+  const colRelative = (targetLayer.viewport.displayedArea.columnPixelSpacing * targetImage.width) /
+                      (baseLayer.viewport.displayedArea.columnPixelSpacing * baseImage.width);
   const viewportRatio = targetLayer.viewport.scale / baseLayer.viewport.scale * colRelative;
 
   targetLayer.viewport.scale = baseLayer.viewport.scale * viewportRatio;
@@ -244,7 +250,7 @@ export function setActiveLayer (element: HTMLElement, layerId: string) {
  * @returns {void}
  * @memberof EnabledElementLayers
  */
-export function setLayerImage (element: HTMLElement, image: Image, layerId: string) {
+export function setLayerImage (element: HTMLElement, image: Image, layerId?: string) {
   const enabledElement = getEnabledElement(element);
   const baseLayer = enabledElement.layers[0];
 

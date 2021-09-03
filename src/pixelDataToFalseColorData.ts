@@ -1,4 +1,5 @@
 import colors from './colors/index';
+import { Image } from './enabledElements';
 
 /**
  * Converts the image pixel data into a false color data
@@ -10,7 +11,7 @@ import colors from './colors/index';
  * @deprecated This function is superseded by the ability to set the Viewport parameters
  * to include colormaps.
  */
-export default function pixelDataToFalseColorData (image, lookupTable) {
+export default function pixelDataToFalseColorData (image: Image, lookupTable: any) {
   if (image.color && !image.falseColor) {
     throw new Error('Color transforms are not implemented yet');
   }
