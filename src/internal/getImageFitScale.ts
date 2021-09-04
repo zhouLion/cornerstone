@@ -1,6 +1,6 @@
 import { validateParameterUndefinedOrNull } from './validator';
 import getImageSize from './getImageSize';
-import { Image } from 'src/enabledElements';
+import { Image } from '../enabledElements';
 
 
 /**

@@ -1,4 +1,4 @@
-import { EnabledElement } from 'src/enabledElements';
+import { EnabledElement } from '../enabledElements';
 /**
  * API function to draw a standard web image (PNG, JPG) to an enabledImage
  *

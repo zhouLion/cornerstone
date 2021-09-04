@@ -1,4 +1,4 @@
-import { EnabledElement, EnabledElementLayer } from 'src/enabledElements';
+import { EnabledElement, EnabledElementLayer } from '../enabledElements';
 /**
  * API function to render a color image to an enabled element
  *

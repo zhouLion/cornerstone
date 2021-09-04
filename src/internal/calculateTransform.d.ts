@@ -1,4 +1,4 @@
-import { EnabledElement } from 'src/enabledElements';
+import { EnabledElement } from '../enabledElements';
 import { Transform } from './transform';
 /**
  * Calculate the transform for a Cornerstone enabled element

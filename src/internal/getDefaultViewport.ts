@@ -1,4 +1,4 @@
-import { Image, Viewport } from 'src/enabledElements';
+import { Image, Viewport } from '../enabledElements';
 import createViewport from './createViewport';
 import getImageFitScale from './getImageFitScale';
 

@@ -1,4 +1,4 @@
-import { LUT } from 'src/enabledElements';
+import { LUT } from '../enabledElements';
 import LookupTable from './lookupTable';
 interface ColormapColorsType {
     name: string;
@@ -17,8 +17,6 @@ interface ColormapSegmentedDataType {
     gamma: number;
     segmentedData: SegmentedData;
 }
-declare type ColorsTypeKeyBuildIn = 'hotIron' | 'pet' | 'hotMetalBlue' | 'pet20Step';
-declare type SegmentedDataTypeKeyBuildIn = 'gray' | 'jet' | 'hsv' | 'hot' | 'cool' | 'spring' | 'summer' | 'autumn' | 'winter' | 'bone' | 'copper' | 'spectral' | 'coolwarm' | 'blues';
 /**
  * Return all available colormaps (id and name)
  * @returns {Array<{id,key}>} An array of colormaps with an object containing the "id" and display "name"
@@ -37,9 +35,9 @@ export declare function getColormapsList(): {
  * @returns {*} The Colormap Object
  * @memberof Colors
 */
-export declare function getColormap(id: ColorsTypeKeyBuildIn | SegmentedDataTypeKeyBuildIn, colormapData?: (ColormapColorsType | ColormapSegmentedDataType)): {
-    getId(): "hotIron" | "pet" | "hotMetalBlue" | "pet20Step" | "gray" | "jet" | "hsv" | "hot" | "cool" | "spring" | "summer" | "autumn" | "winter" | "bone" | "copper" | "spectral" | "coolwarm" | "blues";
-    getColorSchemeName(): string;
+export declare function getColormap(id: string, colormapData?: (ColormapColorsType | ColormapSegmentedDataType)): {
+    getId(): string;
+    getColorSchemeName(): any;
     setColorSchemeName(name: string): void;
     getNumberOfColors(): any;
     setNumberOfColors(numColors: number): void;

@@ -1,5 +1,5 @@
 import LookupTable from 'src/colors/lookupTable';
-import { Image } from 'src/enabledElements';
+import { Image } from '../enabledElements';
 declare type Clut = Array<number[]>;
 /**
  *

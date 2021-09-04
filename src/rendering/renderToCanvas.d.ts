@@ -1,4 +1,4 @@
-import { EnabledElementLayer, Image, Viewport } from 'src/enabledElements';
+import { EnabledElementLayer, Image, Viewport } from '../enabledElements';
 export interface EnabledElementStub {
     element: HTMLCanvasElement;
     canvas: HTMLCanvasElement;

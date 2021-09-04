@@ -1,4 +1,4 @@
-import { Image, Viewport } from 'src/enabledElements';
+import { Image, Viewport } from '../enabledElements';
 /**
  * Creates a new viewport object containing default values for the image and canvas
  *

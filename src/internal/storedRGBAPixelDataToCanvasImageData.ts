@@ -1,4 +1,4 @@
-import { Image } from 'src/enabledElements';
+import { Image } from '../enabledElements';
 import now from './now';
 
 /**

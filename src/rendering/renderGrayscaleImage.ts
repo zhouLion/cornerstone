@@ -7,7 +7,7 @@ import getLut from './getLut';
 import doesImageNeedToBeRendered from './doesImageNeedToBeRendered';
 import initializeRenderCanvas from './initializeRenderCanvas';
 import saveLastRendered from './saveLastRendered';
-import { EnabledElement, EnabledElementLayer, Image } from 'src/enabledElements';
+import { EnabledElement, EnabledElementLayer, Image } from '../enabledElements';
 
 /**
  * Returns an appropriate canvas to render the Image. If the canvas available in the cache is appropriate

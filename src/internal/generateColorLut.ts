@@ -1,4 +1,4 @@
-import { Image, LUT } from 'src/enabledElements';
+import { Image, LUT } from '../enabledElements';
 import getVOILUT from './getVOILut';
 
 /**

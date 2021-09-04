@@ -1,4 +1,4 @@
-import { EnabledElement } from 'src/enabledElements';
+import { EnabledElement } from '../enabledElements';
 import setToPixelCoordinateSystem from '../setToPixelCoordinateSystem';
 import { renderColorImage } from './renderColorImage';
 

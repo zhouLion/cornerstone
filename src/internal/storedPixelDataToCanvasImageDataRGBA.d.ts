@@ -1,4 +1,4 @@
-import { Image } from 'src/enabledElements';
+import { Image } from '../enabledElements';
 /**
  * This function transforms stored pixel values into a canvas image data buffer
  * by using a LUT.

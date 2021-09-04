@@ -7,7 +7,7 @@ import webGL from '../webgl/index';
 import doesImageNeedToBeRendered from './doesImageNeedToBeRendered';
 import initializeRenderCanvas from './initializeRenderCanvas';
 import saveLastRendered from './saveLastRendered';
-import { EnabledElement, EnabledElementLayer, Image, Viewport } from 'src/enabledElements';
+import { EnabledElement, EnabledElementLayer, Image, Viewport } from '../enabledElements';
 
 /**
  * Generates an appropriate Look Up Table to render the given image with the given window width and level (specified in the viewport)

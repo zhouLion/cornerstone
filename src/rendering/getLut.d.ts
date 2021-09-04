@@ -1,4 +1,4 @@
-import { Image, Viewport } from 'src/enabledElements';
+import { Image, Viewport } from '../enabledElements';
 /**
  * Retrieve or generate a LUT Array for an Image and Viewport
  *

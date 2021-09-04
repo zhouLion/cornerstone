@@ -1,4 +1,4 @@
-import { Image } from 'src/enabledElements';
+import { Image } from '../enabledElements';
 /**
  * Retrieves the current image dimensions given an enabled element
  *

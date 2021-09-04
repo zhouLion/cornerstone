@@ -1,7 +1,7 @@
 import computeAutoVoi from '../internal/computeAutoVoi';
 import lutMatches from './lutMatches';
 import generateLut from '../internal/generateLut';
-import { Image, Viewport } from 'src/enabledElements';
+import { Image, Viewport } from '../enabledElements';
 
 /**
  * Retrieve or generate a LUT Array for an Image and Viewport

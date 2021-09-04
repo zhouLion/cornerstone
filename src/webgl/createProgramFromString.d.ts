@@ -6,4 +6,4 @@
  * @return {!WebGLProgram}                 A program
  * @memberof WebGLRendering
  */
-export default function _default(gl: WebGLRenderingContext, vertexShaderSrc: WebGLShader, fragShaderSrc: WebGLShader): WebGLProgram;
+export default function (gl: WebGLRenderingContext, vertexShaderSrc: WebGLShader, fragShaderSrc: WebGLShader): WebGLProgram | undefined;

@@ -1,4 +1,4 @@
-import { Image } from 'src/enabledElements';
+import { Image } from '../enabledElements';
 /**
  * Converts stored color pixel values to display pixel values using a LUT.
  *

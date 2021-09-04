@@ -1,4 +1,4 @@
-import { Image } from 'src/enabledElements';
+import { Image } from '../enabledElements';
 /**
  * Calculates the horizontal, vertical and minimum scale factor for an image
    @param {{width, height}} windowSize The window size where the image is displayed. This can be any HTML element or structure with a width, height fields (e.g. canvas).

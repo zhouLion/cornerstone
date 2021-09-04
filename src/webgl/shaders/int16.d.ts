@@ -1,6 +1,5 @@
-export namespace int16DataUtilities {
-    export { storedPixelDataToImageData };
-}
+import { Image } from "../../enabledElements";
+declare const int16Shader: Record<string, any>;
 /**
  * Convert stored pixel data to image data.
  *
@@ -10,8 +9,8 @@ export namespace int16DataUtilities {
  * @returns {Uint8Array} The image data for use by the WebGL shader
  * @memberof WebGLRendering
  */
-declare function storedPixelDataToImageData(image: new (width?: number | undefined, height?: number | undefined) => HTMLImageElement): Uint8Array;
-export namespace int16Shader {
-    const frag: string;
-}
-export {};
+declare function storedPixelDataToImageData(image: Image): Uint8Array;
+export declare const int16DataUtilities: {
+    storedPixelDataToImageData: typeof storedPixelDataToImageData;
+};
+export { int16Shader };

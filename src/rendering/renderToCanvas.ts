@@ -3,7 +3,7 @@ import EVENTS from '../events';
 import drawImageSync from '../internal/drawImageSync';
 import getDefaultViewport from '../internal/getDefaultViewport';
 import tryEnableWebgl from '../internal/tryEnableWebgl';
-import { EnabledElementLayer, Image, Viewport } from 'src/enabledElements';
+import { EnabledElementLayer, Image, Viewport } from '../enabledElements';
 
 export interface EnabledElementStub {
   element: HTMLCanvasElement;

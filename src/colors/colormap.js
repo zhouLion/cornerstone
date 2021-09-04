@@ -644,7 +644,7 @@ export function getColormapsList() {
  * @memberof Colors
 */
 export function getColormap(id, colormapData) {
-    let colormap = (colormapsData[id]);
+    let colormap = colormapsData[id];
     if (!colormap) {
         colormapsData[id] = colormapData;
         colormap = colormapData;

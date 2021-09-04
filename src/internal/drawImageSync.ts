@@ -6,7 +6,7 @@ import { renderPseudoColorImage } from '../rendering/renderPseudoColorImage';
 import { renderLabelMapImage } from '../rendering/renderLabelMapImage';
 import triggerEvent from '../triggerEvent';
 import EVENTS from '../events';
-import { EnabledElement } from 'src/enabledElements';
+import { EnabledElement } from '../enabledElements';
 
 /**
  * Draw an image to a given enabled element synchronously

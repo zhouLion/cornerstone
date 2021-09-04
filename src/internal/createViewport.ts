@@ -1,4 +1,4 @@
-import { Viewport } from 'src/enabledElements';
+import { Viewport } from '../enabledElements';
 import { state } from './setDefaultViewport';
 
 // eslint-disable-next-line valid-jsdoc

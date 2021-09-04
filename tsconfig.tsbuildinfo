@@ -232,13 +232,13 @@
         "affectsGlobalScope": false
       },
       "./src/internal/calculatetransform.ts": {
-        "version": "4f3196345365c7b860efc2feec09964f0547b8a89aecbefc370403c426083bd9",
-        "signature": "6d22773121963c62d8bb32fa4ad0a68f8eb0bb925cf6746019288754af911016",
+        "version": "d91d7ce0eeb4e17bdab7eb23ceed879b1f853ec93f1bbfc09786b494c560dc4e",
+        "signature": "ef6b8efa4789b4e2a8d00f351264cd4ed04e848ef1ec27c9d3b381652a19b3e1",
         "affectsGlobalScope": false
       },
       "./src/internal/gettransform.ts": {
-        "version": "36455fa2e91da5090873205591ae9c33f774b5dff51211710879ceed17b2c870",
-        "signature": "4175a17eafc5ed956baad98e9a9e8151ae9ab53865cc9e95453775ebca16853c",
+        "version": "45c9f313a180241ad5dd9bedb7d99ff2cc5cce22736dc6d4d6ba17c52e16e508",
+        "signature": "6e1d85a09c854d257f95cd2629a17f036014a44adb810a0970f9c96482f5b314",
         "affectsGlobalScope": false
       },
       "./src/canvastopixel.ts": {
@@ -267,8 +267,8 @@
         "affectsGlobalScope": false
       },
       "./src/internal/createviewport.ts": {
-        "version": "b94aea695da81074184311dfec21ab00f5e75dfd11d607eb7559c1b5ea986dcf",
-        "signature": "c8466b7ce41fd2c00f2baef79d880f2ce2d6284f9fa0ddb74e4eb2e288f2670a",
+        "version": "92f57e255826e69ae7fd98e7c8690279d79082d1def91b4ef7e8751cc7492a2e",
+        "signature": "75ff2a58a4b0b239a15b491087dd66a86d1785f4553f075a7ad4a148f947beaf",
         "affectsGlobalScope": false
       },
       "./src/internal/validator.d.ts": {
@@ -277,18 +277,18 @@
         "affectsGlobalScope": false
       },
       "./src/internal/getimagesize.ts": {
-        "version": "7a029b76105cb2e23bd38c80b1125dd769bf782105edfd48284633868b1931ca",
-        "signature": "8366a7b5af9e1837706108c6d8a7ba620693c3a25f101d29a90cc8453702c9c4",
+        "version": "0900cb83a6dd167ac9a6a331cc17acfdd01e522d5d098d7079552efb3a85fdf6",
+        "signature": "3dde2d757aebc2a47091a5e2c8f2bf8f22c6af822af0031041d00834d77e88a6",
         "affectsGlobalScope": false
       },
       "./src/internal/getimagefitscale.ts": {
-        "version": "d32e96b37ac0f8bbfc1fece503e81c44deddf39a3fa63459f0ec0fe17fb2aefa",
-        "signature": "52ea4185a8211c71e96f5124437f2c4aa029b0d53ee97245b8aa4059d5ccdf77",
+        "version": "6edf16f4a57038d9ea9b3b01fd571d45ce319d407f75a78d62db905e1f7d781b",
+        "signature": "ddfb739c8f31eeca4060bbf47c27c832203c449f9f2aa32ec8651d19f99a5e46",
         "affectsGlobalScope": false
       },
       "./src/internal/getdefaultviewport.ts": {
-        "version": "ab9a95ecda8ed02ab8cc9c7aec974696782eda9c8af39462e7320a05fffb32b3",
-        "signature": "5633d7243a1771cb1ffdabecefa0aef5dbc70ae6f106cd8645bcdae37ee51abf",
+        "version": "34564139393f40c5fd5f1bd1368eff311a2a1ea12a786d415ac486d5245e2beb",
+        "signature": "fb8c9503cdc6083a2244ed498c2666880be1f91bd16d8ba1fbe0dcaa0957c074",
         "affectsGlobalScope": false
       },
       "./src/internal/drawimage.ts": {
@@ -352,18 +352,18 @@
         "affectsGlobalScope": false
       },
       "./src/internal/generatecolorlut.ts": {
-        "version": "8ab0c249160de0e968e0a144b630cce43b77d62834bcd4c41617f547fcc813bc",
-        "signature": "51ec010b8930cad15196c6b9e780a6b8d93dbb83d71caee6f8d6648380b1e2a7",
+        "version": "84622b47e29d2ee1bf2bee1e44a7b04616d6963625a2ffaa4cc0e729ad7115f6",
+        "signature": "913f07b45f1f8e26066e1e13baba73ca3ddd5a095d4efda163ae777ec2ea6ac7",
         "affectsGlobalScope": false
       },
       "./src/internal/storedcolorpixeldatatocanvasimagedata.ts": {
-        "version": "eb539a31aafa3e5f14bf717c84c93f29c1b9ff5e099208b54a84bb253c79b7aa",
-        "signature": "cb9251c6fc4a209012924c198e3a936be6386f9de101eda5c284fd2c1269a663",
+        "version": "b13270afca44b5f4ea8c084517f07ab4997685c7c9304f85276292cbdd9cf497",
+        "signature": "8dd9f789eab5f2be1b13e24c950123899b60e243014e4222109f3d48e5ab96df",
         "affectsGlobalScope": false
       },
       "./src/internal/storedrgbapixeldatatocanvasimagedata.ts": {
-        "version": "5ca73d9690c6dd6f320dd10f5b31ada9ea1a428bd1aad3554111e9b7c63d66a8",
-        "signature": "d6c5461be0a09142aa805c46cada081f06e29bc0d2b7b45e3fcd131a193685c0",
+        "version": "d477d813c9399bccea16593ae1b4b050bd3ffba32fa84afb5a5c3bf35b2f2985",
+        "signature": "09e55c0088ff5fc9c6210f535aad4fc4df07968abfca48d85c2f5eac79f3ed34",
         "affectsGlobalScope": false
       },
       "./src/settopixelcoordinatesystem.ts": {
@@ -376,9 +376,9 @@
         "signature": "977ddbe94e1445e565fc8a626a90ba297e443ca394284ecf6d3d41a044de0522",
         "affectsGlobalScope": false
       },
-      "./src/webgl/createprogramfromstring.d.ts": {
-        "version": "b13e2c3299712d239e86d4abd08b77f9645d4d1772064eac70d5170709eecb0b",
-        "signature": "b13e2c3299712d239e86d4abd08b77f9645d4d1772064eac70d5170709eecb0b",
+      "./src/webgl/createprogramfromstring.ts": {
+        "version": "92604a97e9180390724423db86bc7d12ca6c59b6ad298fdedd768d8f112b74ca",
+        "signature": "c9328c8d48990d65aca89a832c18670f0058835fec6cdfd8a934ff0422c5a908",
         "affectsGlobalScope": false
       },
       "./src/webgl/texturecache.d.ts": {
@@ -407,18 +407,18 @@
         "affectsGlobalScope": false
       },
       "./src/rendering/rendercolorimage.ts": {
-        "version": "4864856ea9b61911ec22f53854af6d42ac23e3a072916dd1873662f27c5e8e8d",
-        "signature": "c1e7cd2cefa3b8e25918f32316cab1540605d6d8b5f9d9741b54ff4604d33bb6",
+        "version": "a3869d65df58bf383f59e08a6455a9588b96985c653ed31074c2a5b596f47f5e",
+        "signature": "1e93d3df1b59e3e2ce624807e0834cafe627627b00aff89606dbf9a9021cdecc",
         "affectsGlobalScope": false
       },
       "./src/internal/storedpixeldatatocanvasimagedata.ts": {
-        "version": "78c14bc91f935854b5e69c36f10f2b8eed5f1d17828f5e4163f707098dfd1f20",
-        "signature": "7fa6f7abd713061cb423b87f0896d37a2a4c49fde694dbec90ad1231a7decbab",
+        "version": "ec341337d70053bb40e954cbdb0896ee3a613bd9549825bd2889843803960a99",
+        "signature": "ae7147a4ce4966e9cdbddec001a2e41ef19916d75ed009981e15ed344b98f61d",
         "affectsGlobalScope": false
       },
       "./src/internal/storedpixeldatatocanvasimagedatargba.ts": {
-        "version": "9465463db4aaf22d9ef1a02579a1b2edefdbf792db001f71c021066628999d6a",
-        "signature": "9469fc77e2b8f55719fbc706361fc8b3b9a4653de31b8bc0fe2e113093612d88",
+        "version": "da18e4131029d78a53026ed64ae199a4c48a81b37d220c87004fac4488daf450",
+        "signature": "0e98c69576e4843b6099b7278a27865a3c84d31dc864bfdd86166b24c09c6709",
         "affectsGlobalScope": false
       },
       "./src/internal/computeautovoi.d.ts": {
@@ -437,18 +437,18 @@
         "affectsGlobalScope": false
       },
       "./src/internal/generatelut.ts": {
-        "version": "e1a5d7c2548853fad9764e1895667772554f8b08a679db352b41000ade504d64",
-        "signature": "06e1fa231fc03dad2595723f9f2e6e8f8c0cf76648ec55c2100e345603512176",
+        "version": "c29bd49a99dd691ce85a3aa7616ed6f9d5abd331886b3a9d08d442fe9f0dc22d",
+        "signature": "cf8d58d3f01777adb8ee28dfeb0fa9d6a3b4fb03f9fad3c925de4fedc5a44d93",
         "affectsGlobalScope": false
       },
       "./src/rendering/getlut.ts": {
-        "version": "4e6112de3eb0ba1be61f6bc7ebdf49c86fff93e580ef36e8d2c00ea658c4802b",
-        "signature": "e323d92358dec67e33288a1604984065118edf78dbc8bed1d814e4251f16eeb4",
+        "version": "0309d921890a8555102811ad936ba527502be054a81e526baefcca1f8925bbd8",
+        "signature": "a73ddbe841119b14d7ca5ca7eea2883fb8ecf4b1000f2f781ca3b8223578b739",
         "affectsGlobalScope": false
       },
       "./src/rendering/rendergrayscaleimage.ts": {
-        "version": "3e384783a93cd0194c8d9feb0d6ca86942e593bb919f0060579168d9ed8a90c2",
-        "signature": "f5fdc0c7cefc966471799976b4c78636aa76f8411c070edf32485cfc4c76d13f",
+        "version": "e6be7ec36e9250c3b51516534b9da89f9de716230459b7c47c4f007df6b86021",
+        "signature": "710f454328d8a88d0641b61c72fc2f8ce5c0fc4bb0615a737126304ff509b562",
         "affectsGlobalScope": false
       },
       "./src/colors/lookuptable.ts": {
@@ -457,8 +457,8 @@
         "affectsGlobalScope": false
       },
       "./src/colors/colormap.ts": {
-        "version": "e1f22978252498f5f04ef864e7fcd748687e495e2966671d4e33f8f4302e1e05",
-        "signature": "07fac23dadb3b35cc5ccf0627523dd16b74f85cd52a8e3e1decfdef82b4ed63a",
+        "version": "e062f58dfe49892aeb728cea33f72ea94f4cb11021aebcfad909910c3e113761",
+        "signature": "85b2a624c38d1a034db5e8b2bb3ef11a2bd1761c4f4c5aa567bef2652d87b4e1",
         "affectsGlobalScope": false
       },
       "./src/colors/index.ts": {
@@ -467,28 +467,28 @@
         "affectsGlobalScope": false
       },
       "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts": {
-        "version": "3aa199b5f36a9910fc1a5cdc3be70888c95b34d95000bf70b0390dcbd59f58a4",
-        "signature": "54be2de95ebb62b5c821ed58bce10851d0b3093341e8b500e54d323ec25c9839",
+        "version": "5f0c77b3087dadb4e2cd75ba1abf8a14628c9aa3ce89f380a4e9690757d0ea46",
+        "signature": "ebbd1626322cae7ab85b9651cef53aac6402ac712f759e6fd317418181a3f147",
         "affectsGlobalScope": false
       },
       "./src/rendering/renderpseudocolorimage.ts": {
-        "version": "14ffcc3c81ff237d20f0b7964d40225a5037d22fc03671059146ab722b751e4d",
-        "signature": "25fb98e1186ea07da47c91e87b8e0da440b09ce225cf09f6c645e686b9a25d9d",
+        "version": "081737de1e9f049cbd826647916e12e9760e925626610783df82512737976942",
+        "signature": "acf9ee446e7698595c2ba6016a26160f9a615d272e9552847f365e64fc532a1f",
         "affectsGlobalScope": false
       },
       "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts": {
-        "version": "17ea665dccf80de6850246fe66359d900290d62afddac11205d247eda657fad6",
-        "signature": "e4c3d0c3da3bb66f58cb84d1deb300c5f0ceeaba1a37724a9deb0cffb772ddaf",
+        "version": "98e169bfc074c40be89233cfa242c6951284904bfc297a946b858b0a703d312d",
+        "signature": "803e53e6de04967fbe6807bb4c568a3ef3b4b663ffde0022ac137a3024fd5f36",
         "affectsGlobalScope": false
       },
       "./src/rendering/renderlabelmapimage.ts": {
-        "version": "a48c2eb23325e2e3b8c84cb65c72ca1fb19ac56d14f5499f149dc8ea79381502",
-        "signature": "3ae623128aad5d0d74563a0a5ad108e3fbaebdb60043a561f94f67dd90428064",
+        "version": "61b30917c81a11125463bec92e9f7ef471fa98f4739db715696fca1eeeaab2ed",
+        "signature": "28755f1795576ef5b1faef2bdca4ecab4f0264b70e6f88c9172c1b6a0a513b08",
         "affectsGlobalScope": false
       },
       "./src/internal/drawimagesync.ts": {
-        "version": "228b88a366593285741b8588dc70ef3c94c9eaee45c8f361534c0797a5a14361",
-        "signature": "56d3370baec54f6e59e5a4fc8cd601a2b27bcc12faf0043d7b8ed654125c0981",
+        "version": "98a93f1df82ce11612da782dcb906a5f2ce4bab6439e6d7bd065dfcee83c7774",
+        "signature": "1190220ab9d0e0188de01435b2eea3bd01d0ed1e9a59885e9d16f0bd47054e88",
         "affectsGlobalScope": false
       },
       "./src/internal/requestanimationframe.ts": {
@@ -597,13 +597,13 @@
         "affectsGlobalScope": false
       },
       "./src/rendering/rendertocanvas.ts": {
-        "version": "6e7833df14601f37b9f9f869a13635af5d6d15d862c0a2363452a4962fbb5edb",
-        "signature": "fe3c6b421b32fd1221ca41d5464cc84126c71878e672867b83b02bb54cb79579",
+        "version": "c5b4cf5663962bd6cf9ba64e728386055fd8a7db3424d373408db2319061661d",
+        "signature": "515b3f244d030b5c75f3efb47a4d90148496c3be36721dba8956c737cfa66324",
         "affectsGlobalScope": false
       },
       "./src/rendering/renderwebimage.ts": {
-        "version": "78666b24f69062ba033694d3731e66b1167038941a7bc4b83d0e8bb27ce1d579",
-        "signature": "b17679995f59686dfca943b7c3a56a982696aa0f938222e8e7c3878113c297e6",
+        "version": "387bd53465528753a527bbe85700a8677217177884004d322c8d2ed9cc8b6304",
+        "signature": "fd22268413b7d8e1eabdd4d17e751c45685701a5fd2eda9629d7aa84fdbce9a1",
         "affectsGlobalScope": false
       },
       "./src/rendering/index.ts": {
@@ -636,34 +636,34 @@
         "signature": "4ce992c2e85f138efdf5dc971d25d9b82304cc53f8046b9d7b1ff1348264a41f",
         "affectsGlobalScope": false
       },
-      "./src/webgl/shaders/int16.d.ts": {
-        "version": "7af2fb86c567cc143effeb56ae947a328a52b68c076d34d57be4f9174f00a9e9",
-        "signature": "7af2fb86c567cc143effeb56ae947a328a52b68c076d34d57be4f9174f00a9e9",
+      "./src/webgl/shaders/int16.ts": {
+        "version": "d8511fad7f68f65110b732c9a77bdd4830e44073a99b7c306536fb47794d8ec3",
+        "signature": "b2d7f023cf6b94fa42fb8eb385a9fc9b954a6d46dfd5ca775ab00ce0e9e1675c",
         "affectsGlobalScope": false
       },
-      "./src/webgl/shaders/int8.d.ts": {
-        "version": "a9ebbde7eca494039558e18161f2df609eafb0312da023eca63a5426b62d83a1",
-        "signature": "a9ebbde7eca494039558e18161f2df609eafb0312da023eca63a5426b62d83a1",
+      "./src/webgl/shaders/int8.ts": {
+        "version": "b78e84a6cbc609605182b17bc535d59bc5c15083c59fb5ea09a43533a1405300",
+        "signature": "a2ed4da609346bbf615ade967c6db12049f17765a5d2735f7085ebe28976940b",
         "affectsGlobalScope": false
       },
-      "./src/webgl/shaders/rgb.d.ts": {
-        "version": "e79d626f6a17eb19bee97a63979d01a32ee41468fbd5e37f39ad9f4018d81c6a",
-        "signature": "e79d626f6a17eb19bee97a63979d01a32ee41468fbd5e37f39ad9f4018d81c6a",
+      "./src/webgl/shaders/rgb.ts": {
+        "version": "23d0bca54324a04742e0ac9e5b0455d4cfa8d920407d4bb256d2cfe13e7b111b",
+        "signature": "0271a9543f51fc3787beb622b8a1e2a4d0e0431790f9d1f0aa167cef84d1480a",
         "affectsGlobalScope": false
       },
-      "./src/webgl/shaders/uint16.d.ts": {
-        "version": "769e9e9467097f942be492560d19be671cd9b80e62fb6b08e922a2c67e1e1ec0",
-        "signature": "769e9e9467097f942be492560d19be671cd9b80e62fb6b08e922a2c67e1e1ec0",
+      "./src/webgl/shaders/uint16.ts": {
+        "version": "659d463af84b403f6027a872052247540eccaca1ed7ba8d3064fb6067eba73d8",
+        "signature": "bca1ab2bc831569d36027b24b71f556d371c151ba46d63f3c9f8b67eb99b9887",
         "affectsGlobalScope": false
       },
-      "./src/webgl/shaders/uint8.d.ts": {
-        "version": "7772cb4dd776e126261b4cda0ae7e30e928e176cb758b04bde1f7e7c1e1517ea",
-        "signature": "7772cb4dd776e126261b4cda0ae7e30e928e176cb758b04bde1f7e7c1e1517ea",
+      "./src/webgl/shaders/uint8.ts": {
+        "version": "632df76fdce0d5ee552ddbf30a9c69011cc9a266532b423b6838de3772a8432a",
+        "signature": "f67864fefcff9520ec610a3a1890e58aa8ff90c6b7bb10bc0acde3aab2abda7e",
         "affectsGlobalScope": false
       },
-      "./src/webgl/shaders/index.d.ts": {
-        "version": "2287acfeb18a636b5f6be43199af09c59d11cae8ced04159efedbdff262fc218",
-        "signature": "2287acfeb18a636b5f6be43199af09c59d11cae8ced04159efedbdff262fc218",
+      "./src/webgl/shaders/index.ts": {
+        "version": "6da07de23f945f1ee97714bca30a47de8469f35e67de6e51b128ebcedafb3bf1",
+        "signature": "4b487ec44b150a3e97f1d7ea1608e1a5fccbf26a0c6268a01e9705a574ed0639",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/events/index.d.ts": {
@@ -911,7 +911,6 @@
       "declaration": true,
       "removeComments": false,
       "strict": true,
-      "rootDirs": [],
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
@@ -1766,14 +1765,14 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./src/webgl/createprogramfromstring.d.ts": [
+      "./src/webgl/createprogramfromstring.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
       "./src/webgl/index.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/webgl/createprogramfromstring.d.ts",
+        "./src/webgl/createprogramfromstring.ts",
         "./src/webgl/renderer.d.ts",
         "./src/webgl/texturecache.d.ts"
       ],
@@ -1781,34 +1780,39 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./src/webgl/shaders/index.d.ts": [
+      "./src/webgl/shaders/index.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/webgl/shaders/int16.d.ts",
-        "./src/webgl/shaders/int8.d.ts",
-        "./src/webgl/shaders/rgb.d.ts",
-        "./src/webgl/shaders/uint16.d.ts",
-        "./src/webgl/shaders/uint8.d.ts"
+        "./src/webgl/shaders/int16.ts",
+        "./src/webgl/shaders/int8.ts",
+        "./src/webgl/shaders/rgb.ts",
+        "./src/webgl/shaders/uint16.ts",
+        "./src/webgl/shaders/uint8.ts"
       ],
-      "./src/webgl/shaders/int16.d.ts": [
+      "./src/webgl/shaders/int16.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
       ],
-      "./src/webgl/shaders/int8.d.ts": [
+      "./src/webgl/shaders/int8.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
       ],
-      "./src/webgl/shaders/rgb.d.ts": [
+      "./src/webgl/shaders/rgb.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
       ],
-      "./src/webgl/shaders/uint16.d.ts": [
+      "./src/webgl/shaders/uint16.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
       ],
-      "./src/webgl/shaders/uint8.d.ts": [
+      "./src/webgl/shaders/uint8.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
       ],
       "./src/webgl/texturecache.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -2506,10 +2510,6 @@
       "./src/setviewport.ts": [
         "./src/enabledelements.ts"
       ],
-      "./src/webgl/createprogramfromstring.d.ts": [
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
-      ],
       "./src/webgl/index.ts": [
         "./src/webgl/createprogramfromstring.d.ts",
         "./src/webgl/renderer.d.ts",
@@ -2519,34 +2519,23 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./src/webgl/shaders/index.d.ts": [
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./src/webgl/shaders/int16.d.ts",
-        "./src/webgl/shaders/int8.d.ts",
-        "./src/webgl/shaders/rgb.d.ts",
-        "./src/webgl/shaders/uint16.d.ts",
-        "./src/webgl/shaders/uint8.d.ts"
+      "./src/webgl/shaders/index.ts": [
+        "./src/enabledelements.ts"
       ],
-      "./src/webgl/shaders/int16.d.ts": [
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+      "./src/webgl/shaders/int16.ts": [
+        "./src/enabledelements.ts"
       ],
-      "./src/webgl/shaders/int8.d.ts": [
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+      "./src/webgl/shaders/int8.ts": [
+        "./src/enabledelements.ts"
       ],
-      "./src/webgl/shaders/rgb.d.ts": [
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+      "./src/webgl/shaders/rgb.ts": [
+        "./src/enabledelements.ts"
       ],
-      "./src/webgl/shaders/uint16.d.ts": [
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+      "./src/webgl/shaders/uint16.ts": [
+        "./src/enabledelements.ts"
       ],
-      "./src/webgl/shaders/uint8.d.ts": [
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
+      "./src/webgl/shaders/uint8.ts": [
+        "./src/enabledelements.ts"
       ],
       "./src/webgl/texturecache.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -2787,7 +2776,7 @@
         [
           {
             "file": "./src/colors/colormap.ts",
-            "start": 39239,
+            "start": 39232,
             "length": 18,
             "code": 7053,
             "category": 1,
@@ -2806,528 +2795,45 @@
           },
           {
             "file": "./src/colors/colormap.ts",
-            "start": 40389,
+            "start": 40232,
             "length": 17,
-            "code": 2322,
+            "code": 7053,
             "category": 1,
             "messageText": {
-              "messageText": "Type 'ColormapColorsType | ColormapSegmentedDataType | undefined' is not assignable to type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'IColormapsData'.",
               "category": 1,
-              "code": 2322,
+              "code": 7053,
               "next": [
                 {
-                  "messageText": "Type 'undefined' is not assignable to type 'ColormapColorsType | ColormapSegmentedDataType'.",
+                  "messageText": "No index signature with a parameter of type 'string' was found on type 'IColormapsData'.",
                   "category": 1,
-                  "code": 2322
+                  "code": 7054
                 }
               ]
             }
           },
           {
             "file": "./src/colors/colormap.ts",
-            "start": 40462,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40471,
-            "length": 6,
-            "code": 2339,
+            "start": 40274,
+            "length": 17,
+            "code": 7053,
             "category": 1,
             "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'IColormapsData'.",
               "category": 1,
-              "code": 2339,
+              "code": 7053,
               "next": [
                 {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "messageText": "No index signature with a parameter of type 'string' was found on type 'IColormapsData'.",
                   "category": 1,
-                  "code": 2339
+                  "code": 7054
                 }
               ]
             }
           },
           {
             "file": "./src/colors/colormap.ts",
-            "start": 40481,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40490,
-            "length": 13,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'segmentedData' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'segmentedData' does not exist on type 'ColormapColorsType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40511,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40520,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40559,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40568,
-            "length": 13,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'segmentedData' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'segmentedData' does not exist on type 'ColormapColorsType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40583,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40583,
-            "length": 18,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'number | undefined' is not assignable to parameter of type 'number'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'undefined' is not assignable to type 'number'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40603,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40612,
-            "length": 5,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'gamma' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'gamma' does not exist on type 'ColormapColorsType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40717,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40786,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40856,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40865,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40945,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40954,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 40991,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41000,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41047,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41056,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41175,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41184,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41312,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41321,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41528,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41537,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41618,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41627,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41755,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41764,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41891,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41900,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41968,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 41977,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 42099,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 42108,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 42134,
+            "start": 42019,
             "length": 22,
             "code": 2339,
             "category": 1,
@@ -3335,7 +2841,7 @@
           },
           {
             "file": "./src/colors/colormap.ts",
-            "start": 42226,
+            "start": 42111,
             "length": 13,
             "code": 2339,
             "category": 1,
@@ -3343,34 +2849,7 @@
           },
           {
             "file": "./src/colors/colormap.ts",
-            "start": 42243,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 42252,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 42373,
+            "start": 42258,
             "length": 3,
             "code": 2345,
             "category": 1,
@@ -3383,33 +2862,6 @@
                   "messageText": "Type 'LookupTable' is missing the following properties from type 'LUT': firstValueMapped, numBitsPerEntry, lut",
                   "category": 1,
                   "code": 2739
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 42479,
-            "length": 8,
-            "messageText": "Object is possibly 'undefined'.",
-            "category": 1,
-            "code": 2532
-          },
-          {
-            "file": "./src/colors/colormap.ts",
-            "start": 42488,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
-              "category": 1,
-              "code": 2339,
-              "next": [
-                {
-                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
-                  "category": 1,
-                  "code": 2339
                 }
               ]
             }
@@ -3431,20 +2883,12 @@
         [
           {
             "file": "./src/falsecolormapping.ts",
-            "start": 2651,
-            "length": 8,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'string' is not assignable to parameter of type '\"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"'."
-          },
-          {
-            "file": "./src/falsecolormapping.ts",
             "start": 3727,
             "length": 5,
             "code": 2339,
             "category": 1,
             "messageText": {
-              "messageText": "Property 'getId' does not exist on type '{ getId(): \"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"; ... 13 more ...; isValidIndex(index: number): boolean; } | Colormap'.",
+              "messageText": "Property 'getId' does not exist on type 'Colormap | { getId(): string; getColorSchemeName(): any; setColorSchemeName(name: string): void; getNumberOfColors(): any; setNumberOfColors(numColors: number): void; ... 9 more ...; isValidIndex(index: number): boolean; }'.",
               "category": 1,
               "code": 2339,
               "next": [
@@ -3463,7 +2907,7 @@
             "code": 2339,
             "category": 1,
             "messageText": {
-              "messageText": "Property 'createLookupTable' does not exist on type '{ getId(): \"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"; ... 13 more ...; isValidIndex(index: number): boolean; } | Colormap'.",
+              "messageText": "Property 'createLookupTable' does not exist on type 'Colormap | { getId(): string; getColorSchemeName(): any; setColorSchemeName(name: string): void; getNumberOfColors(): any; setNumberOfColors(numColors: number): void; ... 9 more ...; isValidIndex(index: number): boolean; }'.",
               "category": 1,
               "code": 2339,
               "next": [
@@ -3530,33 +2974,13 @@
       "./src/rendering/lutmatches.ts",
       "./src/rendering/rendercolorimage.ts",
       "./src/rendering/rendergrayscaleimage.ts",
-      [
-        "./src/rendering/renderlabelmapimage.ts",
-        [
-          {
-            "file": "./src/rendering/renderlabelmapimage.ts",
-            "start": 1788,
-            "length": 8,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'string' is not assignable to parameter of type '\"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"'."
-          }
-        ]
-      ],
+      "./src/rendering/renderlabelmapimage.ts",
       [
         "./src/rendering/renderpseudocolorimage.ts",
         [
           {
             "file": "./src/rendering/renderpseudocolorimage.ts",
-            "start": 1824,
-            "length": 8,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'string' is not assignable to parameter of type '\"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"'."
-          },
-          {
-            "file": "./src/rendering/renderpseudocolorimage.ts",
-            "start": 3254,
+            "start": 3253,
             "length": 3,
             "code": 2345,
             "category": 1,
@@ -3585,15 +3009,54 @@
       "./src/triggerevent.ts",
       "./src/updateimage.ts",
       "./src/version.ts",
-      "./src/webgl/createprogramfromstring.d.ts",
+      [
+        "./src/webgl/createprogramfromstring.ts",
+        [
+          {
+            "file": "./src/webgl/createprogramfromstring.ts",
+            "start": 2551,
+            "length": 15,
+            "code": 2345,
+            "category": 1,
+            "messageText": "Argument of type 'WebGLShader' is not assignable to parameter of type 'string'."
+          },
+          {
+            "file": "./src/webgl/createprogramfromstring.ts",
+            "start": 2626,
+            "length": 13,
+            "code": 2345,
+            "category": 1,
+            "messageText": "Argument of type 'WebGLShader' is not assignable to parameter of type 'string'."
+          },
+          {
+            "file": "./src/webgl/createprogramfromstring.ts",
+            "start": 2691,
+            "length": 12,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'WebGLShader | undefined' is not assignable to parameter of type 'WebGLShader'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'undefined' is not assignable to type 'WebGLShader'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          }
+        ]
+      ],
       "./src/webgl/index.ts",
       "./src/webgl/renderer.d.ts",
-      "./src/webgl/shaders/index.d.ts",
-      "./src/webgl/shaders/int16.d.ts",
-      "./src/webgl/shaders/int8.d.ts",
-      "./src/webgl/shaders/rgb.d.ts",
-      "./src/webgl/shaders/uint16.d.ts",
-      "./src/webgl/shaders/uint8.d.ts",
+      "./src/webgl/shaders/index.ts",
+      "./src/webgl/shaders/int16.ts",
+      "./src/webgl/shaders/int8.ts",
+      "./src/webgl/shaders/rgb.ts",
+      "./src/webgl/shaders/uint16.ts",
+      "./src/webgl/shaders/uint8.ts",
       "./src/webgl/texturecache.d.ts",
       "./src/webgl/vertexshader.d.ts",
       "../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts",

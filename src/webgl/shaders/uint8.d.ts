@@ -1,6 +1,5 @@
-export namespace uint8DataUtilities {
-    export { storedPixelDataToImageData };
-}
+import { Image } from '../../enabledElements';
+declare const uint8Shader: Record<string, any>;
 /**
  * Convert stored pixel data to image data. Here we will store
  * all data in the alpha channel.
@@ -9,8 +8,8 @@ export namespace uint8DataUtilities {
  * @returns {Uint8Array} The image data for use by the WebGL shader
  * @memberof WebGLRendering
  */
-declare function storedPixelDataToImageData(image: new (width?: number | undefined, height?: number | undefined) => HTMLImageElement): Uint8Array;
-export namespace uint8Shader {
-    const frag: string;
-}
-export {};
+declare function storedPixelDataToImageData(image: Image): any;
+export declare const uint8DataUtilities: {
+    storedPixelDataToImageData: typeof storedPixelDataToImageData;
+};
+export { uint8Shader };

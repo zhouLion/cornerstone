@@ -1,6 +1,5 @@
-export namespace rgbDataUtilities {
-    export { storedPixelDataToImageData };
-}
+import { Image } from "../../enabledElements";
+declare const rgbShader: Record<string, any>;
 /**
  * Convert stored pixel data to image data.
  *
@@ -10,8 +9,8 @@ export namespace rgbDataUtilities {
  * @returns {Uint8Array} The image data for use by the WebGL shader
  * @memberof WebGLRendering
  */
-declare function storedPixelDataToImageData(image: new (width?: number | undefined, height?: number | undefined) => HTMLImageElement): Uint8Array;
-export namespace rgbShader {
-    const frag: string;
-}
-export {};
+declare function storedPixelDataToImageData(image: Image): Uint8Array;
+export declare const rgbDataUtilities: {
+    storedPixelDataToImageData: typeof storedPixelDataToImageData;
+};
+export { rgbShader };

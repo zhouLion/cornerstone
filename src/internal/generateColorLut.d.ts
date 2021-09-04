@@ -1,4 +1,4 @@
-import { Image, LUT } from 'src/enabledElements';
+import { Image, LUT } from '../enabledElements';
 /**
  * Creates a LUT used while rendering to convert stored pixel values to
  * display pixels

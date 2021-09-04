@@ -1,4 +1,4 @@
-import { LUT } from 'src/enabledElements';
+import { LUT } from '../enabledElements';
 import LookupTable from './lookupTable';
 
 const COLOR_TRANSPARENT = [0, 0, 0, 0];
@@ -491,7 +491,8 @@ type OtherColormapKeys = string;
 
 type IColormapsData = { [key in ColorsTypeKeyBuildIn]: ColormapColorsType }
   & { [key in SegmentedDataTypeKeyBuildIn]: ColormapSegmentedDataType }
-  | { [key in OtherColormapKeys]: ColormapColorsType | ColormapSegmentedDataType };
+  | Partial<Record<string, ColormapColorsType | ColormapSegmentedDataType>>;
+
 /**
  *  Generate linearly spaced vectors
 *  http://cens.ioc.ee/local/man/matlab/techdoc/ref/linspace.html
@@ -711,10 +712,10 @@ export function getColormapsList () {
  * @memberof Colors
 */
 export function getColormap (
-  id: ColorsTypeKeyBuildIn | SegmentedDataTypeKeyBuildIn,
+  id: string,
   colormapData?: (ColormapColorsType | ColormapSegmentedDataType)
 ) {
-  let colormap = (colormapsData[id]) as ColormapColorsType | ColormapSegmentedDataType | undefined;
+  let colormap = colormapsData[id];
   if (!colormap) {
     colormapsData[id] = colormapData
     colormap = colormapData;

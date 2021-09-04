@@ -6,7 +6,7 @@ import saveLastRendered from './saveLastRendered';
 import doesImageNeedToBeRendered from './doesImageNeedToBeRendered';
 import storedPixelDataToCanvasImageDataPseudocolorLUT from '../internal/storedPixelDataToCanvasImageDataPseudocolorLUT';
 import colors from '../colors/index';
-import { EnabledElement, EnabledElementLayer, Image } from 'src/enabledElements';
+import { EnabledElement, EnabledElementLayer, Image } from '../enabledElements';
 
 /**
  * Returns an appropriate canvas to render the Image. If the canvas available in the cache is appropriate

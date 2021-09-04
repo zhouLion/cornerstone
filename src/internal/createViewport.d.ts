@@ -1,4 +1,4 @@
-import { Viewport } from 'src/enabledElements';
+import { Viewport } from '../enabledElements';
 /**
  * Creates a new viewport object containing default values
  *

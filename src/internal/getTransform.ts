@@ -1,4 +1,4 @@
-import { EnabledElement } from 'src/enabledElements';
+import { EnabledElement } from '../enabledElements';
 import calculateTransform from './calculateTransform';
 
 export default function (enabledElement: EnabledElement) {

@@ -1,4 +1,4 @@
-import { EnabledElement } from 'src/enabledElements';
+import { EnabledElement } from '../enabledElements';
 /**
  * Draw an image to a given enabled element synchronously
  *

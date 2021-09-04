@@ -8,19 +8,22 @@
  * @return {!WebGLShader} The shader.
  * @memberof WebGLRendering
  */
-function compileShader (gl, shaderSource, shaderType) {
+function compileShader (gl: WebGLRenderingContext, shaderSource: string, shaderType: number) {
+
   // Create the shader object
   const shader = gl.createShader(shaderType);
 
   if (!shader) {
     console.error('unable to create shader');
-
     return;
   }
+
   // Set the shader source code.
   gl.shaderSource(shader, shaderSource);
+
   // Compile the shader
   gl.compileShader(shader);
+
   // Check if it compiled
   const success = gl.getShaderParameter(shader, gl.COMPILE_STATUS);
 
@@ -43,20 +46,23 @@ function compileShader (gl, shaderSource, shaderType) {
  * @return {!WebGLProgram} A program.
  * @memberof WebGLRendering
  */
-function createProgram (gl, vertexShader, fragmentShader) {
+function createProgram (gl: WebGLRenderingContext, vertexShader: WebGLShader, fragmentShader: WebGLShader) {
+
   // Create a program.
   const program = gl.createProgram();
 
   if (!program) {
     console.error('unable to create program');
-
     return;
   }
+
   // Attach the shaders.
   gl.attachShader(program, vertexShader);
   gl.attachShader(program, fragmentShader);
+
   // Link the program.
   gl.linkProgram(program);
+
   // Check if it linked.
   const success = gl.getProgramParameter(program, gl.LINK_STATUS);
 
@@ -78,7 +84,7 @@ function createProgram (gl, vertexShader, fragmentShader) {
  * @return {!WebGLProgram}                 A program
  * @memberof WebGLRendering
  */
-export default function (gl, vertexShaderSrc, fragShaderSrc) {
+export default function (gl: WebGLRenderingContext, vertexShaderSrc: WebGLShader, fragShaderSrc: WebGLShader) {
   const vertexShader = compileShader(gl, vertexShaderSrc, gl.VERTEX_SHADER);
   const fragShader = compileShader(gl, fragShaderSrc, gl.FRAGMENT_SHADER);
 
