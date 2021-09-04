@@ -124,7 +124,7 @@ class LookupTable {
   AboveRangeColor: number[];
   UseAboveRangeColor: boolean;
   InputRange: number[];
-  Table: never[];
+  Table: number[][];
 
   /**
    * Creates a default linear LookupTable object with 256 colors.
@@ -261,7 +261,7 @@ class LookupTable {
    * @returns {void}
    * @memberof Colors
    */
-  build (force: undefined) {
+  build (force?: boolean) {
     if (this.Table.length > 1 && !force) {
       return;
     }
@@ -383,7 +383,12 @@ class LookupTable {
    * @memberof Colors
    */
   getIndex (v: number) {
-    const p = {};
+    const p: Partial<{
+      Range: Array<number>,
+      MaxIndex: number,
+      Shift: number,
+      Scale: number,
+    }> = {};
 
     p.Range = [];
     p.MaxIndex = this.NumberOfColors - 1;

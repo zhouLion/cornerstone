@@ -1,6 +1,5 @@
-import { getEnabledElementsByImageId } from './enabledElements.js';
-import drawImage from './internal/drawImage.js';
-
+import { getEnabledElementsByImageId } from './enabledElements';
+import drawImage from './internal/drawImage';
 /**
  * Forces the image to be updated/redrawn for all enabled elements
  * displaying the specified imageId
@@ -10,9 +9,8 @@ import drawImage from './internal/drawImage.js';
  * @memberof Drawing
  */
 export default function (imageId) {
-  const enabledElements = getEnabledElementsByImageId(imageId);
-
-  enabledElements.forEach(function (enabledElement) {
-    drawImage(enabledElement, true);
-  });
+    const enabledElements = getEnabledElementsByImageId(imageId);
+    enabledElements.forEach(function (enabledElement) {
+        drawImage(enabledElement, true);
+    });
 }

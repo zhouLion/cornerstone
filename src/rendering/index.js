@@ -1,18 +1,17 @@
-import { renderColorImage } from './renderColorImage.js';
-import { renderGrayscaleImage } from './renderGrayscaleImage.js';
-import { renderWebImage } from './renderWebImage.js';
-import { renderPseudoColorImage } from './renderPseudoColorImage.js';
-import { renderLabelMapImage } from './renderLabelMapImage.js';
-import renderToCanvas from './renderToCanvas.js';
-
+import { renderColorImage } from './renderColorImage';
+import { renderGrayscaleImage } from './renderGrayscaleImage';
+import { renderWebImage } from './renderWebImage';
+import { renderPseudoColorImage } from './renderPseudoColorImage';
+import { renderLabelMapImage } from './renderLabelMapImage';
+import renderToCanvas from './renderToCanvas';
 /**
  * @module rendering
  */
 export default {
-  colorImage: renderColorImage,
-  grayscaleImage: renderGrayscaleImage,
-  webImage: renderWebImage,
-  pseudoColorImage: renderPseudoColorImage,
-  labelMapImage: renderLabelMapImage,
-  toCanvas: renderToCanvas
+    colorImage: renderColorImage,
+    grayscaleImage: renderGrayscaleImage,
+    webImage: renderWebImage,
+    pseudoColorImage: renderPseudoColorImage,
+    labelMapImage: renderLabelMapImage,
+    toCanvas: renderToCanvas
 };

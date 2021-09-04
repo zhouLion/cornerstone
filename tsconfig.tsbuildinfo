@@ -1,0 +1,3646 @@
+{
+  "program": {
+    "fileInfos": {
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "signature": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "affectsGlobalScope": false
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "signature": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "affectsGlobalScope": false
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "signature": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "affectsGlobalScope": false
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "signature": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "affectsGlobalScope": false
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.d.ts": {
+        "version": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
+        "signature": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
+        "affectsGlobalScope": false
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.d.ts": {
+        "version": "94b4108552f078722078d7c4a010ca4851063882f6c0c51a1468aa7a39aed4b3",
+        "signature": "94b4108552f078722078d7c4a010ca4851063882f6c0c51a1468aa7a39aed4b3",
+        "affectsGlobalScope": false
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.d.ts": {
+        "version": "2f8f379dedbdbd96a38a1e445cb3919853a1157a950fd977f85808db8d0f8a58",
+        "signature": "2f8f379dedbdbd96a38a1e445cb3919853a1157a950fd977f85808db8d0f8a58",
+        "affectsGlobalScope": false
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "9affb0a2ddc57df5b8174c0af96c288d697a262e5bc9ca1f544c999dc64a91e6",
+        "signature": "9affb0a2ddc57df5b8174c0af96c288d697a262e5bc9ca1f544c999dc64a91e6",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
+        "version": "fb0c09b697dc42afa84d1587e3c994a2f554d2a45635e4f0618768d16a86b69a",
+        "signature": "fb0c09b697dc42afa84d1587e3c994a2f554d2a45635e4f0618768d16a86b69a",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "signature": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "signature": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "signature": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "signature": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "signature": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "signature": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "signature": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "signature": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "signature": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "signature": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "signature": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "signature": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "signature": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "d0db416bccdb33975548baf09a42ee8c47eace1aac7907351a000f1e568e7232",
+        "signature": "d0db416bccdb33975548baf09a42ee8c47eace1aac7907351a000f1e568e7232",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "signature": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "signature": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "signature": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": {
+        "version": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "signature": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "signature": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "signature": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "signature": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "signature": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.array.d.ts": {
+        "version": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
+        "signature": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.object.d.ts": {
+        "version": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
+        "signature": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.string.d.ts": {
+        "version": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
+        "signature": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.symbol.d.ts": {
+        "version": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
+        "signature": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.bigint.d.ts": {
+        "version": "4f435f794b7853c55e2ae7cff6206025802aa79232d2867544178f2ca8ff5eaa",
+        "signature": "4f435f794b7853c55e2ae7cff6206025802aa79232d2867544178f2ca8ff5eaa",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.promise.d.ts": {
+        "version": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
+        "signature": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.string.d.ts": {
+        "version": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
+        "signature": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts": {
+        "version": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
+        "signature": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
+        "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.string.d.ts": {
+        "version": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
+        "signature": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.promise.d.ts": {
+        "version": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
+        "signature": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.full.d.ts": {
+        "version": "d96fa8a56871904776165ceb8e00bd56127e1a017bb2664cae76223b5f815141",
+        "signature": "d96fa8a56871904776165ceb8e00bd56127e1a017bb2664cae76223b5f815141",
+        "affectsGlobalScope": false
+      },
+      "./src/enabledelements.ts": {
+        "version": "04ba7371ca956850c2c689cc39884a76bd5e842661aea7e8a1ba7b27008438ef",
+        "signature": "48ef5abb580b83f0ad1d502e40a8fd171a12ae71e240eed8734ec9f0263b3efe",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/transform.ts": {
+        "version": "0ba61ac4f6524f63032d6c0cca47f1a8a464e449c3b269a7760f04294a2bde72",
+        "signature": "69b681a6fcfb597700970709eccf3b38e1f17d89cd7c51222eb479537b502402",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/calculatetransform.ts": {
+        "version": "4f3196345365c7b860efc2feec09964f0547b8a89aecbefc370403c426083bd9",
+        "signature": "6d22773121963c62d8bb32fa4ad0a68f8eb0bb925cf6746019288754af911016",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/gettransform.ts": {
+        "version": "36455fa2e91da5090873205591ae9c33f774b5dff51211710879ceed17b2c870",
+        "signature": "4175a17eafc5ed956baad98e9a9e8151ae9ab53865cc9e95453775ebca16853c",
+        "affectsGlobalScope": false
+      },
+      "./src/canvastopixel.ts": {
+        "version": "d5b5a2f621f1abd52c8af43c435f8752f9bf635031dae355e656bba395ea5774",
+        "signature": "2245f66542d301cf5dbfd4b42db117d2401b3fc154174085b7e7c69f96fb020e",
+        "affectsGlobalScope": false
+      },
+      "./src/triggerevent.ts": {
+        "version": "e10216b60f2c00103727549081c95f6d9a4787125e232bdfc5c02c28623d4e3f",
+        "signature": "60840d91a4cde2f9486d6d7884d65f7654b6edd5335264795e76e88093d728f4",
+        "affectsGlobalScope": false
+      },
+      "./src/events.ts": {
+        "version": "0949e2cff07756f77aa857e5005483eacf0906039bf7e95b77874b666f6afb06",
+        "signature": "c0bf6f0b66800088e1113046c111f7f42c54d90f7e9036283b7bad245b27e946",
+        "affectsGlobalScope": false
+      },
+      "./src/disable.ts": {
+        "version": "4f86b45add153bd68dd73b8f54c58c7dc639852b33fa8531d03ab471f20c75e9",
+        "signature": "a69d9103e8fbc97843a1e100cd69a7e94b83cd197947cd51c5c74ac480a73278",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/setdefaultviewport.ts": {
+        "version": "dbe3e0bda2d7a004d2e170e526ec1302e86300c0c1a0a1f7e9c9d0afcd90bab9",
+        "signature": "ea147e48be4880abf28e1c5eb06a18e2ea9673f850bd60613ae95b568448282f",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/createviewport.ts": {
+        "version": "b94aea695da81074184311dfec21ab00f5e75dfd11d607eb7559c1b5ea986dcf",
+        "signature": "c8466b7ce41fd2c00f2baef79d880f2ce2d6284f9fa0ddb74e4eb2e288f2670a",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/validator.d.ts": {
+        "version": "3f4a81ba3814ef9d264bb54aee8b9deb93af897b68f32e4e66874e7758ea74ca",
+        "signature": "3f4a81ba3814ef9d264bb54aee8b9deb93af897b68f32e4e66874e7758ea74ca",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/getimagesize.ts": {
+        "version": "7a029b76105cb2e23bd38c80b1125dd769bf782105edfd48284633868b1931ca",
+        "signature": "8366a7b5af9e1837706108c6d8a7ba620693c3a25f101d29a90cc8453702c9c4",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/getimagefitscale.ts": {
+        "version": "d32e96b37ac0f8bbfc1fece503e81c44deddf39a3fa63459f0ec0fe17fb2aefa",
+        "signature": "52ea4185a8211c71e96f5124437f2c4aa029b0d53ee97245b8aa4059d5ccdf77",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/getdefaultviewport.ts": {
+        "version": "ab9a95ecda8ed02ab8cc9c7aec974696782eda9c8af39462e7320a05fffb32b3",
+        "signature": "5633d7243a1771cb1ffdabecefa0aef5dbc70ae6f106cd8645bcdae37ee51abf",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/drawimage.ts": {
+        "version": "993eacf1f4cd2d5587a95293ec6556301d55afde0de28ff08333b8de2c4b820d",
+        "signature": "39197cb00b0b8c02a8da46e40ea4183127d450887676b0aee5c08b67dd5d3556",
+        "affectsGlobalScope": false
+      },
+      "./src/updateimage.ts": {
+        "version": "ee87f7f927896d4d8b416436849f9bb8c5eab1f48738736d5c1bc57061c26e63",
+        "signature": "5c068a7354988495dcc4a21b710a4491a15386e4c4d5f0c449c7c11da29e9c23",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/now.ts": {
+        "version": "7ff179522da2775721c30706ae73499e8b1094302a27f73fe762d5d09b9ebbfa",
+        "signature": "d705ea2a9066581f0dc9a2da012c85592216595844a8f35b7a373ce73697dce0",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/guid.ts": {
+        "version": "d46d2253f7e08a3d6c0e7261e83c67b65a6f4e880b63830de953bdb9af32b8fe",
+        "signature": "06daa450891cdec5053690756f4c80cdd0c2d143f41cade38175a0abe5059323",
+        "affectsGlobalScope": false
+      },
+      "./src/layers.ts": {
+        "version": "4a52bc51a36eb028c9049472e2b14bd3089337ff3f59c445097986f671441542",
+        "signature": "ffda5fc24632051267f0e347178b849a638855936f0e1bd4fcd4da5490709ab7",
+        "affectsGlobalScope": false
+      },
+      "./src/displayimage.ts": {
+        "version": "bb775c626d60d962f05045ceeaffefb6219d705df175a8ff412671c8a5fdbbb2",
+        "signature": "ceeb3d2ba5da6d18bbfbcb223d3b4ad74965460ef523af462383eb8d4c9b29f4",
+        "affectsGlobalScope": false
+      },
+      "./src/draw.ts": {
+        "version": "f5e1bdb24b4c7b1dd93f707e0f3b7da0e1cd58a2277e5b0c8dc4ae741771cab5",
+        "signature": "4f41d8a31bf385e824e03a2e7ae7c4a08902428a16db563108056f881a2bf3a3",
+        "affectsGlobalScope": false
+      },
+      "./src/drawinvalidated.ts": {
+        "version": "3af4ff8e486277f0c9b9f571c9d37bc031d2a0edc22dd4512ddde69f8470c14c",
+        "signature": "0e5ccaac0b6e043ab68c058ba246536f5c4c7a295570bececd2213cc60a5661b",
+        "affectsGlobalScope": false
+      },
+      "./src/fittowindow.ts": {
+        "version": "82c041410740b20554411fb94f7dcea66c46f3eaf0fe1a2f3ada2a15772594a8",
+        "signature": "3a4d90ece89d25bd0d9ce0246c682312486c27ef7bb505ae45e216827eea4533",
+        "affectsGlobalScope": false
+      },
+      "./src/resize.ts": {
+        "version": "39595f75f9526efcb75b5c1908028688b3b1584a3a72332d06948a9679294825",
+        "signature": "f383a07a770a3900bbda1c3bf171f8cabc043f5be5a3a03d4023df73c14578d2",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/drawcompositeimage.d.ts": {
+        "version": "fef8460687a01ff5e7986e6cc84e4866ebfc8e60501b941a7cc1494ef6d4e3c3",
+        "signature": "fef8460687a01ff5e7986e6cc84e4866ebfc8e60501b941a7cc1494ef6d4e3c3",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/getvoilut.ts": {
+        "version": "0ab22d0d2f0a9277b6b7024fb9b0c1b7765f514b6e55afe489a9d7a9140bb125",
+        "signature": "75ac3129da987e4b0fa0222f9dd3d80e7e64a744944ef865abc7b4c19cca0121",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/generatecolorlut.ts": {
+        "version": "8ab0c249160de0e968e0a144b630cce43b77d62834bcd4c41617f547fcc813bc",
+        "signature": "51ec010b8930cad15196c6b9e780a6b8d93dbb83d71caee6f8d6648380b1e2a7",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/storedcolorpixeldatatocanvasimagedata.ts": {
+        "version": "eb539a31aafa3e5f14bf717c84c93f29c1b9ff5e099208b54a84bb253c79b7aa",
+        "signature": "cb9251c6fc4a209012924c198e3a936be6386f9de101eda5c284fd2c1269a663",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/storedrgbapixeldatatocanvasimagedata.ts": {
+        "version": "5ca73d9690c6dd6f320dd10f5b31ada9ea1a428bd1aad3554111e9b7c63d66a8",
+        "signature": "d6c5461be0a09142aa805c46cada081f06e29bc0d2b7b45e3fcd131a193685c0",
+        "affectsGlobalScope": false
+      },
+      "./src/settopixelcoordinatesystem.ts": {
+        "version": "af7c8750dfee11e10a8d8ff94c8c2b96b926b64ea26cccde6da67a67fa862ceb",
+        "signature": "17a0b8e2c0ab457e5c1431bab919eb1f6fbcc4ce7781c7f38e18493d68caa9ce",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/renderer.d.ts": {
+        "version": "977ddbe94e1445e565fc8a626a90ba297e443ca394284ecf6d3d41a044de0522",
+        "signature": "977ddbe94e1445e565fc8a626a90ba297e443ca394284ecf6d3d41a044de0522",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/createprogramfromstring.d.ts": {
+        "version": "b13e2c3299712d239e86d4abd08b77f9645d4d1772064eac70d5170709eecb0b",
+        "signature": "b13e2c3299712d239e86d4abd08b77f9645d4d1772064eac70d5170709eecb0b",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/texturecache.d.ts": {
+        "version": "753f6344e22119bfe5ca8c58f031a87e56d2dd9ee27a933b9534a4c99deb2379",
+        "signature": "753f6344e22119bfe5ca8c58f031a87e56d2dd9ee27a933b9534a4c99deb2379",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/index.ts": {
+        "version": "7bd3dd503c22b37216532e5c0b93adc5ed2cc08d17b3985659d4cd428d7915a7",
+        "signature": "824a14865a8f800abf76047cdb6e1914ab73d34f4ae1cccc7ff59ba1febeea62",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/doesimageneedtoberendered.ts": {
+        "version": "a8826bc54d2586f94dcf02a0ac91323e98c197a9a8e6a2a1bdbbf3c5652c045c",
+        "signature": "e781e43a612b7e5d7bd23ff93885318a68f37df777b7df0ade0519e2b55e5d47",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/initializerendercanvas.ts": {
+        "version": "7b042a95d2a8ae6e2197082b2a9c8071d5ab76e6a0e11d762b330059fcd8c7c7",
+        "signature": "a22b80afd891f473a89f5ad24502c7a49fc2566c2f906efe8e4bfe35be6e580c",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/savelastrendered.ts": {
+        "version": "74238c391e17b76b2f50935ed770f5e76cd9fbbd33ac0b52fee485449db3e244",
+        "signature": "5bf3c36c1528e9f58a0ff7b69c7d0ac9bf132a599b456b2d62ee10ad3df6eae1",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/rendercolorimage.ts": {
+        "version": "4864856ea9b61911ec22f53854af6d42ac23e3a072916dd1873662f27c5e8e8d",
+        "signature": "c1e7cd2cefa3b8e25918f32316cab1540605d6d8b5f9d9741b54ff4604d33bb6",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/storedpixeldatatocanvasimagedata.ts": {
+        "version": "78c14bc91f935854b5e69c36f10f2b8eed5f1d17828f5e4163f707098dfd1f20",
+        "signature": "7fa6f7abd713061cb423b87f0896d37a2a4c49fde694dbec90ad1231a7decbab",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/storedpixeldatatocanvasimagedatargba.ts": {
+        "version": "9465463db4aaf22d9ef1a02579a1b2edefdbf792db001f71c021066628999d6a",
+        "signature": "9469fc77e2b8f55719fbc706361fc8b3b9a4653de31b8bc0fe2e113093612d88",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/computeautovoi.d.ts": {
+        "version": "2c6df1aa9c6722586caea867496052bb989398417ff22ba71032e214dd08b591",
+        "signature": "2c6df1aa9c6722586caea867496052bb989398417ff22ba71032e214dd08b591",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/lutmatches.ts": {
+        "version": "3bd1e32f5864d4c2e995a28c4d791aac1dac4dc3deb3b0925f77ec69e87da497",
+        "signature": "ae2a717532505cffefde7e3d9836419348f3afcdb69bb2001ed9bc57c08ef03c",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/getmodalitylut.ts": {
+        "version": "b6627f525e91ba321c5f0ea5fee68d6ec1dd43b20a8c810ac3dd28f659b3ff8b",
+        "signature": "40e3b16f7a56dbdb5b41a0d1a765c3e031ac655b3ea5a89e01beb6699bf3836d",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/generatelut.ts": {
+        "version": "e1a5d7c2548853fad9764e1895667772554f8b08a679db352b41000ade504d64",
+        "signature": "06e1fa231fc03dad2595723f9f2e6e8f8c0cf76648ec55c2100e345603512176",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/getlut.ts": {
+        "version": "4e6112de3eb0ba1be61f6bc7ebdf49c86fff93e580ef36e8d2c00ea658c4802b",
+        "signature": "e323d92358dec67e33288a1604984065118edf78dbc8bed1d814e4251f16eeb4",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/rendergrayscaleimage.ts": {
+        "version": "3e384783a93cd0194c8d9feb0d6ca86942e593bb919f0060579168d9ed8a90c2",
+        "signature": "f5fdc0c7cefc966471799976b4c78636aa76f8411c070edf32485cfc4c76d13f",
+        "affectsGlobalScope": false
+      },
+      "./src/colors/lookuptable.ts": {
+        "version": "93804351e58299accb597fd6d283f04637a5b1b17d307984292fede0b695c9c3",
+        "signature": "666406dc06e7ace7b1aee69b85fe70c28d85c62e5b550c8dd1399aa99d029803",
+        "affectsGlobalScope": false
+      },
+      "./src/colors/colormap.ts": {
+        "version": "e1f22978252498f5f04ef864e7fcd748687e495e2966671d4e33f8f4302e1e05",
+        "signature": "07fac23dadb3b35cc5ccf0627523dd16b74f85cd52a8e3e1decfdef82b4ed63a",
+        "affectsGlobalScope": false
+      },
+      "./src/colors/index.ts": {
+        "version": "24438a3dc9c8207637e76ed15acaf9452ec122c63d1b21da1b43b3b72f13b99f",
+        "signature": "3ed8aad42e234e40c0302bbafb22272e6916629562224fecc2970a7be7367577",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts": {
+        "version": "3aa199b5f36a9910fc1a5cdc3be70888c95b34d95000bf70b0390dcbd59f58a4",
+        "signature": "54be2de95ebb62b5c821ed58bce10851d0b3093341e8b500e54d323ec25c9839",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/renderpseudocolorimage.ts": {
+        "version": "14ffcc3c81ff237d20f0b7964d40225a5037d22fc03671059146ab722b751e4d",
+        "signature": "25fb98e1186ea07da47c91e87b8e0da440b09ce225cf09f6c645e686b9a25d9d",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts": {
+        "version": "17ea665dccf80de6850246fe66359d900290d62afddac11205d247eda657fad6",
+        "signature": "e4c3d0c3da3bb66f58cb84d1deb300c5f0ceeaba1a37724a9deb0cffb772ddaf",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/renderlabelmapimage.ts": {
+        "version": "a48c2eb23325e2e3b8c84cb65c72ca1fb19ac56d14f5499f149dc8ea79381502",
+        "signature": "3ae623128aad5d0d74563a0a5ad108e3fbaebdb60043a561f94f67dd90428064",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/drawimagesync.ts": {
+        "version": "228b88a366593285741b8588dc70ef3c94c9eaee45c8f361534c0797a5a14361",
+        "signature": "56d3370baec54f6e59e5a4fc8cd601a2b27bcc12faf0043d7b8ed654125c0981",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/requestanimationframe.ts": {
+        "version": "9a74ac554f9a488c7041485809365159431a3da8c93495793d73412d5e44baa6",
+        "signature": "48d3297e17aee0ec30c78d654c6e9b9541e9a442a8c3e0b18af17ca461007b29",
+        "affectsGlobalScope": true
+      },
+      "./src/internal/tryenablewebgl.d.ts": {
+        "version": "af5647a610cc1298a6221a8b084946b0495f19de44de52c6da65b81698e8c083",
+        "signature": "af5647a610cc1298a6221a8b084946b0495f19de44de52c6da65b81698e8c083",
+        "affectsGlobalScope": false
+      },
+      "./src/generateuuid.ts": {
+        "version": "dc323c246d378eb38316b2281ba565c12bdfa7be6d064e064f8746562f8132aa",
+        "signature": "26d572da7384218826c6e7a921f9a0f537e2f08efbb3954a681154e8137d0799",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/getcanvas.ts": {
+        "version": "57fbe1a9336a0d61e287f8c699cff5170820b7e5efb81cd8442ddef1755b15eb",
+        "signature": "dbbb7dc2e98026079f70618f507cb194e5e0ab7068ce865f1940cbac8b3ccd3f",
+        "affectsGlobalScope": false
+      },
+      "./src/enable.ts": {
+        "version": "8005365d2f54bac39d9c9a9b64266713e5f5c954b62e4be4e8bcba6887dc66d2",
+        "signature": "0efed14a3ab03a516119e4dbfd907376aa003460110d0e69ac5268cbe40f6ac5",
+        "affectsGlobalScope": false
+      },
+      "./src/enabledelementdata.ts": {
+        "version": "a931a7e3e94210b6e15b5d2750dcbc29194198073ba2c68b68e586155d38f968",
+        "signature": "b2a2043c32e3b56e50e6ceea9b79843e319127241fd8aed84671acb70e9423e1",
+        "affectsGlobalScope": false
+      },
+      "./src/pixeldatatofalsecolordata.ts": {
+        "version": "65ae4d3acd6f08c494fbff7cb98ff65498b981793c3bb4b597e66ca80656528f",
+        "signature": "2b03f4f8f7b457e66dbdde5e239f1e03767a05b4b2888831b3afa1efd10285a4",
+        "affectsGlobalScope": false
+      },
+      "./src/falsecolormapping.ts": {
+        "version": "448e20eb1b9a40e1537139b7ad7ffd9ba05bf083c946d7cb9fed64f98dfd44ac",
+        "signature": "404bfd420d74ec294470aeb702895ec3dfdcd7cd35514f8e7e1ebc782ae9391d",
+        "affectsGlobalScope": false
+      },
+      "./src/getdefaultviewportforimage.ts": {
+        "version": "0d64dd2377f905895d6dec1535ac5f4998e903763899e4fadb087836fc7e88d8",
+        "signature": "f9aa3bd47b6ee6bcedc75eb21402945b6bca1b7b702189dedafbf8dd47f7550e",
+        "affectsGlobalScope": false
+      },
+      "./src/getimage.ts": {
+        "version": "62a8bf2385716b44dca555af4ba2627e0afa631adbfa3511e93631fb260f215e",
+        "signature": "2fab1fe838d70fc873699b0efb8ac6f6752f580915e6d137ca61f3fb1ffadd56",
+        "affectsGlobalScope": false
+      },
+      "./src/getstoredpixels.ts": {
+        "version": "1fce90e667479a92476540d9b562a287280f0ae2ebc119b7d8f04a82653033b6",
+        "signature": "2d58a151e2796ce6dc9f926eafea9bdb06de0855be0655df0ea98c3312c52e45",
+        "affectsGlobalScope": false
+      },
+      "./src/getpixels.ts": {
+        "version": "15ff7b8ee036e9f030d74f6c09295af0d8a9d778ca097b06b6a9220f4035ac4c",
+        "signature": "8cb65d5b828b79565bcb91a4928afd4569ab05a0da25ce2edb112f5698960745",
+        "affectsGlobalScope": false
+      },
+      "./src/getviewport.ts": {
+        "version": "4ccf3f0634468a8aad8e2467afa05b749dddf2f1ed7eb02fbbbad108f05baa09",
+        "signature": "c3fc11d58c8a5ba42deab9d892267ec70b73bbb00b544dc91a01a591a03ed5d2",
+        "affectsGlobalScope": false
+      },
+      "./src/imagecache.ts": {
+        "version": "738d3f092fb6fd88d3bac8d2b79db8e61ac580125b8b3f71784a6c6d78660b20",
+        "signature": "38de4b1fae54d80ef8602ca7e7c508cb2039920f194a5e8342014de019d0a54b",
+        "affectsGlobalScope": false
+      },
+      "./src/imageloader.ts": {
+        "version": "b5866faa394570cbc9a6ba38afdefcb2bfdbcefc392dbb2ab9133dabe7cbfde1",
+        "signature": "14d178c8cba2d84d072854cdd0635f2d738f78d6eae6f88e06559ed172201c8b",
+        "affectsGlobalScope": false
+      },
+      "./src/internal/index.ts": {
+        "version": "413465691ce4baf86fc6fa996feaf98f38386190a2748ea81a5349570c3287e7",
+        "signature": "53df0a33e312fe914909d8ea62b24f9b2edc373f50820538fa5570629ff21c36",
+        "affectsGlobalScope": false
+      },
+      "./src/invalidate.ts": {
+        "version": "d903d5b16486be1dbc863fc0e98de0af421135bf4783778f2bce8ca0a20c8461",
+        "signature": "62d1577de505c2097ccfd0810cd83221a9495868b845069bbeb3e4c0c70327d3",
+        "affectsGlobalScope": false
+      },
+      "./src/invalidateimageid.ts": {
+        "version": "cc193a4a4f9edae820369fef02a24fe128b8b4c498f7b03a34b58a411b608afb",
+        "signature": "8be349de6944bbac3f9c04ad9b18a666fb60a5963a18cfc0fe9b6e2e86197cce",
+        "affectsGlobalScope": false
+      },
+      "./src/metadata.ts": {
+        "version": "f516cfb8d664ef815e403fd8c7a38681c7d9aaf79cd48f220ed56aba90700124",
+        "signature": "6f18f2112489030c97f8f70e513781f8ef4be64a20d467f63d5264d62dcf99db",
+        "affectsGlobalScope": false
+      },
+      "./src/pagetopixel.ts": {
+        "version": "8829225d38e1aea20f04a41790c5aa4dfbfd3dc29a3d56e02038f5aca957e383",
+        "signature": "7c452dee2f8105821bdecb44d96bb14eb18fcb55ac7be552a041306c100d0f7a",
+        "affectsGlobalScope": false
+      },
+      "./src/pixeltocanvas.ts": {
+        "version": "95cf439bf86a909b4ac91f65f6bc13c89e329f4adfa8319a2974e870fc41c6dd",
+        "signature": "cd5e9f08b3d5e2d13d7bd31bea7c292fc03e8d8f27dee55b04ed8602fb4ca794",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/rendertocanvas.ts": {
+        "version": "6e7833df14601f37b9f9f869a13635af5d6d15d862c0a2363452a4962fbb5edb",
+        "signature": "fe3c6b421b32fd1221ca41d5464cc84126c71878e672867b83b02bb54cb79579",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/renderwebimage.ts": {
+        "version": "78666b24f69062ba033694d3731e66b1167038941a7bc4b83d0e8bb27ce1d579",
+        "signature": "b17679995f59686dfca943b7c3a56a982696aa0f938222e8e7c3878113c297e6",
+        "affectsGlobalScope": false
+      },
+      "./src/rendering/index.ts": {
+        "version": "30384a66097cb8cdc567e80d4e275360060817064c69506440505c778a2a6a18",
+        "signature": "b7fba5b27b10b9d3616d6edaf8cfb56441cf324854a0c4d849dc2872e9722cf7",
+        "affectsGlobalScope": false
+      },
+      "./src/reset.ts": {
+        "version": "2112c0b3bdd7d7fdac21d0ee5ea71bed2a494c6d05efbff35ab72428d4f44a98",
+        "signature": "6d32f781c3d1b3ef75d8bd737b5c4f80feb3e6b7ea18d467a57454b428dccfd0",
+        "affectsGlobalScope": false
+      },
+      "./src/setviewport.ts": {
+        "version": "41fd91931fc7cb527356e45dd5539b729ae7dcafc13aee8947347c3ee77cba2e",
+        "signature": "368d470bdc5cae54202ecff4d1352cba778767c5a2a78beaf09bfb3e94adfcb3",
+        "affectsGlobalScope": false
+      },
+      "./src/index.ts": {
+        "version": "ce0c907a6b0e7c04a7b9abaa6cdbdff50c2de0dacca9bfd27b03239ff62d90bf",
+        "signature": "eed4cf9e6cb8a3cfb46d2c10d1bcd3bba4dfd59f0613061bf649c9233896ed55",
+        "affectsGlobalScope": false
+      },
+      "./src/version.ts": {
+        "version": "af1e36ea67e8f2b583dd1c979dfcb2b65301e8e32a248b1156d7366c498cdf18",
+        "signature": "3c68db7b03d5ecbf294db53d268580bca883b00921d288b4f2f54c3b1dcd5a64",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/vertexshader.d.ts": {
+        "version": "4ce992c2e85f138efdf5dc971d25d9b82304cc53f8046b9d7b1ff1348264a41f",
+        "signature": "4ce992c2e85f138efdf5dc971d25d9b82304cc53f8046b9d7b1ff1348264a41f",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/shaders/int16.d.ts": {
+        "version": "7af2fb86c567cc143effeb56ae947a328a52b68c076d34d57be4f9174f00a9e9",
+        "signature": "7af2fb86c567cc143effeb56ae947a328a52b68c076d34d57be4f9174f00a9e9",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/shaders/int8.d.ts": {
+        "version": "a9ebbde7eca494039558e18161f2df609eafb0312da023eca63a5426b62d83a1",
+        "signature": "a9ebbde7eca494039558e18161f2df609eafb0312da023eca63a5426b62d83a1",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/shaders/rgb.d.ts": {
+        "version": "e79d626f6a17eb19bee97a63979d01a32ee41468fbd5e37f39ad9f4018d81c6a",
+        "signature": "e79d626f6a17eb19bee97a63979d01a32ee41468fbd5e37f39ad9f4018d81c6a",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/shaders/uint16.d.ts": {
+        "version": "769e9e9467097f942be492560d19be671cd9b80e62fb6b08e922a2c67e1e1ec0",
+        "signature": "769e9e9467097f942be492560d19be671cd9b80e62fb6b08e922a2c67e1e1ec0",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/shaders/uint8.d.ts": {
+        "version": "7772cb4dd776e126261b4cda0ae7e30e928e176cb758b04bde1f7e7c1e1517ea",
+        "signature": "7772cb4dd776e126261b4cda0ae7e30e928e176cb758b04bde1f7e7c1e1517ea",
+        "affectsGlobalScope": false
+      },
+      "./src/webgl/shaders/index.d.ts": {
+        "version": "2287acfeb18a636b5f6be43199af09c59d11cae8ced04159efedbdff262fc218",
+        "signature": "2287acfeb18a636b5f6be43199af09c59d11cae8ced04159efedbdff262fc218",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/events/index.d.ts": {
+        "version": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",
+        "signature": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/globals.d.ts": {
+        "version": "bd8e096b13681e3aa148c869e7f3bb397145bfde49b53f6dd4b297ce131ea077",
+        "signature": "bd8e096b13681e3aa148c869e7f3bb397145bfde49b53f6dd4b297ce131ea077",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/node/assert.d.ts": {
+        "version": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f",
+        "signature": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/async_hooks.d.ts": {
+        "version": "1305b079a057355f496bdde048716189178877a6b4fe0e9267a46af67f8c7561",
+        "signature": "1305b079a057355f496bdde048716189178877a6b4fe0e9267a46af67f8c7561",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/buffer.d.ts": {
+        "version": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d",
+        "signature": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/events.d.ts": {
+        "version": "0be551fde848d5adde38731272ee980bda2bde0f8bf2a76ce99e01b86985546c",
+        "signature": "0be551fde848d5adde38731272ee980bda2bde0f8bf2a76ce99e01b86985546c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/stream.d.ts": {
+        "version": "15087156b728a1bdf46de0e1299f904c6a658af37f80851f6fe76fb21bb99b65",
+        "signature": "15087156b728a1bdf46de0e1299f904c6a658af37f80851f6fe76fb21bb99b65",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/dns.d.ts": {
+        "version": "896cd7d58e9d832392a6e374a8f8b64f142089b4d2678a2c90fd8d1d49128677",
+        "signature": "896cd7d58e9d832392a6e374a8f8b64f142089b4d2678a2c90fd8d1d49128677",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/net.d.ts": {
+        "version": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50",
+        "signature": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/child_process.d.ts": {
+        "version": "5d2e80657d5993f581a82e36c005b51e1bc74b9a30fe47a7804602ba818a702c",
+        "signature": "5d2e80657d5993f581a82e36c005b51e1bc74b9a30fe47a7804602ba818a702c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/cluster.d.ts": {
+        "version": "ce629710e5e58724902b753212e97861fd73e2aa09f5d88cb6d55dc763cf8c8a",
+        "signature": "ce629710e5e58724902b753212e97861fd73e2aa09f5d88cb6d55dc763cf8c8a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/console.d.ts": {
+        "version": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d",
+        "signature": "525c8fc510d9632d2a0a9de2d41c3ac1cdd79ff44d3b45c6d81cacabb683528d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/constants.d.ts": {
+        "version": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598",
+        "signature": "b952021e804dcd9cb5e5552e1ec8bf9f479b61e20da5641e2a542fe77db9a598",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/crypto.d.ts": {
+        "version": "325154b5b9b94af94b9c0cea4a051496693e6253be1abb2b6399b68331d70e46",
+        "signature": "325154b5b9b94af94b9c0cea4a051496693e6253be1abb2b6399b68331d70e46",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/dgram.d.ts": {
+        "version": "b6c6861bccf209a98eeddb99bdb7bd987fb29fc52130d5d9fd2f79d3607a0a7a",
+        "signature": "b6c6861bccf209a98eeddb99bdb7bd987fb29fc52130d5d9fd2f79d3607a0a7a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/domain.d.ts": {
+        "version": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa",
+        "signature": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/querystring.d.ts": {
+        "version": "e0070c45bf15b872f58eee948f71ad6f4f424f36330b2477753fc1aed3ece36e",
+        "signature": "e0070c45bf15b872f58eee948f71ad6f4f424f36330b2477753fc1aed3ece36e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/url.d.ts": {
+        "version": "1e3da92862604b1f7a32265169f9aa712c4567742d42597704e04ae3e07019e7",
+        "signature": "1e3da92862604b1f7a32265169f9aa712c4567742d42597704e04ae3e07019e7",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/fs.d.ts": {
+        "version": "92bad5d23e0d21fb6ad4354b2ca8bfe683c1d57e32daca6a88c15fff2ecb9fcd",
+        "signature": "92bad5d23e0d21fb6ad4354b2ca8bfe683c1d57e32daca6a88c15fff2ecb9fcd",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/http.d.ts": {
+        "version": "cc4cd9d8af7f5689b5df3c91d0fc287fafbd89e6e305183da28a6877a8aa08a8",
+        "signature": "cc4cd9d8af7f5689b5df3c91d0fc287fafbd89e6e305183da28a6877a8aa08a8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/tls.d.ts": {
+        "version": "af4eb6cfde4501c70e7cfb453370eb671ae51e20a3e591ddff71cdd2c190114e",
+        "signature": "af4eb6cfde4501c70e7cfb453370eb671ae51e20a3e591ddff71cdd2c190114e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/http2.d.ts": {
+        "version": "ef535a3849d5826d70b2b341420e239e180d2d9d64045e84683b6a52a82845b5",
+        "signature": "ef535a3849d5826d70b2b341420e239e180d2d9d64045e84683b6a52a82845b5",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/https.d.ts": {
+        "version": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6",
+        "signature": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/inspector.d.ts": {
+        "version": "8cfa78f4c052a93ac1e7accb0a78ce331dbd14f277ee0e193279ec31ce7efb25",
+        "signature": "8cfa78f4c052a93ac1e7accb0a78ce331dbd14f277ee0e193279ec31ce7efb25",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/module.d.ts": {
+        "version": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66",
+        "signature": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/os.d.ts": {
+        "version": "1a6016bd905855b2b45881e9edbd7ab8c7175f8bcbb711ff06989c4bcdc75486",
+        "signature": "1a6016bd905855b2b45881e9edbd7ab8c7175f8bcbb711ff06989c4bcdc75486",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/path.d.ts": {
+        "version": "5fb30076f0e0e5744db8993648bfb67aadd895f439edad5cce039127a87a8a36",
+        "signature": "5fb30076f0e0e5744db8993648bfb67aadd895f439edad5cce039127a87a8a36",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/perf_hooks.d.ts": {
+        "version": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f",
+        "signature": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/process.d.ts": {
+        "version": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389",
+        "signature": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/punycode.d.ts": {
+        "version": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1",
+        "signature": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/readline.d.ts": {
+        "version": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c",
+        "signature": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/vm.d.ts": {
+        "version": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9",
+        "signature": "f98df5ec124f441b465332271d0b083aeec815cd3c92d9249b9739e6318477a9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/util.d.ts": {
+        "version": "0f6382d5032e45eec50b8f6c1e18c77544bc4db2ef8f854d196b254ec16add12",
+        "signature": "0f6382d5032e45eec50b8f6c1e18c77544bc4db2ef8f854d196b254ec16add12",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/repl.d.ts": {
+        "version": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157",
+        "signature": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/string_decoder.d.ts": {
+        "version": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948",
+        "signature": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/timers.d.ts": {
+        "version": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
+        "signature": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/trace_events.d.ts": {
+        "version": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662",
+        "signature": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/tty.d.ts": {
+        "version": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4",
+        "signature": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/v8.d.ts": {
+        "version": "6ad2dd29dbf3aea031062298e9978d4b2a1fadd0997eb9d8caaf95aaa89e7033",
+        "signature": "6ad2dd29dbf3aea031062298e9978d4b2a1fadd0997eb9d8caaf95aaa89e7033",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/worker_threads.d.ts": {
+        "version": "16de20ae20cd1d948409a56b55832f3d416c66c8cb44bb8475e1e9db14d8e402",
+        "signature": "16de20ae20cd1d948409a56b55832f3d416c66c8cb44bb8475e1e9db14d8e402",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/zlib.d.ts": {
+        "version": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9",
+        "signature": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/base.d.ts": {
+        "version": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce",
+        "signature": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/ts3.2/util.d.ts": {
+        "version": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c",
+        "signature": "4f54f0a9dd3b644c99ec32b32f8804d5978bc854799b228ae9c467bf3c84c64c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/node/ts3.2/globals.d.ts": {
+        "version": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1",
+        "signature": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/node/ts3.2/index.d.ts": {
+        "version": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c",
+        "signature": "765fc34423b93c2ab763670d8d11d99e5f47387c13c161d6f1640dd6d91b7d1c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/minimatch/index.d.ts": {
+        "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "signature": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/glob/index.d.ts": {
+        "version": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee",
+        "signature": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee",
+        "affectsGlobalScope": false
+      }
+    },
+    "options": {
+      "incremental": true,
+      "target": 99,
+      "module": 5,
+      "allowJs": false,
+      "checkJs": false,
+      "declaration": true,
+      "removeComments": false,
+      "strict": true,
+      "rootDirs": [],
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "watch": true,
+      "configFilePath": "./tsconfig.json"
+    },
+    "referencedMap": {
+      "./node_modules/@types/events/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/glob/index.d.ts": [
+        "./node_modules/@types/minimatch/index.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/minimatch/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/assert.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/async_hooks.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/base.d.ts": [
+        "./node_modules/@types/node/assert.d.ts",
+        "./node_modules/@types/node/async_hooks.d.ts",
+        "./node_modules/@types/node/buffer.d.ts",
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/cluster.d.ts",
+        "./node_modules/@types/node/console.d.ts",
+        "./node_modules/@types/node/constants.d.ts",
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/dgram.d.ts",
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/domain.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/globals.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/http2.d.ts",
+        "./node_modules/@types/node/https.d.ts",
+        "./node_modules/@types/node/inspector.d.ts",
+        "./node_modules/@types/node/module.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/os.d.ts",
+        "./node_modules/@types/node/path.d.ts",
+        "./node_modules/@types/node/perf_hooks.d.ts",
+        "./node_modules/@types/node/process.d.ts",
+        "./node_modules/@types/node/punycode.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/readline.d.ts",
+        "./node_modules/@types/node/repl.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/string_decoder.d.ts",
+        "./node_modules/@types/node/timers.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/trace_events.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/tty.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/v8.d.ts",
+        "./node_modules/@types/node/vm.d.ts",
+        "./node_modules/@types/node/worker_threads.d.ts",
+        "./node_modules/@types/node/zlib.d.ts"
+      ],
+      "./node_modules/@types/node/buffer.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/child_process.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/cluster.d.ts": [
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/console.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/constants.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/crypto.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/dgram.d.ts": [
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/dns.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/domain.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/events.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/fs.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/globals.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/http.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/http2.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/https.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/inspector.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/module.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/net.d.ts": [
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/os.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/path.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/perf_hooks.d.ts": [
+        "./node_modules/@types/node/async_hooks.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/process.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/punycode.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/querystring.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/readline.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/repl.d.ts": [
+        "./node_modules/@types/node/readline.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/vm.d.ts"
+      ],
+      "./node_modules/@types/node/stream.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/string_decoder.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/timers.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/tls.d.ts": [
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/trace_events.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/ts3.2/globals.d.ts": [
+        "./node_modules/@types/node/globals.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/ts3.2/index.d.ts": [
+        "./node_modules/@types/node/base.d.ts",
+        "./node_modules/@types/node/ts3.2/globals.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/ts3.2/util.d.ts": [
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/tty.d.ts": [
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/url.d.ts": [
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/util.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/node/v8.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/vm.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/worker_threads.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/vm.d.ts"
+      ],
+      "./node_modules/@types/node/zlib.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/canvastopixel.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/gettransform.ts"
+      ],
+      "./src/colors/colormap.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/colors/lookuptable.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/colors/index.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/colors/colormap.ts",
+        "./src/colors/lookuptable.ts"
+      ],
+      "./src/colors/lookuptable.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/disable.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/triggerevent.ts"
+      ],
+      "./src/displayimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/internal/getdefaultviewport.ts",
+        "./src/internal/now.ts",
+        "./src/layers.ts",
+        "./src/triggerevent.ts",
+        "./src/updateimage.ts"
+      ],
+      "./src/draw.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/drawimage.ts"
+      ],
+      "./src/drawinvalidated.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/drawimage.ts"
+      ],
+      "./src/enable.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/generateuuid.ts",
+        "./src/internal/drawimagesync.ts",
+        "./src/internal/getcanvas.ts",
+        "./src/internal/requestanimationframe.ts",
+        "./src/internal/tryenablewebgl.d.ts",
+        "./src/resize.ts",
+        "./src/triggerevent.ts"
+      ],
+      "./src/enabledelementdata.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/enabledelements.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/events.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/falsecolormapping.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/colors/colormap.ts",
+        "./src/enabledelements.ts",
+        "./src/pixeldatatofalsecolordata.ts"
+      ],
+      "./src/fittowindow.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/getimagefitscale.ts",
+        "./src/updateimage.ts"
+      ],
+      "./src/generateuuid.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/getdefaultviewportforimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/getdefaultviewport.ts"
+      ],
+      "./src/getimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/getpixels.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/getstoredpixels.ts",
+        "./src/internal/getmodalitylut.ts"
+      ],
+      "./src/getstoredpixels.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/getviewport.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/imagecache.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/triggerevent.ts"
+      ],
+      "./src/imageloader.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/imagecache.ts",
+        "./src/triggerevent.ts"
+      ],
+      "./src/index.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/canvastopixel.ts",
+        "./src/colors/index.ts",
+        "./src/disable.ts",
+        "./src/displayimage.ts",
+        "./src/draw.ts",
+        "./src/drawinvalidated.ts",
+        "./src/enable.ts",
+        "./src/enabledelementdata.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/falsecolormapping.ts",
+        "./src/fittowindow.ts",
+        "./src/getdefaultviewportforimage.ts",
+        "./src/getimage.ts",
+        "./src/getpixels.ts",
+        "./src/getstoredpixels.ts",
+        "./src/getviewport.ts",
+        "./src/imagecache.ts",
+        "./src/imageloader.ts",
+        "./src/internal/drawimage.ts",
+        "./src/internal/generatelut.ts",
+        "./src/internal/getdefaultviewport.ts",
+        "./src/internal/index.ts",
+        "./src/internal/requestanimationframe.ts",
+        "./src/internal/setdefaultviewport.ts",
+        "./src/internal/storedcolorpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts",
+        "./src/invalidate.ts",
+        "./src/invalidateimageid.ts",
+        "./src/layers.ts",
+        "./src/metadata.ts",
+        "./src/pagetopixel.ts",
+        "./src/pixeldatatofalsecolordata.ts",
+        "./src/pixeltocanvas.ts",
+        "./src/rendering/index.ts",
+        "./src/rendering/rendercolorimage.ts",
+        "./src/rendering/rendergrayscaleimage.ts",
+        "./src/rendering/renderlabelmapimage.ts",
+        "./src/rendering/renderpseudocolorimage.ts",
+        "./src/rendering/rendertocanvas.ts",
+        "./src/rendering/renderwebimage.ts",
+        "./src/reset.ts",
+        "./src/resize.ts",
+        "./src/settopixelcoordinatesystem.ts",
+        "./src/setviewport.ts",
+        "./src/triggerevent.ts",
+        "./src/updateimage.ts",
+        "./src/webgl/index.ts"
+      ],
+      "./src/internal/calculatetransform.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/transform.ts"
+      ],
+      "./src/internal/computeautovoi.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/createviewport.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/setdefaultviewport.ts"
+      ],
+      "./src/internal/drawcompositeimage.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/drawimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/drawimagesync.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/internal/drawcompositeimage.d.ts",
+        "./src/internal/now.ts",
+        "./src/rendering/rendercolorimage.ts",
+        "./src/rendering/rendergrayscaleimage.ts",
+        "./src/rendering/renderlabelmapimage.ts",
+        "./src/rendering/renderpseudocolorimage.ts",
+        "./src/triggerevent.ts"
+      ],
+      "./src/internal/generatecolorlut.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/getvoilut.ts"
+      ],
+      "./src/internal/generatelut.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/getmodalitylut.ts",
+        "./src/internal/getvoilut.ts"
+      ],
+      "./src/internal/getcanvas.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/getdefaultviewport.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/createviewport.ts",
+        "./src/internal/getimagefitscale.ts"
+      ],
+      "./src/internal/getimagefitscale.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/getimagesize.ts",
+        "./src/internal/validator.d.ts"
+      ],
+      "./src/internal/getimagesize.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/validator.d.ts"
+      ],
+      "./src/internal/getmodalitylut.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/gettransform.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/calculatetransform.ts"
+      ],
+      "./src/internal/getvoilut.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/guid.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/index.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/internal/calculatetransform.ts",
+        "./src/internal/drawimage.ts",
+        "./src/internal/generatelut.ts",
+        "./src/internal/getdefaultviewport.ts",
+        "./src/internal/gettransform.ts",
+        "./src/internal/requestanimationframe.ts",
+        "./src/internal/setdefaultviewport.ts",
+        "./src/internal/storedcolorpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatargba.ts",
+        "./src/internal/transform.ts"
+      ],
+      "./src/internal/now.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/requestanimationframe.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/setdefaultviewport.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/storedcolorpixeldatatocanvasimagedata.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/now.ts"
+      ],
+      "./src/internal/storedpixeldatatocanvasimagedata.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/now.ts"
+      ],
+      "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/colors/index.ts",
+        "./src/colors/lookuptable.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/now.ts"
+      ],
+      "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/colors/index.ts",
+        "./src/colors/lookuptable.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/now.ts"
+      ],
+      "./src/internal/storedpixeldatatocanvasimagedatargba.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/now.ts"
+      ],
+      "./src/internal/storedrgbapixeldatatocanvasimagedata.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/now.ts"
+      ],
+      "./src/internal/transform.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/tryenablewebgl.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/validator.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/invalidate.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/triggerevent.ts"
+      ],
+      "./src/invalidateimageid.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/drawimage.ts"
+      ],
+      "./src/layers.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/internal/getdefaultviewport.ts",
+        "./src/internal/guid.ts",
+        "./src/triggerevent.ts",
+        "./src/updateimage.ts"
+      ],
+      "./src/metadata.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/pagetopixel.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/gettransform.ts"
+      ],
+      "./src/pixeldatatofalsecolordata.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/colors/index.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/pixeltocanvas.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/gettransform.ts"
+      ],
+      "./src/rendering/doesimageneedtoberendered.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/getlut.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/computeautovoi.d.ts",
+        "./src/internal/generatelut.ts",
+        "./src/rendering/lutmatches.ts"
+      ],
+      "./src/rendering/index.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/rendering/rendercolorimage.ts",
+        "./src/rendering/rendergrayscaleimage.ts",
+        "./src/rendering/renderlabelmapimage.ts",
+        "./src/rendering/renderpseudocolorimage.ts",
+        "./src/rendering/rendertocanvas.ts",
+        "./src/rendering/renderwebimage.ts"
+      ],
+      "./src/rendering/initializerendercanvas.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/lutmatches.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/rendercolorimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/generatecolorlut.ts",
+        "./src/internal/now.ts",
+        "./src/internal/storedcolorpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedrgbapixeldatatocanvasimagedata.ts",
+        "./src/rendering/doesimageneedtoberendered.ts",
+        "./src/rendering/initializerendercanvas.ts",
+        "./src/rendering/savelastrendered.ts",
+        "./src/settopixelcoordinatesystem.ts",
+        "./src/webgl/index.ts"
+      ],
+      "./src/rendering/rendergrayscaleimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/now.ts",
+        "./src/internal/storedpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatargba.ts",
+        "./src/rendering/doesimageneedtoberendered.ts",
+        "./src/rendering/getlut.ts",
+        "./src/rendering/initializerendercanvas.ts",
+        "./src/rendering/savelastrendered.ts",
+        "./src/settopixelcoordinatesystem.ts",
+        "./src/webgl/index.ts"
+      ],
+      "./src/rendering/renderlabelmapimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/colors/index.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/now.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts",
+        "./src/rendering/doesimageneedtoberendered.ts",
+        "./src/rendering/initializerendercanvas.ts",
+        "./src/rendering/savelastrendered.ts",
+        "./src/settopixelcoordinatesystem.ts"
+      ],
+      "./src/rendering/renderpseudocolorimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/colors/index.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/now.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts",
+        "./src/rendering/doesimageneedtoberendered.ts",
+        "./src/rendering/getlut.ts",
+        "./src/rendering/initializerendercanvas.ts",
+        "./src/rendering/savelastrendered.ts",
+        "./src/settopixelcoordinatesystem.ts"
+      ],
+      "./src/rendering/rendertocanvas.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/internal/drawimagesync.ts",
+        "./src/internal/getdefaultviewport.ts",
+        "./src/internal/tryenablewebgl.d.ts",
+        "./src/triggerevent.ts"
+      ],
+      "./src/rendering/renderwebimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/rendering/rendercolorimage.ts",
+        "./src/settopixelcoordinatesystem.ts"
+      ],
+      "./src/rendering/savelastrendered.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/reset.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/getdefaultviewport.ts",
+        "./src/updateimage.ts"
+      ],
+      "./src/resize.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/fittowindow.ts",
+        "./src/internal/getimagesize.ts",
+        "./src/triggerevent.ts",
+        "./src/updateimage.ts"
+      ],
+      "./src/settopixelcoordinatesystem.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/calculatetransform.ts"
+      ],
+      "./src/setviewport.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/getdefaultviewport.ts",
+        "./src/updateimage.ts"
+      ],
+      "./src/triggerevent.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/updateimage.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/enabledelements.ts",
+        "./src/internal/drawimage.ts"
+      ],
+      "./src/version.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/createprogramfromstring.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/index.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/webgl/createprogramfromstring.d.ts",
+        "./src/webgl/renderer.d.ts",
+        "./src/webgl/texturecache.d.ts"
+      ],
+      "./src/webgl/renderer.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/webgl/shaders/int16.d.ts",
+        "./src/webgl/shaders/int8.d.ts",
+        "./src/webgl/shaders/rgb.d.ts",
+        "./src/webgl/shaders/uint16.d.ts",
+        "./src/webgl/shaders/uint8.d.ts"
+      ],
+      "./src/webgl/shaders/int16.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/int8.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/rgb.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/uint16.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/uint8.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/texturecache.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/vertexshader.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.array.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.object.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.string.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.symbol.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.bigint.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.promise.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.string.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.full.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.promise.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.string.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "./node_modules/@types/events/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/glob/index.d.ts": [
+        "./node_modules/@types/minimatch/index.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/minimatch/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/assert.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/async_hooks.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/base.d.ts": [
+        "./node_modules/@types/node/assert.d.ts",
+        "./node_modules/@types/node/async_hooks.d.ts",
+        "./node_modules/@types/node/buffer.d.ts",
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/cluster.d.ts",
+        "./node_modules/@types/node/console.d.ts",
+        "./node_modules/@types/node/constants.d.ts",
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/dgram.d.ts",
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/domain.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/globals.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/http2.d.ts",
+        "./node_modules/@types/node/https.d.ts",
+        "./node_modules/@types/node/inspector.d.ts",
+        "./node_modules/@types/node/module.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/os.d.ts",
+        "./node_modules/@types/node/path.d.ts",
+        "./node_modules/@types/node/perf_hooks.d.ts",
+        "./node_modules/@types/node/process.d.ts",
+        "./node_modules/@types/node/punycode.d.ts",
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/readline.d.ts",
+        "./node_modules/@types/node/repl.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/string_decoder.d.ts",
+        "./node_modules/@types/node/timers.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/trace_events.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/tty.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/v8.d.ts",
+        "./node_modules/@types/node/vm.d.ts",
+        "./node_modules/@types/node/worker_threads.d.ts",
+        "./node_modules/@types/node/zlib.d.ts"
+      ],
+      "./node_modules/@types/node/buffer.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/child_process.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/cluster.d.ts": [
+        "./node_modules/@types/node/child_process.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/console.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/constants.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/crypto.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/dgram.d.ts": [
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/dns.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/domain.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/events.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/fs.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/globals.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/http.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/http2.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/https.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/inspector.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/module.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/net.d.ts": [
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/os.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/path.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/perf_hooks.d.ts": [
+        "./node_modules/@types/node/async_hooks.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/process.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/punycode.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/querystring.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/readline.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/repl.d.ts": [
+        "./node_modules/@types/node/readline.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/vm.d.ts"
+      ],
+      "./node_modules/@types/node/stream.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/string_decoder.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/timers.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/tls.d.ts": [
+        "./node_modules/@types/node/crypto.d.ts",
+        "./node_modules/@types/node/dns.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/trace_events.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/ts3.2/globals.d.ts": [
+        "./node_modules/@types/node/globals.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/ts3.2/index.d.ts": [
+        "./node_modules/@types/node/base.d.ts",
+        "./node_modules/@types/node/ts3.2/globals.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/ts3.2/util.d.ts": [
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/tty.d.ts": [
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/url.d.ts": [
+        "./node_modules/@types/node/querystring.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/util.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/node/v8.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/vm.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/node/worker_threads.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/vm.d.ts"
+      ],
+      "./node_modules/@types/node/zlib.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/colors/colormap.ts": [
+        "./src/colors/lookuptable.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/colors/index.ts": [
+        "./src/colors/colormap.ts",
+        "./src/colors/lookuptable.ts"
+      ],
+      "./src/displayimage.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/falsecolormapping.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/getdefaultviewportforimage.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/getimage.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/getviewport.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/imagecache.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/index.ts": [
+        "./src/canvastopixel.ts",
+        "./src/colors/colormap.ts",
+        "./src/colors/index.ts",
+        "./src/colors/lookuptable.ts",
+        "./src/disable.ts",
+        "./src/displayimage.ts",
+        "./src/draw.ts",
+        "./src/drawinvalidated.ts",
+        "./src/enable.ts",
+        "./src/enabledelementdata.ts",
+        "./src/enabledelements.ts",
+        "./src/events.ts",
+        "./src/falsecolormapping.ts",
+        "./src/fittowindow.ts",
+        "./src/getdefaultviewportforimage.ts",
+        "./src/getimage.ts",
+        "./src/getpixels.ts",
+        "./src/getstoredpixels.ts",
+        "./src/getviewport.ts",
+        "./src/imagecache.ts",
+        "./src/imageloader.ts",
+        "./src/internal/calculatetransform.ts",
+        "./src/internal/drawimage.ts",
+        "./src/internal/generatelut.ts",
+        "./src/internal/getdefaultviewport.ts",
+        "./src/internal/gettransform.ts",
+        "./src/internal/index.ts",
+        "./src/internal/requestanimationframe.ts",
+        "./src/internal/setdefaultviewport.ts",
+        "./src/internal/storedcolorpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatargba.ts",
+        "./src/internal/transform.ts",
+        "./src/invalidate.ts",
+        "./src/invalidateimageid.ts",
+        "./src/layers.ts",
+        "./src/metadata.ts",
+        "./src/pagetopixel.ts",
+        "./src/pixeldatatofalsecolordata.ts",
+        "./src/pixeltocanvas.ts",
+        "./src/rendering/index.ts",
+        "./src/rendering/rendercolorimage.ts",
+        "./src/rendering/rendergrayscaleimage.ts",
+        "./src/rendering/renderlabelmapimage.ts",
+        "./src/rendering/renderpseudocolorimage.ts",
+        "./src/rendering/rendertocanvas.ts",
+        "./src/rendering/renderwebimage.ts",
+        "./src/reset.ts",
+        "./src/resize.ts",
+        "./src/settopixelcoordinatesystem.ts",
+        "./src/setviewport.ts",
+        "./src/triggerevent.ts",
+        "./src/updateimage.ts",
+        "./src/webgl/createprogramfromstring.d.ts",
+        "./src/webgl/index.ts",
+        "./src/webgl/renderer.d.ts",
+        "./src/webgl/texturecache.d.ts"
+      ],
+      "./src/internal/calculatetransform.ts": [
+        "./src/enabledelements.ts",
+        "./src/internal/transform.ts"
+      ],
+      "./src/internal/computeautovoi.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/createviewport.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/drawcompositeimage.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/drawimage.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/drawimagesync.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/generatecolorlut.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/generatelut.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/getdefaultviewport.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/getimagefitscale.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/getimagesize.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/gettransform.ts": [
+        "./src/enabledelements.ts",
+        "./src/internal/transform.ts"
+      ],
+      "./src/internal/getvoilut.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/index.ts": [
+        "./src/internal/calculatetransform.ts",
+        "./src/internal/drawimage.ts",
+        "./src/internal/generatelut.ts",
+        "./src/internal/getdefaultviewport.ts",
+        "./src/internal/gettransform.ts",
+        "./src/internal/requestanimationframe.ts",
+        "./src/internal/setdefaultviewport.ts",
+        "./src/internal/storedcolorpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedpixeldatatocanvasimagedata.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts",
+        "./src/internal/storedpixeldatatocanvasimagedatargba.ts",
+        "./src/internal/transform.ts"
+      ],
+      "./src/internal/setdefaultviewport.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/storedcolorpixeldatatocanvasimagedata.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/storedpixeldatatocanvasimagedata.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts": [
+        "./src/colors/lookuptable.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts": [
+        "./src/colors/lookuptable.ts",
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/storedpixeldatatocanvasimagedatargba.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/storedrgbapixeldatatocanvasimagedata.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/internal/tryenablewebgl.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/internal/validator.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/layers.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/pixeldatatofalsecolordata.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/doesimageneedtoberendered.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/getlut.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/index.ts": [
+        "./src/rendering/rendercolorimage.ts",
+        "./src/rendering/rendergrayscaleimage.ts",
+        "./src/rendering/renderlabelmapimage.ts",
+        "./src/rendering/renderpseudocolorimage.ts",
+        "./src/rendering/rendertocanvas.ts",
+        "./src/rendering/renderwebimage.ts"
+      ],
+      "./src/rendering/initializerendercanvas.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/lutmatches.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/rendercolorimage.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/rendergrayscaleimage.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/renderlabelmapimage.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/renderpseudocolorimage.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/rendertocanvas.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/renderwebimage.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/rendering/savelastrendered.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/settopixelcoordinatesystem.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/setviewport.ts": [
+        "./src/enabledelements.ts"
+      ],
+      "./src/webgl/createprogramfromstring.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/index.ts": [
+        "./src/webgl/createprogramfromstring.d.ts",
+        "./src/webgl/renderer.d.ts",
+        "./src/webgl/texturecache.d.ts"
+      ],
+      "./src/webgl/renderer.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/webgl/shaders/int16.d.ts",
+        "./src/webgl/shaders/int8.d.ts",
+        "./src/webgl/shaders/rgb.d.ts",
+        "./src/webgl/shaders/uint16.d.ts",
+        "./src/webgl/shaders/uint8.d.ts"
+      ],
+      "./src/webgl/shaders/int16.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/int8.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/rgb.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/uint16.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/shaders/uint8.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/texturecache.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./src/webgl/vertexshader.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.array.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.object.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.string.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.symbol.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.bigint.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.promise.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.string.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.full.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.promise.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.string.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "./node_modules/@types/events/index.d.ts",
+      "./node_modules/@types/glob/index.d.ts",
+      "./node_modules/@types/minimatch/index.d.ts",
+      "./node_modules/@types/node/assert.d.ts",
+      "./node_modules/@types/node/async_hooks.d.ts",
+      "./node_modules/@types/node/base.d.ts",
+      "./node_modules/@types/node/buffer.d.ts",
+      "./node_modules/@types/node/child_process.d.ts",
+      "./node_modules/@types/node/cluster.d.ts",
+      "./node_modules/@types/node/console.d.ts",
+      "./node_modules/@types/node/constants.d.ts",
+      "./node_modules/@types/node/crypto.d.ts",
+      "./node_modules/@types/node/dgram.d.ts",
+      "./node_modules/@types/node/dns.d.ts",
+      "./node_modules/@types/node/domain.d.ts",
+      "./node_modules/@types/node/events.d.ts",
+      "./node_modules/@types/node/fs.d.ts",
+      "./node_modules/@types/node/globals.d.ts",
+      "./node_modules/@types/node/http.d.ts",
+      "./node_modules/@types/node/http2.d.ts",
+      "./node_modules/@types/node/https.d.ts",
+      "./node_modules/@types/node/inspector.d.ts",
+      "./node_modules/@types/node/module.d.ts",
+      "./node_modules/@types/node/net.d.ts",
+      "./node_modules/@types/node/os.d.ts",
+      "./node_modules/@types/node/path.d.ts",
+      "./node_modules/@types/node/perf_hooks.d.ts",
+      "./node_modules/@types/node/process.d.ts",
+      "./node_modules/@types/node/punycode.d.ts",
+      "./node_modules/@types/node/querystring.d.ts",
+      "./node_modules/@types/node/readline.d.ts",
+      "./node_modules/@types/node/repl.d.ts",
+      "./node_modules/@types/node/stream.d.ts",
+      "./node_modules/@types/node/string_decoder.d.ts",
+      "./node_modules/@types/node/timers.d.ts",
+      "./node_modules/@types/node/tls.d.ts",
+      "./node_modules/@types/node/trace_events.d.ts",
+      "./node_modules/@types/node/ts3.2/globals.d.ts",
+      "./node_modules/@types/node/ts3.2/index.d.ts",
+      "./node_modules/@types/node/ts3.2/util.d.ts",
+      "./node_modules/@types/node/tty.d.ts",
+      "./node_modules/@types/node/url.d.ts",
+      "./node_modules/@types/node/util.d.ts",
+      "./node_modules/@types/node/v8.d.ts",
+      "./node_modules/@types/node/vm.d.ts",
+      "./node_modules/@types/node/worker_threads.d.ts",
+      "./node_modules/@types/node/zlib.d.ts",
+      "./src/canvastopixel.ts",
+      [
+        "./src/colors/colormap.ts",
+        [
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 39239,
+            "length": 18,
+            "code": 7053,
+            "category": 1,
+            "messageText": {
+              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'IColormapsData'.",
+              "category": 1,
+              "code": 7053,
+              "next": [
+                {
+                  "messageText": "No index signature with a parameter of type 'string' was found on type 'IColormapsData'.",
+                  "category": 1,
+                  "code": 7054
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40389,
+            "length": 17,
+            "code": 2322,
+            "category": 1,
+            "messageText": {
+              "messageText": "Type 'ColormapColorsType | ColormapSegmentedDataType | undefined' is not assignable to type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2322,
+              "next": [
+                {
+                  "messageText": "Type 'undefined' is not assignable to type 'ColormapColorsType | ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40462,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40471,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40481,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40490,
+            "length": 13,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'segmentedData' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'segmentedData' does not exist on type 'ColormapColorsType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40511,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40520,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40559,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40568,
+            "length": 13,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'segmentedData' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'segmentedData' does not exist on type 'ColormapColorsType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40583,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40583,
+            "length": 18,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'number | undefined' is not assignable to parameter of type 'number'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'undefined' is not assignable to type 'number'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40603,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40612,
+            "length": 5,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'gamma' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'gamma' does not exist on type 'ColormapColorsType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40717,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40786,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40856,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40865,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40945,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40954,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 40991,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41000,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41047,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41056,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41175,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41184,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41312,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41321,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41528,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41537,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41618,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41627,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41755,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41764,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41891,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41900,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41968,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 41977,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 42099,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 42108,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 42134,
+            "length": 22,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'setNumberOfTableValues' does not exist on type 'LUT'."
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 42226,
+            "length": 13,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'setTableValue' does not exist on type 'LUT'."
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 42243,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 42252,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 42373,
+            "length": 3,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'LookupTable' is not assignable to parameter of type 'LUT'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'LookupTable' is missing the following properties from type 'LUT': firstValueMapped, numBitsPerEntry, lut",
+                  "category": 1,
+                  "code": 2739
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 42479,
+            "length": 8,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/colors/colormap.ts",
+            "start": 42488,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'colors' does not exist on type 'ColormapColorsType | ColormapSegmentedDataType'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'colors' does not exist on type 'ColormapSegmentedDataType'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "./src/colors/index.ts",
+      "./src/colors/lookuptable.ts",
+      "./src/disable.ts",
+      "./src/displayimage.ts",
+      "./src/draw.ts",
+      "./src/drawinvalidated.ts",
+      "./src/enable.ts",
+      "./src/enabledelementdata.ts",
+      "./src/enabledelements.ts",
+      "./src/events.ts",
+      [
+        "./src/falsecolormapping.ts",
+        [
+          {
+            "file": "./src/falsecolormapping.ts",
+            "start": 2651,
+            "length": 8,
+            "code": 2345,
+            "category": 1,
+            "messageText": "Argument of type 'string' is not assignable to parameter of type '\"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"'."
+          },
+          {
+            "file": "./src/falsecolormapping.ts",
+            "start": 3727,
+            "length": 5,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'getId' does not exist on type '{ getId(): \"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"; ... 13 more ...; isValidIndex(index: number): boolean; } | Colormap'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'getId' does not exist on type 'Colormap'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/falsecolormapping.ts",
+            "start": 4335,
+            "length": 17,
+            "code": 2339,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'createLookupTable' does not exist on type '{ getId(): \"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"; ... 13 more ...; isValidIndex(index: number): boolean; } | Colormap'.",
+              "category": 1,
+              "code": 2339,
+              "next": [
+                {
+                  "messageText": "Property 'createLookupTable' does not exist on type 'Colormap'.",
+                  "category": 1,
+                  "code": 2339
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "./src/fittowindow.ts",
+      "./src/generateuuid.ts",
+      "./src/getdefaultviewportforimage.ts",
+      "./src/getimage.ts",
+      "./src/getpixels.ts",
+      "./src/getstoredpixels.ts",
+      "./src/getviewport.ts",
+      "./src/imagecache.ts",
+      "./src/imageloader.ts",
+      "./src/index.ts",
+      "./src/internal/calculatetransform.ts",
+      "./src/internal/computeautovoi.d.ts",
+      "./src/internal/createviewport.ts",
+      "./src/internal/drawcompositeimage.d.ts",
+      "./src/internal/drawimage.ts",
+      "./src/internal/drawimagesync.ts",
+      "./src/internal/generatecolorlut.ts",
+      "./src/internal/generatelut.ts",
+      "./src/internal/getcanvas.ts",
+      "./src/internal/getdefaultviewport.ts",
+      "./src/internal/getimagefitscale.ts",
+      "./src/internal/getimagesize.ts",
+      "./src/internal/getmodalitylut.ts",
+      "./src/internal/gettransform.ts",
+      "./src/internal/getvoilut.ts",
+      "./src/internal/guid.ts",
+      "./src/internal/index.ts",
+      "./src/internal/now.ts",
+      "./src/internal/requestanimationframe.ts",
+      "./src/internal/setdefaultviewport.ts",
+      "./src/internal/storedcolorpixeldatatocanvasimagedata.ts",
+      "./src/internal/storedpixeldatatocanvasimagedata.ts",
+      "./src/internal/storedpixeldatatocanvasimagedatacolorlut.ts",
+      "./src/internal/storedpixeldatatocanvasimagedatapseudocolorlut.ts",
+      "./src/internal/storedpixeldatatocanvasimagedatargba.ts",
+      "./src/internal/storedrgbapixeldatatocanvasimagedata.ts",
+      "./src/internal/transform.ts",
+      "./src/internal/tryenablewebgl.d.ts",
+      "./src/internal/validator.d.ts",
+      "./src/invalidate.ts",
+      "./src/invalidateimageid.ts",
+      "./src/layers.ts",
+      "./src/metadata.ts",
+      "./src/pagetopixel.ts",
+      "./src/pixeldatatofalsecolordata.ts",
+      "./src/pixeltocanvas.ts",
+      "./src/rendering/doesimageneedtoberendered.ts",
+      "./src/rendering/getlut.ts",
+      "./src/rendering/index.ts",
+      "./src/rendering/initializerendercanvas.ts",
+      "./src/rendering/lutmatches.ts",
+      "./src/rendering/rendercolorimage.ts",
+      "./src/rendering/rendergrayscaleimage.ts",
+      [
+        "./src/rendering/renderlabelmapimage.ts",
+        [
+          {
+            "file": "./src/rendering/renderlabelmapimage.ts",
+            "start": 1788,
+            "length": 8,
+            "code": 2345,
+            "category": 1,
+            "messageText": "Argument of type 'string' is not assignable to parameter of type '\"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"'."
+          }
+        ]
+      ],
+      [
+        "./src/rendering/renderpseudocolorimage.ts",
+        [
+          {
+            "file": "./src/rendering/renderpseudocolorimage.ts",
+            "start": 1824,
+            "length": 8,
+            "code": 2345,
+            "category": 1,
+            "messageText": "Argument of type 'string' is not assignable to parameter of type '\"hotIron\" | \"pet\" | \"hotMetalBlue\" | \"pet20Step\" | \"gray\" | \"jet\" | \"hsv\" | \"hot\" | \"cool\" | \"spring\" | \"summer\" | \"autumn\" | \"winter\" | \"bone\" | \"copper\" | \"spectral\" | \"coolwarm\" | \"blues\"'."
+          },
+          {
+            "file": "./src/rendering/renderpseudocolorimage.ts",
+            "start": 3254,
+            "length": 3,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'Uint8ClampedArray' is not assignable to parameter of type 'number[]'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'Uint8ClampedArray' is missing the following properties from type 'number[]': pop, push, concat, shift, and 5 more.",
+                  "category": 1,
+                  "code": 2740
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "./src/rendering/rendertocanvas.ts",
+      "./src/rendering/renderwebimage.ts",
+      "./src/rendering/savelastrendered.ts",
+      "./src/reset.ts",
+      "./src/resize.ts",
+      "./src/settopixelcoordinatesystem.ts",
+      "./src/setviewport.ts",
+      "./src/triggerevent.ts",
+      "./src/updateimage.ts",
+      "./src/version.ts",
+      "./src/webgl/createprogramfromstring.d.ts",
+      "./src/webgl/index.ts",
+      "./src/webgl/renderer.d.ts",
+      "./src/webgl/shaders/index.d.ts",
+      "./src/webgl/shaders/int16.d.ts",
+      "./src/webgl/shaders/int8.d.ts",
+      "./src/webgl/shaders/rgb.d.ts",
+      "./src/webgl/shaders/uint16.d.ts",
+      "./src/webgl/shaders/uint8.d.ts",
+      "./src/webgl/texturecache.d.ts",
+      "./src/webgl/vertexshader.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2016.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.array.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.object.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.string.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2019.symbol.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.bigint.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.promise.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.string.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.full.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.promise.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.esnext.string.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "../../../../../usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts"
+    ]
+  },
+  "version": "3.9.3"
+}

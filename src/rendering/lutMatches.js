@@ -7,15 +7,14 @@
  * @memberof rendering
  */
 export default function (a, b) {
-  // If undefined, they are equal
-  if (!a && !b) {
-    return true;
-  }
-  // If one is undefined, not equal
-  if (!a || !b) {
-    return false;
-  }
-
-  // Check the unique ids
-  return (a.id === b.id);
+    // If undefined, they are equal
+    if (!a && !b) {
+        return true;
+    }
+    // If one is undefined, not equal
+    if (!a || !b) {
+        return false;
+    }
+    // Check the unique ids
+    return (a.id === b.id);
 }

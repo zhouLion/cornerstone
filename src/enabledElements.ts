@@ -47,6 +47,7 @@ export interface LUT {
   firstValueMapped: number;
   numBitsPerEntry: number;
   lut: number[];
+  id?: string;
 }
 
 /**

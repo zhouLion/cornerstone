@@ -1,4 +1,4 @@
-import { Image } from 'src/enabledElements';
+import { Image, LUT } from 'src/enabledElements';
 import getModalityLUT from './getModalityLUT';
 import getVOILUT from './getVOILut';
 
@@ -21,8 +21,8 @@ export default function (
   windowWidth: number,
   windowCenter: number,
   invert: boolean,
-  modalityLUT: Array<any>,
-  voiLUT:  Array<any>
+  modalityLUT?: LUT,
+  voiLUT?: LUT
 ): Uint8ClampedArray {
   const maxPixelValue = image.maxPixelValue;
   const minPixelValue = image.minPixelValue;
@@ -31,11 +31,12 @@ export default function (
   if (image.cachedLut === undefined) {
     const length = maxPixelValue - offset + 1;
 
-    image.cachedLut = {};
-    image.cachedLut.lutArray = new Uint8ClampedArray(length);
+    image.cachedLut = {
+      lutArray: new Uint8ClampedArray(length)
+    };
   }
 
-  const lut = image.cachedLut.lutArray;
+  const lut = image.cachedLut.lutArray as Uint8ClampedArray;
   const mlutfn = getModalityLUT(image.slope, image.intercept, modalityLUT);
   const vlutfn = getVOILUT(windowWidth, windowCenter, voiLUT);
 

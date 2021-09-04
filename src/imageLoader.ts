@@ -1,6 +1,7 @@
 import { getImageLoadObject, putImageLoadObject } from './imageCache';
 import EVENTS, { events } from './events';
 import triggerEvent from './triggerEvent';
+import { Image } from './enabledElements';
 
 /**
  * This module deals with ImageLoaders, loading images and caching images
@@ -40,9 +41,9 @@ function loadImageFromImageLoader (imageId: string, options: Record<string, any>
   const imageLoadObject = loader(imageId, options);
 
   // Broadcast an image loaded event once the image is loaded
-  imageLoadObject.promise.then(function (image) {
+  imageLoadObject.promise.then(function (image: Image) {
     triggerEvent(events, EVENTS.IMAGE_LOADED, { image });
-  }, function (error) {
+  }, function (error: Error) {
     const errorObject = {
       imageId,
       error

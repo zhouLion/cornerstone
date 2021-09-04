@@ -84,10 +84,10 @@ function getRestoreImageMethod (image: Image) {
  */
 function ensuresColormap (colormap: string | Colormap) {
   if (colormap && (typeof colormap === 'string')) {
-    colormap = getColormap(colormap);
+    return getColormap(colormap);
   }
 
-  return colormap;
+  return colormap as Colormap;
 }
 
 /**
@@ -120,9 +120,9 @@ function convertImageToFalseColorImage (image: Image, colormap: string | Colorma
   }
 
   // User can pass a colormap id or a colormap object
-  colormap = ensuresColormap(colormap);
+  const ensuredColormap = ensuresColormap(colormap);
 
-  const colormapId = colormap.getId();
+  const colormapId = ensuredColormap.getId();
 
   // Doesn't do anything if colormapId hasn't changed
   if (image.colormapId === colormapId) {
@@ -141,7 +141,7 @@ function convertImageToFalseColorImage (image: Image, colormap: string | Colorma
 
     image.restore = getRestoreImageMethod(image);
 
-    const lookupTable = colormap.createLookupTable();
+    const lookupTable = ensuredColormap.createLookupTable();
 
     lookupTable.setTableRange(minPixelValue, maxPixelValue);
 
@@ -178,10 +178,13 @@ function convertImageToFalseColorImage (image: Image, colormap: string | Colorma
 function convertToFalseColorImage (element: HTMLElement, colormap: string | Colormap) {
   const enabledElement = getEnabledElement(element);
 
-
-  return convertImageToFalseColorImage(enabledElement.image, colormap);
+  if (enabledElement.image) {
+    return convertImageToFalseColorImage(enabledElement.image, colormap);
+  }
 }
 
-export { convertImageToFalseColorImage,
+export {
+  convertImageToFalseColorImage,
   convertToFalseColorImage,
-  restoreImage };
+  restoreImage
+};

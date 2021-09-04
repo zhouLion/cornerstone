@@ -12,9 +12,9 @@ function requestFrame (callback) {
  */
 export default function (callback) {
   return window.requestAnimationFrame(callback) ||
-    window.webkitRequestAnimationFrame(callback) ||
-    window.mozRequestAnimationFrame(callback) ||
-    window.oRequestAnimationFrame(callback) ||
-    window.msRequestAnimationFrame(callback) ||
-    requestFrame(callback);
+        window.webkitRequestAnimationFrame(callback) ||
+        window.mozRequestAnimationFrame(callback) ||
+        window.oRequestAnimationFrame(callback) ||
+        window.msRequestAnimationFrame(callback) ||
+        requestFrame(callback);
 }

@@ -1,9 +1,8 @@
-import triggerEvent from '../triggerEvent.js';
-import EVENTS from '../events.js';
-import drawImageSync from '../internal/drawImageSync.js';
-import getDefaultViewport from '../internal/getDefaultViewport.js';
-import tryEnableWebgl from '../internal/tryEnableWebgl.js';
-
+import triggerEvent from '../triggerEvent';
+import EVENTS from '../events';
+import drawImageSync from '../internal/drawImageSync';
+import getDefaultViewport from '../internal/getDefaultViewport';
+import tryEnableWebgl from '../internal/tryEnableWebgl';
 /**
  * @typedef {Object} EnabledElementStub
  * @property {HTMLElement} element  The enabled element
@@ -18,7 +17,6 @@ import tryEnableWebgl from '../internal/tryEnableWebgl.js';
  * @property {Object} viewport The current viewport
  * @memberof rendering
  */
-
 /**
  * creates a dummy enabled element
  *
@@ -29,21 +27,20 @@ import tryEnableWebgl from '../internal/tryEnableWebgl.js';
  * @returns {EnabledElementStub} a dummy enabled element
  * @memberof rendering
  */
-function createEnabledElementStub (canvas, image, options, viewport) {
-  return {
-    element: canvas,
-    canvas,
-    image,
-    invalid: true, // True if image needs to be drawn, false if not
-    needsRedraw: true,
-    options,
-    layers: [],
-    data: {},
-    renderingTools: {},
-    viewport
-  };
+function createEnabledElementStub(canvas, image, options, viewport) {
+    return {
+        element: canvas,
+        canvas,
+        image,
+        invalid: true,
+        needsRedraw: true,
+        options,
+        layers: [],
+        data: {},
+        renderingTools: {},
+        viewport
+    };
 }
-
 /**
  * Render the image to the provided canvas immediately.
  * @param {any} canvas The HTML canvas where the image will be rendered.
@@ -54,30 +51,23 @@ function createEnabledElementStub (canvas, image, options, viewport) {
  * @memberof rendering
  */
 export default function (canvas, image, viewport = null, options = null) {
-  if (canvas === undefined) {
-    throw new Error('renderToCanvas: parameter canvas cannot be undefined');
-  }
-
-  // If this enabled element has the option set for WebGL, we should
-  // Check if this device actually supports it
-  if (options && options.renderer && options.renderer.toLowerCase() === 'webgl') {
-    tryEnableWebgl(options);
-  }
-
-  const defaultViewport = getDefaultViewport(canvas, image);
-
-  if (viewport) {
-    Object.assign(defaultViewport, viewport);
-  }
-
-  const enabledElementStub = createEnabledElementStub(canvas, image, options, defaultViewport);
-
-  const eventDetails = {
-    enabledElement: enabledElementStub,
-    timestamp: Date.now()
-  };
-
-  triggerEvent(enabledElementStub.element, EVENTS.PRE_RENDER, eventDetails);
-
-  drawImageSync(enabledElementStub, enabledElementStub.invalid);
+    if (canvas === undefined) {
+        throw new Error('renderToCanvas: parameter canvas cannot be undefined');
+    }
+    // If this enabled element has the option set for WebGL, we should
+    // Check if this device actually supports it
+    if (options && options.renderer && options.renderer.toLowerCase() === 'webgl') {
+        tryEnableWebgl(options);
+    }
+    const defaultViewport = getDefaultViewport(canvas, image);
+    if (viewport) {
+        Object.assign(defaultViewport, viewport);
+    }
+    const enabledElementStub = createEnabledElementStub(canvas, image, options, defaultViewport);
+    const eventDetails = {
+        enabledElement: enabledElementStub,
+        timestamp: Date.now()
+    };
+    triggerEvent(enabledElementStub.element, EVENTS.PRE_RENDER, eventDetails);
+    drawImageSync(enabledElementStub, enabledElementStub.invalid);
 }

@@ -10,6 +10,5 @@ function s4 () {
  * @memberof Internal
  */
 export default function () {
-  return `${s4() + s4()}-${s4()}-${s4()}-${
-    s4()}-${s4()}${s4()}${s4()}`;
+  return `${s4() + s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
 }

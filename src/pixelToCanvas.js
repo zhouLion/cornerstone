@@ -1,6 +1,5 @@
-import { getEnabledElement } from './enabledElements.js';
-import getTransform from './internal/getTransform.js';
-
+import { getEnabledElement } from './enabledElements';
+import getTransform from './internal/getTransform';
 /**
  * Converts a point in the pixel coordinate system to the canvas coordinate system
  * system.  This can be used to render using canvas context without having the weird
@@ -13,9 +12,7 @@ import getTransform from './internal/getTransform.js';
  * @memberof PixelCoordinateSystem
  */
 export default function (element, pt) {
-  const enabledElement = getEnabledElement(element);
-  const transform = getTransform(enabledElement);
-
-
-  return transform.transformPoint(pt.x, pt.y);
+    const enabledElement = getEnabledElement(element);
+    const transform = getTransform(enabledElement);
+    return transform.transformPoint(pt.x, pt.y);
 }

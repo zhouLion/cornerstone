@@ -1,7 +1,6 @@
 /**
  * @module Polyfills
  */
-
 /**
  * Use the performance.now() method if possible, and if not, use Date.now()
  *

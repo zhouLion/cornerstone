@@ -102,13 +102,14 @@ export function putImageLoadObject (imageId: string, imageLoadObject: { promise:
     sharedCacheKey: undefined, // The sharedCacheKey for this imageId.  undefined by default
     imageLoadObject,
     timeStamp: Date.now(),
-    sizeInBytes: 0
+    sizeInBytes: 0,
+    image: undefined as Image | undefined,
   };
 
   imageCacheDict[imageId] = cachedImage;
   cachedImages.push(cachedImage);
 
-  imageLoadObject.promise.then(function (image: { sizeInBytes: number | undefined; sharedCacheKey: undefined; }) {
+  imageLoadObject.promise.then(function (image: Image) {
     if (cachedImages.indexOf(cachedImage) === -1) {
       // If the image has been purged before being loaded, we stop here.
       return;
@@ -140,8 +141,10 @@ export function putImageLoadObject (imageId: string, imageLoadObject: { promise:
   }, () => {
     const cachedImage = imageCacheDict[imageId];
 
-    cachedImages.splice(cachedImages.indexOf(cachedImage), 1);
-    delete imageCacheDict[imageId];
+    if (cachedImage) {
+      cachedImages.splice(cachedImages.indexOf(cachedImage), 1);
+      delete imageCacheDict[imageId];
+    }
   });
 }
 
@@ -184,7 +187,7 @@ export function removeImageLoadObject (imageId?: string) {
   }
 
   cachedImages.splice(cachedImages.indexOf(cachedImage), 1);
-  cacheSizeInBytes -= cachedImage.sizeInBytes;
+  cacheSizeInBytes -= cachedImage.sizeInBytes || 0;
 
   const eventDetails = {
     action: 'deleteImage',

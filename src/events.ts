@@ -106,5 +106,4 @@ class EventTarget {
   }
 }
 
-
 export const events = new EventTarget();
