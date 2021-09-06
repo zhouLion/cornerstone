@@ -1,6 +1,6 @@
 // Internal (some of these are from old internal/legacy expose)
 
-import { default as EVENTS, events } from './events';
+import { default as EVENTS, events, PolyfillsEventTarget } from './events';
 import {
   addEnabledElement,
   getEnabledElement,
@@ -85,7 +85,6 @@ import { default as webGL } from './webgl/index';
  * @module ViewportSettings
  */
 
-
 const cornerstone = {
   drawImage,
   generateLut,
@@ -153,6 +152,7 @@ const cornerstone = {
   convertToFalseColorImage,
   restoreImage,
   EVENTS,
+  PolyfillsEventTarget,
   events,
   triggerEvent
 };

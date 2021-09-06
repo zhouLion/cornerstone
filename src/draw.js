@@ -1,5 +1,6 @@
 import { getEnabledElement } from './enabledElements';
 import drawImage from './internal/drawImage';
+
 /**
  * Immediately draws the enabled element
  *
@@ -8,9 +9,10 @@ import drawImage from './internal/drawImage';
  * @memberof Drawing
  */
 export default function (element) {
-    const enabledElement = getEnabledElement(element);
-    if (enabledElement.image === undefined) {
-        throw new Error('draw: image has not been loaded yet');
-    }
-    drawImage(enabledElement);
+  const enabledElement = getEnabledElement(element);
+
+  if (enabledElement.image === undefined) {
+    throw new Error('draw: image has not been loaded yet');
+  }
+  drawImage(enabledElement);
 }

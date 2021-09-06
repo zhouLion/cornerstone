@@ -1,4 +1,5 @@
 const int8Shader = {};
+
 /**
  * Convert stored pixel data to image data.
  *
@@ -8,21 +9,24 @@ const int8Shader = {};
  * @returns {Uint8Array} The image data for use by the WebGL shader
  * @memberof WebGLRendering
  */
-function storedPixelDataToImageData(image) {
-    // Transfer image data to alpha channel of WebGL texture
-    // Store data in Uint8Array
-    const pixelData = image.getPixelData();
-    const numberOfChannels = 2;
-    const data = new Uint8Array(image.width * image.height * numberOfChannels);
-    let offset = 0;
-    for (let i = 0; i < pixelData.length; i++) {
-        data[offset++] = pixelData[i];
-        data[offset++] = pixelData[i] < 0 ? 0 : 1; // 0 For negative, 1 for positive
-    }
-    return data;
+
+function storedPixelDataToImageData (image) {
+  // Transfer image data to alpha channel of WebGL texture
+  // Store data in Uint8Array
+  const pixelData = image.getPixelData();
+  const numberOfChannels = 2;
+  const data = new Uint8Array(image.width * image.height * numberOfChannels);
+  let offset = 0;
+
+  for (let i = 0; i < pixelData.length; i++) {
+    data[offset++] = pixelData[i];
+    data[offset++] = pixelData[i] < 0 ? 0 : 1; // 0 For negative, 1 for positive
+  }
+
+  return data;
 }
 export const int8DataUtilities = {
-    storedPixelDataToImageData
+  storedPixelDataToImageData
 };
 int8Shader.frag = 'precision mediump float;' +
     'uniform sampler2D u_image;' +

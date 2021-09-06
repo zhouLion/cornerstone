@@ -85,9 +85,9 @@ function createProgram (gl: WebGLRenderingContext, vertexShader: WebGLShader, fr
  * @memberof WebGLRendering
  */
 export default function (gl: WebGLRenderingContext, vertexShaderSrc: WebGLShader, fragShaderSrc: WebGLShader) {
-  const vertexShader = compileShader(gl, vertexShaderSrc, gl.VERTEX_SHADER);
-  const fragShader = compileShader(gl, fragShaderSrc, gl.FRAGMENT_SHADER);
+  const vertexShader = compileShader(gl, vertexShaderSrc as string, gl.VERTEX_SHADER);
+  const fragShader = compileShader(gl, fragShaderSrc as string, gl.FRAGMENT_SHADER);
 
 
-  return createProgram(gl, vertexShader, fragShader);
+  return createProgram(gl, vertexShader as string, fragShader as string);
 }

@@ -1,10 +1,9 @@
-import { LUT } from '../enabledElements';
 import LookupTable from './lookupTable';
 interface ColormapColorsType {
     name: string;
     numColors?: number;
     numOfColors?: number;
-    colors: number[][];
+    colors?: number[][];
 }
 interface SegmentedData {
     red: number[][];
@@ -13,9 +12,9 @@ interface SegmentedData {
 }
 interface ColormapSegmentedDataType {
     name: string;
-    numColors: number;
-    gamma: number;
-    segmentedData: SegmentedData;
+    numColors?: number;
+    gamma?: number;
+    segmentedData?: SegmentedData;
 }
 /**
  * Return all available colormaps (id and name)
@@ -37,19 +36,20 @@ export declare function getColormapsList(): {
 */
 export declare function getColormap(id: string, colormapData?: (ColormapColorsType | ColormapSegmentedDataType)): {
     getId(): string;
-    getColorSchemeName(): any;
+    getColorSchemeName(): string;
     setColorSchemeName(name: string): void;
-    getNumberOfColors(): any;
+    getNumberOfColors(): number;
     setNumberOfColors(numColors: number): void;
-    getColor(index: number): any;
-    getColorRepeating(index: number): any;
+    getColor(index: number): number[];
+    getColorRepeating(index: number): number[] | undefined;
     setColor(index: number, rgba: Array<number>): void;
     addColor(rgba: Array<number>): void;
     insertColor(index: number, rgba: Array<number>): void;
     removeColor(index: number): void;
     clearColors(): void;
-    buildLookupTable(lut: LUT): void;
+    buildLookupTable(lut: LookupTable): void;
     createLookupTable(): LookupTable;
-    isValidIndex(index: number): boolean;
+    isValidIndex(index: number): boolean | undefined;
 };
+export declare type Colormap = ReturnType<typeof getColormap>;
 export {};

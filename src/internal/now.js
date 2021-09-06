@@ -8,8 +8,9 @@
  * @memberof Polyfills
  */
 export default function () {
-    if (window.performance) {
-        return performance.now();
-    }
-    return Date.now();
+  if (window.performance) {
+    return performance.now();
+  }
+
+  return Date.now();
 }

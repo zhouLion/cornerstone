@@ -1,4 +1,5 @@
 import calculateTransform from './internal/calculateTransform';
+
 /**
  * Sets the canvas context transformation matrix to the pixel coordinate system.  This allows
  * geometry to be driven using the canvas context using coordinates in the pixel coordinate system
@@ -8,12 +9,13 @@ import calculateTransform from './internal/calculateTransform';
  * @returns {void}
  */
 export default function (enabledElement, context, scale = 1) {
-    if (enabledElement === undefined) {
-        throw new Error('setToPixelCoordinateSystem: parameter enabledElement must not be undefined');
-    }
-    if (context === undefined) {
-        throw new Error('setToPixelCoordinateSystem: parameter context must not be undefined');
-    }
-    const transform = calculateTransform(enabledElement, scale);
-    context.setTransform(transform.m[0], transform.m[1], transform.m[2], transform.m[3], transform.m[4], transform.m[5]);
+  if (enabledElement === undefined) {
+    throw new Error('setToPixelCoordinateSystem: parameter enabledElement must not be undefined');
+  }
+  if (context === undefined) {
+    throw new Error('setToPixelCoordinateSystem: parameter context must not be undefined');
+  }
+  const transform = calculateTransform(enabledElement, scale);
+
+  context.setTransform(transform.m[0], transform.m[1], transform.m[2], transform.m[3], transform.m[4], transform.m[5]);
 }

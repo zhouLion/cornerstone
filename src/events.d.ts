@@ -25,7 +25,7 @@ export default EVENTS;
  * @class
  * @memberof Polyfills
  */
-declare class EventTarget {
+export declare class PolyfillsEventTarget {
     private namespaces;
     private listeners;
     constructor();
@@ -35,4 +35,4 @@ declare class EventTarget {
     removeEventListener(type: string, callback: EventListener): void;
     dispatchEvent(event: Event): boolean;
 }
-export declare const events: EventTarget;
+export declare const events: PolyfillsEventTarget;

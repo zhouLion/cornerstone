@@ -1,4 +1,5 @@
 const enabledElements = [];
+
 /**
  * Retrieves a Cornerstone Enabled Element object
  *
@@ -7,17 +8,19 @@ const enabledElements = [];
  * @returns {EnabledElement} A Cornerstone Enabled Element
  * @memberof EnabledElements
  */
-export function getEnabledElement(element) {
-    if (element === undefined) {
-        throw new Error('getEnabledElement: parameter element must not be undefined');
+
+export function getEnabledElement (element) {
+  if (element === undefined) {
+    throw new Error('getEnabledElement: parameter element must not be undefined');
+  }
+  for (let i = 0; i < enabledElements.length; i++) {
+    if (enabledElements[i].element === element) {
+      return enabledElements[i];
     }
-    for (let i = 0; i < enabledElements.length; i++) {
-        if (enabledElements[i].element === element) {
-            return enabledElements[i];
-        }
-    }
-    throw new Error('element not enabled');
+  }
+  throw new Error('element not enabled');
 }
+
 /**
  * Adds a Cornerstone Enabled Element object to the central store of enabledElements
  *
@@ -25,12 +28,13 @@ export function getEnabledElement(element) {
  * @returns {void}
  * @memberof EnabledElements
  */
-export function addEnabledElement(enabledElement) {
-    if (enabledElement === undefined) {
-        throw new Error('getEnabledElement: enabledElement element must not be undefined');
-    }
-    enabledElements.push(enabledElement);
+export function addEnabledElement (enabledElement) {
+  if (enabledElement === undefined) {
+    throw new Error('getEnabledElement: enabledElement element must not be undefined');
+  }
+  enabledElements.push(enabledElement);
 }
+
 /**
  * Adds a Cornerstone Enabled Element object to the central store of enabledElements
  *
@@ -38,21 +42,24 @@ export function addEnabledElement(enabledElement) {
  * @returns {EnabledElement[]} An Array of Cornerstone enabledElement Objects
  * @memberof EnabledElements
  */
-export function getEnabledElementsByImageId(imageId) {
-    const ees = [];
-    enabledElements.forEach(function (enabledElement) {
-        if (enabledElement.image && enabledElement.image.imageId === imageId) {
-            ees.push(enabledElement);
-        }
-    });
-    return ees;
+export function getEnabledElementsByImageId (imageId) {
+  const ees = [];
+
+  enabledElements.forEach(function (enabledElement) {
+    if (enabledElement.image && enabledElement.image.imageId === imageId) {
+      ees.push(enabledElement);
+    }
+  });
+
+  return ees;
 }
+
 /**
  * Retrieve all of the currently enabled Cornerstone elements
  *
  * @return {EnabledElement[]} An Array of Cornerstone enabledElement Objects
  * @memberof EnabledElements
  */
-export function getEnabledElements() {
-    return enabledElements;
+export function getEnabledElements () {
+  return enabledElements;
 }

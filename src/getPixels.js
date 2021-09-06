@@ -1,6 +1,7 @@
 import { getEnabledElement } from './enabledElements';
 import getStoredPixels from './getStoredPixels';
 import getModalityLUT from './internal/getModalityLUT';
+
 /**
  * Retrieves an array of pixels from a rectangular region with modality LUT transformation applied
  *
@@ -12,12 +13,15 @@ import getModalityLUT from './internal/getModalityLUT';
  * @returns {Array} The modality pixel value of the pixels in the sampling rectangle
  */
 export default function (element, x, y, width, height) {
-    const storedPixels = getStoredPixels(element, x, y, width, height);
-    const enabledElement = getEnabledElement(element);
-    const { image, viewport } = enabledElement;
-    if (!image || !viewport) {
-        throw new Error('getPixels: no image or viewport');
-    }
-    const mlutfn = getModalityLUT(image.slope, image.intercept, viewport.modalityLUT);
-    return storedPixels.map(mlutfn);
+  const storedPixels = getStoredPixels(element, x, y, width, height);
+  const enabledElement = getEnabledElement(element);
+  const { image, viewport } = enabledElement;
+
+  if (!image || !viewport) {
+    throw new Error('getPixels: no image or viewport');
+  }
+  const mlutfn = getModalityLUT(image.slope, image.intercept, viewport.modalityLUT);
+
+
+  return storedPixels.map(mlutfn);
 }

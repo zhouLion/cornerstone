@@ -9,7 +9,7 @@
 import { EnabledElement, EnabledElementLayer } from "src/enabledElements";
 
 export default function (enabledElement: EnabledElement | EnabledElementLayer) {
-  if (enabledElement.image) {
+  if (enabledElement.image && enabledElement.viewport) {
     const imageId = enabledElement.image.imageId;
     const viewport = enabledElement.viewport;
     const isColor = enabledElement.image.color;
@@ -17,15 +17,15 @@ export default function (enabledElement: EnabledElement | EnabledElementLayer) {
     enabledElement.renderingTools.lastRenderedImageId = imageId;
     enabledElement.renderingTools.lastRenderedIsColor = isColor;
     enabledElement.renderingTools.lastRenderedViewport = {
-      windowCenter: viewport?.voi?.windowCenter,
-      windowWidth: viewport?.voi?.windowWidth,
-      invert: viewport?.invert,
-      rotation: viewport?.rotation,
-      hflip: viewport?.hflip,
-      vflip: viewport?.vflip,
-      modalityLUT: viewport?.modalityLUT,
-      voiLUT: viewport?.voiLUT,
-      colormap: viewport?.colormap
+      windowCenter: viewport.voi ? viewport.voi.windowCenter : 0,
+      windowWidth: viewport.voi ? viewport.voi.windowWidth : 0,
+      invert: viewport.invert,
+      rotation: viewport.rotation,
+      hflip: viewport.hflip,
+      vflip: viewport.vflip,
+      modalityLUT: viewport.modalityLUT,
+      voiLUT: viewport.voiLUT,
+      colormap: viewport.colormap
     };
   }
 

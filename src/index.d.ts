@@ -1,4 +1,4 @@
-import { default as EVENTS, events } from './events';
+import { default as EVENTS, events, PolyfillsEventTarget } from './events';
 import { addEnabledElement, getEnabledElement, getEnabledElements, getEnabledElementsByImageId } from './enabledElements';
 import { addLayer, getActiveLayer, getLayer, getLayers, getVisibleLayers, purgeLayers, removeLayer, setActiveLayer, setLayerImage } from './layers';
 import { convertImageToFalseColorImage, convertToFalseColorImage, restoreImage } from './falseColorMapping';
@@ -29,25 +29,25 @@ import { default as pageToPixel } from './pageToPixel';
 import { default as pixelDataToFalseColorData } from './pixelDataToFalseColorData';
 import { default as pixelToCanvas } from './pixelToCanvas';
 import { renderColorImage } from './rendering/renderColorImage';
-import { renderGrayscaleImage } from './rendering/renderGrayscaleImage.js';
-import { renderLabelMapImage } from './rendering/renderLabelMapImage.js';
-import { renderPseudoColorImage } from './rendering/renderPseudoColorImage.js';
-import { default as renderToCanvas } from './rendering/renderToCanvas.js';
-import { renderWebImage } from './rendering/renderWebImage.js';
-import { default as rendering } from './rendering/index.js';
-import { default as requestAnimationFrame } from './internal/requestAnimationFrame.js';
-import { default as reset } from './reset.js';
-import { default as resize } from './resize.js';
-import { default as setDefaultViewport } from './internal/setDefaultViewport.js';
-import { default as setToPixelCoordinateSystem } from './setToPixelCoordinateSystem.js';
-import { default as setViewport } from './setViewport.js';
-import { default as storedColorPixelDataToCanvasImageData } from './internal/storedColorPixelDataToCanvasImageData.js';
-import { default as storedPixelDataToCanvasImageData } from './internal/storedPixelDataToCanvasImageData.js';
-import { default as storedPixelDataToCanvasImageDataColorLUT } from './internal/storedPixelDataToCanvasImageDataColorLUT.js';
-import { default as storedPixelDataToCanvasImageDataPseudocolorLUT } from './internal/storedPixelDataToCanvasImageDataPseudocolorLUT.js';
-import { default as triggerEvent } from './triggerEvent.js';
-import { default as updateImage } from './updateImage.js';
-import { default as webGL } from './webgl/index.js';
+import { renderGrayscaleImage } from './rendering/renderGrayscaleImage';
+import { renderLabelMapImage } from './rendering/renderLabelMapImage';
+import { renderPseudoColorImage } from './rendering/renderPseudoColorImage';
+import { default as renderToCanvas } from './rendering/renderToCanvas';
+import { renderWebImage } from './rendering/renderWebImage';
+import { default as rendering } from './rendering/index';
+import { default as requestAnimationFrame } from './internal/requestAnimationFrame';
+import { default as reset } from './reset';
+import { default as resize } from './resize';
+import { default as setDefaultViewport } from './internal/setDefaultViewport';
+import { default as setToPixelCoordinateSystem } from './setToPixelCoordinateSystem';
+import { default as setViewport } from './setViewport';
+import { default as storedColorPixelDataToCanvasImageData } from './internal/storedColorPixelDataToCanvasImageData';
+import { default as storedPixelDataToCanvasImageData } from './internal/storedPixelDataToCanvasImageData';
+import { default as storedPixelDataToCanvasImageDataColorLUT } from './internal/storedPixelDataToCanvasImageDataColorLUT';
+import { default as storedPixelDataToCanvasImageDataPseudocolorLUT } from './internal/storedPixelDataToCanvasImageDataPseudocolorLUT';
+import { default as triggerEvent } from './triggerEvent';
+import { default as updateImage } from './updateImage';
+import { default as webGL } from './webgl/index';
 /**
  * @module PixelCoordinateSystem
  */
@@ -126,7 +126,14 @@ declare const cornerstone: {
     setViewport: typeof setViewport;
     updateImage: typeof updateImage;
     pixelDataToFalseColorData: typeof pixelDataToFalseColorData;
-    rendering: typeof rendering;
+    rendering: {
+        colorImage: typeof renderColorImage;
+        grayscaleImage: typeof renderGrayscaleImage;
+        webImage: typeof renderWebImage;
+        pseudoColorImage: typeof renderPseudoColorImage;
+        labelMapImage: typeof renderLabelMapImage;
+        toCanvas: typeof renderToCanvas;
+    };
     imageCache: {
         imageCache: Partial<Record<string, Partial<import("./enabledElements").Image>>>;
         cachedImages: Partial<import("./enabledElements").Image>[];
@@ -181,7 +188,8 @@ declare const cornerstone: {
         ELEMENT_DISABLED: string;
         ELEMENT_ENABLED: string;
     };
-    events: import("./events").PolyfillsEventTarget;
+    PolyfillsEventTarget: typeof PolyfillsEventTarget;
+    events: PolyfillsEventTarget;
     triggerEvent: typeof triggerEvent;
 };
 export { drawImage, generateLut, getDefaultViewport, setDefaultViewport, requestAnimationFrame, storedPixelDataToCanvasImageData, storedColorPixelDataToCanvasImageData, storedPixelDataToCanvasImageDataColorLUT, storedPixelDataToCanvasImageDataPseudocolorLUT, internal, renderLabelMapImage, renderPseudoColorImage, renderColorImage, renderGrayscaleImage, renderWebImage, renderToCanvas, canvasToPixel, disable, displayImage, draw, drawInvalidated, enable, getElementData, removeElementData, getEnabledElement, addEnabledElement, getEnabledElementsByImageId, getEnabledElements, addLayer, removeLayer, getLayer, getLayers, getVisibleLayers, setActiveLayer, getActiveLayer, purgeLayers, setLayerImage, fitToWindow, getDefaultViewportForImage, getImage, getPixels, getStoredPixels, getViewport, loadImage, loadAndCacheImage, registerImageLoader, registerUnknownImageLoader, invalidate, invalidateImageId, pageToPixel, pixelToCanvas, reset, resize, setToPixelCoordinateSystem, setViewport, updateImage, pixelDataToFalseColorData, rendering, imageCache, metaData, webGL, colors, convertImageToFalseColorImage, convertToFalseColorImage, restoreImage, EVENTS, events, triggerEvent };

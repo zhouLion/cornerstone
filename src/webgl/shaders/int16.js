@@ -1,5 +1,6 @@
 /* eslint no-bitwise: 0 */
 const int16Shader = {};
+
 /**
  * Convert stored pixel data to image data.
  *
@@ -9,24 +10,28 @@ const int16Shader = {};
  * @returns {Uint8Array} The image data for use by the WebGL shader
  * @memberof WebGLRendering
  */
-function storedPixelDataToImageData(image) {
-    // Transfer image data to alpha and luminance channels of WebGL texture
-    // Credit to @jpambrun and @fernandojsg
-    // Pack int16 into three uint8 channels (r, g, b)
-    const pixelData = image.getPixelData();
-    const numberOfChannels = 3;
-    const data = new Uint8Array(image.width * image.height * numberOfChannels);
-    let offset = 0;
-    for (let i = 0; i < pixelData.length; i++) {
-        const val = Math.abs(pixelData[i]);
-        data[offset++] = val & 0xFF;
-        data[offset++] = val >> 8;
-        data[offset++] = pixelData[i] < 0 ? 0 : 1; // 0 For negative, 1 for positive
-    }
-    return data;
+
+function storedPixelDataToImageData (image) {
+  // Transfer image data to alpha and luminance channels of WebGL texture
+  // Credit to @jpambrun and @fernandojsg
+  // Pack int16 into three uint8 channels (r, g, b)
+  const pixelData = image.getPixelData();
+  const numberOfChannels = 3;
+  const data = new Uint8Array(image.width * image.height * numberOfChannels);
+  let offset = 0;
+
+  for (let i = 0; i < pixelData.length; i++) {
+    const val = Math.abs(pixelData[i]);
+
+    data[offset++] = val & 0xFF;
+    data[offset++] = val >> 8;
+    data[offset++] = pixelData[i] < 0 ? 0 : 1; // 0 For negative, 1 for positive
+  }
+
+  return data;
 }
 export const int16DataUtilities = {
-    storedPixelDataToImageData
+  storedPixelDataToImageData
 };
 int16Shader.frag = 'precision mediump float;' +
     'uniform sampler2D u_image;' +

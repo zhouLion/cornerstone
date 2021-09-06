@@ -4,5 +4,5 @@ import LookupTable from './lookupTable';
 export default {
   getColormap,
   getColormapsList,
-  LookupTable
+  LookupTable,
 };

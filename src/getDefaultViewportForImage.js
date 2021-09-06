@@ -1,5 +1,6 @@
 import { getEnabledElement } from './enabledElements';
 import getDefaultViewport from './internal/getDefaultViewport';
+
 /**
  * Returns a default viewport for display the specified image on the specified
  * enabled element.  The default viewport is fit to window
@@ -10,6 +11,8 @@ import getDefaultViewport from './internal/getDefaultViewport';
  * @returns {Viewport} The default viewport for the image
  */
 export default function (element, image) {
-    const enabledElement = getEnabledElement(element);
-    return getDefaultViewport(enabledElement.canvas, image);
+  const enabledElement = getEnabledElement(element);
+
+
+  return getDefaultViewport(enabledElement.canvas, image);
 }

@@ -1,4 +1,5 @@
 import getVOILUT from './getVOILut';
+
 /**
  * Creates a LUT used while rendering to convert stored pixel values to
  * display pixels
@@ -13,25 +14,28 @@ import getVOILUT from './getVOILut';
  * @memberof Internal
  */
 export default function (image, windowWidth, windowCenter, invert = false, voiLUT) {
-    const maxPixelValue = image.maxPixelValue;
-    const minPixelValue = image.minPixelValue;
-    const offset = Math.min(minPixelValue, 0);
-    if (image.cachedLut === undefined) {
-        const length = maxPixelValue - offset + 1;
-        image.cachedLut = {};
-        image.cachedLut.lutArray = new Uint8ClampedArray(length);
+  const maxPixelValue = image.maxPixelValue;
+  const minPixelValue = image.minPixelValue;
+  const offset = Math.min(minPixelValue, 0);
+
+  if (image.cachedLut === undefined) {
+    const length = maxPixelValue - offset + 1;
+
+    image.cachedLut = {};
+    image.cachedLut.lutArray = new Uint8ClampedArray(length);
+  }
+  const lut = image.cachedLut.lutArray;
+  const vlutfn = getVOILUT(windowWidth, windowCenter, voiLUT);
+
+  if (invert === true) {
+    for (let storedValue = minPixelValue; storedValue <= maxPixelValue; storedValue++) {
+      lut[storedValue + (-offset)] = 255 - vlutfn(storedValue);
     }
-    const lut = image.cachedLut.lutArray;
-    const vlutfn = getVOILUT(windowWidth, windowCenter, voiLUT);
-    if (invert === true) {
-        for (let storedValue = minPixelValue; storedValue <= maxPixelValue; storedValue++) {
-            lut[storedValue + (-offset)] = 255 - vlutfn(storedValue);
-        }
+  } else {
+    for (let storedValue = minPixelValue; storedValue <= maxPixelValue; storedValue++) {
+      lut[storedValue + (-offset)] = vlutfn(storedValue);
     }
-    else {
-        for (let storedValue = minPixelValue; storedValue <= maxPixelValue; storedValue++) {
-            lut[storedValue + (-offset)] = vlutfn(storedValue);
-        }
-    }
-    return lut;
+  }
+
+  return lut;
 }

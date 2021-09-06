@@ -1,4 +1,5 @@
-import { Colormap, Image } from './enabledElements';
+import { Image } from './enabledElements';
+import { Colormap } from './colors/colormap';
 /**
  * Restores a false color image to its original version
  *
@@ -14,7 +15,7 @@ declare function restoreImage(image: Image): boolean;
  *
  * @returns {Boolean} - Whether or not the image has been converted to a false color image
  */
-declare function convertImageToFalseColorImage(image: Image, colormap: string | Colormap): boolean;
+declare function convertImageToFalseColorImage(image: Image, colormap: string | Colormap): boolean | undefined;
 /**
  * Convert the image of a element to a false color image
  *

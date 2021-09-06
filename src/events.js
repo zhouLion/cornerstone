@@ -25,9 +25,10 @@ export default EVENTS;
  * @class
  * @memberof Polyfills
  */
-class EventTarget {
+export class PolyfillsEventTarget {
+    namespaces = {};
+    listeners;
     constructor() {
-        this.namespaces = {};
         this.listeners = {};
         this.namespaces = {};
     }
@@ -84,4 +85,4 @@ class EventTarget {
         return !event.defaultPrevented;
     }
 }
-export const events = new EventTarget();
+export const events = new PolyfillsEventTarget();

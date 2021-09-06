@@ -96,6 +96,20 @@ function linearIndexLookupMain(v, p) {
  * or rgba into scalar values. The color table can be created by direct insertion of color values, or by specifying hue, saturation, value, and alpha range and generating a table
  */
 class LookupTable {
+    NumberOfColors;
+    Ramp;
+    TableRange;
+    HueRange;
+    SaturationRange;
+    ValueRange;
+    AlphaRange;
+    NaNColor;
+    BelowRangeColor;
+    UseBelowRangeColor;
+    AboveRangeColor;
+    UseAboveRangeColor;
+    InputRange;
+    Table;
     /**
      * Creates a default linear LookupTable object with 256 colors.
      */

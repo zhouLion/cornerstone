@@ -1,5 +1,6 @@
 import { getEnabledElement } from './enabledElements';
 import getTransform from './internal/getTransform';
+
 /**
  * Converts a point in the canvas coordinate system to the pixel coordinate system
  * system.  This can be used to reset tools' image coordinates after modifications
@@ -13,8 +14,10 @@ import getTransform from './internal/getTransform';
  * @memberof PixelCoordinateSystem
  */
 export default function (element, pt) {
-    const enabledElement = getEnabledElement(element);
-    const transform = getTransform(enabledElement);
-    transform.invert();
-    return transform.transformPoint(pt.x, pt.y);
+  const enabledElement = getEnabledElement(element);
+  const transform = getTransform(enabledElement);
+
+  transform.invert();
+
+  return transform.transformPoint(pt.x, pt.y);
 }

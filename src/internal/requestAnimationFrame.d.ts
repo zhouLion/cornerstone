@@ -1,6 +1,7 @@
 declare type RequestAnimationFrame = typeof window.requestAnimationFrame;
 declare global {
     interface Window {
+        webkitRequestAnimationFrame: RequestAnimationFrame;
         mozRequestAnimationFrame: RequestAnimationFrame;
         oRequestAnimationFrame: RequestAnimationFrame;
         msRequestAnimationFrame: RequestAnimationFrame;

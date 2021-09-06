@@ -1,5 +1,6 @@
 import { getEnabledElement } from './enabledElements';
 import drawImage from './internal/drawImage';
+
 /**
  * Forces the image to be updated/redrawn for the specified enabled element
  * @param {HTMLElement} element An HTML Element enabled for Cornerstone
@@ -9,9 +10,10 @@ import drawImage from './internal/drawImage';
  * @memberof Drawing
  */
 export default function (element, invalidated = false) {
-    const enabledElement = getEnabledElement(element);
-    if (enabledElement.image === undefined && !enabledElement.layers.length) {
-        throw new Error('updateImage: image has not been loaded yet');
-    }
-    drawImage(enabledElement, invalidated);
+  const enabledElement = getEnabledElement(element);
+
+  if (enabledElement.image === undefined && !enabledElement.layers.length) {
+    throw new Error('updateImage: image has not been loaded yet');
+  }
+  drawImage(enabledElement, invalidated);
 }

@@ -1,4 +1,5 @@
 import { getEnabledElement } from './enabledElements';
+
 /**
  * Retrieves the viewport for the specified enabled element
  *
@@ -7,11 +8,12 @@ import { getEnabledElement } from './enabledElements';
  * @memberof ViewportSettings
  */
 export default function (element) {
-    const enabledElement = getEnabledElement(element);
-    const viewport = enabledElement.viewport;
-    if (viewport === undefined) {
-        return;
-    }
-    // Return a copy of the viewport
-    return Object.assign({}, viewport);
+  const enabledElement = getEnabledElement(element);
+  const viewport = enabledElement.viewport;
+
+  if (viewport === undefined) {
+    return;
+  }
+  // Return a copy of the viewport
+  return Object.assign({}, viewport);
 }

@@ -7,8 +7,8 @@
  * @memberof Internal
  */
 export default function (enabledElement, invalidated = false) {
-    enabledElement.needsRedraw = true;
-    if (invalidated) {
-        enabledElement.invalid = true;
-    }
+  enabledElement.needsRedraw = true;
+  if (invalidated) {
+    enabledElement.invalid = true;
+  }
 }

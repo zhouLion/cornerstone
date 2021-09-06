@@ -13,7 +13,7 @@ import { Image, Viewport } from '../enabledElements';
  * @return {Uint8ClampedArray} LUT Array
  * @memberof rendering
  */
-export default function (image: Image, viewport?: Viewport, invalidated = false): Uint8ClampedArray {
+export default function (image: Image, viewport?: Viewport, invalidated = false) {
   if (!viewport) {
     throw new Error('Viewport is required');
   }

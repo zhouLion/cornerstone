@@ -15,8 +15,8 @@
 // But now you can retrieve it :)
 // Remember that this does not account for any CSS transforms applied to the canvas
 export class Transform {
+    m = [];
     constructor() {
-        this.m = [];
         this.reset();
     }
     reset() {

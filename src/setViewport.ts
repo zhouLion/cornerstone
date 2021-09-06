@@ -44,12 +44,12 @@ export default function (element: HTMLElement, viewport: Viewport) {
   // Prevent window width from being too small (note that values close to zero are valid and can occur with
   // PET images in particular)
   if (enabledElement.viewport.voi.windowWidth) {
-    enabledElement.viewport.voi.windowWidth = Math.max((viewport?.voi?.windowWidth || 0), MIN_WINDOW_WIDTH);
+    enabledElement.viewport.voi.windowWidth = Math.max((viewport.voi ? viewport.voi.windowWidth : 0), MIN_WINDOW_WIDTH);
   }
 
   // Prevent scale from getting too small
   if (enabledElement.viewport.scale) {
-    enabledElement.viewport.scale = Math.max((viewport?.scale) || 1, MIN_VIEWPORT_SCALE);
+    enabledElement.viewport.scale = Math.max((viewport.scale) || 1, MIN_VIEWPORT_SCALE);
   }
   if (enabledElement.viewport.rotation) {
     // Normalize the rotation value to a positive rotation in degrees

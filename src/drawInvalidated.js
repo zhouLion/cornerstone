@@ -3,6 +3,7 @@
  */
 import { getEnabledElements } from './enabledElements';
 import drawImage from './internal/drawImage';
+
 /**
  * Draws all invalidated enabled elements and clears the invalid flag after drawing it
  *
@@ -10,11 +11,13 @@ import drawImage from './internal/drawImage';
  * @memberof Drawing
  */
 export default function () {
-    const enabledElements = getEnabledElements();
-    for (let i = 0; i < enabledElements.length; i++) {
-        const ee = enabledElements[i];
-        if (ee.invalid === true) {
-            drawImage(ee, true);
-        }
+  const enabledElements = getEnabledElements();
+
+  for (let i = 0; i < enabledElements.length; i++) {
+    const ee = enabledElements[i];
+
+    if (ee.invalid === true) {
+      drawImage(ee, true);
     }
+  }
 }

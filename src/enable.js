@@ -7,6 +7,7 @@ import triggerEvent from './triggerEvent';
 import generateUUID from './generateUUID';
 import EVENTS, { events } from './events';
 import getCanvas from './internal/getCanvas';
+
 /**
  * @module Enable
  * This module is responsible for enabling an element to display images with cornerstone
@@ -19,9 +20,10 @@ import getCanvas from './internal/getCanvas';
  * @return {Boolean} Whether or not the Enabled Element has an active image or valid set of layers
  * @memberof Enable
  */
-function hasImageOrLayers(enabledElement) {
-    return enabledElement.image !== undefined || enabledElement.layers.length > 0;
+function hasImageOrLayers (enabledElement) {
+  return enabledElement.image !== undefined || enabledElement.layers.length > 0;
 }
+
 /**
  * Enable an HTML Element for use in Cornerstone
  *
@@ -37,52 +39,55 @@ function hasImageOrLayers(enabledElement) {
  * @memberof Enable
  */
 export default function (element, options) {
-    if (element === undefined) {
-        throw new Error('enable: parameter element cannot be undefined');
-    }
-    // If this enabled element has the option set for WebGL, we should
-    // Check if this device actually supports it
-    if (options &&
+  if (element === undefined) {
+    throw new Error('enable: parameter element cannot be undefined');
+  }
+  // If this enabled element has the option set for WebGL, we should
+  // Check if this device actually supports it
+  if (options &&
         options.renderer &&
         options.renderer.toLowerCase() === 'webgl') {
-        tryEnableWebgl(options);
-    }
-    const canvas = getCanvas(element);
-    const enabledElement = {
-        element,
-        canvas,
-        image: undefined,
-        invalid: false,
-        needsRedraw: true,
-        options,
-        layers: [],
-        data: {},
-        renderingTools: {},
-        uuid: generateUUID()
-    };
-    addEnabledElement(enabledElement);
-    triggerEvent(events, EVENTS.ELEMENT_ENABLED, enabledElement);
-    resize(element, true);
-    /**
+    tryEnableWebgl(options);
+  }
+  const canvas = getCanvas(element);
+  const enabledElement = {
+    element,
+    canvas,
+    image: undefined,
+    invalid: false,
+    needsRedraw: true,
+    options,
+    layers: [],
+    data: {},
+    renderingTools: {},
+    uuid: generateUUID()
+  };
+
+  addEnabledElement(enabledElement);
+  triggerEvent(events, EVENTS.ELEMENT_ENABLED, enabledElement);
+  resize(element, true);
+
+  /**
      * Draw the image immediately
      *
      * @param {DOMHighResTimeStamp} timestamp The current time for when requestAnimationFrame starts to fire callbacks
      * @returns {void}
      * @memberof Drawing
      */
-    function draw(timestamp) {
-        if (enabledElement.canvas === undefined) {
-            return;
-        }
-        const eventDetails = {
-            enabledElement,
-            timestamp
-        };
-        triggerEvent(enabledElement.element, EVENTS.PRE_RENDER, eventDetails);
-        if (enabledElement.needsRedraw && hasImageOrLayers(enabledElement)) {
-            drawImageSync(enabledElement, enabledElement.invalid);
-        }
-        requestAnimationFrame(draw);
+  function draw (timestamp) {
+    if (enabledElement.canvas === undefined) {
+      return;
     }
-    draw();
+    const eventDetails = {
+      enabledElement,
+      timestamp
+    };
+
+    triggerEvent(enabledElement.element, EVENTS.PRE_RENDER, eventDetails);
+    if (enabledElement.needsRedraw && hasImageOrLayers(enabledElement)) {
+      drawImageSync(enabledElement, enabledElement.invalid);
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
 }

@@ -11,21 +11,22 @@ import storedPixelDataToCanvasImageData from './storedPixelDataToCanvasImageData
 import storedPixelDataToCanvasImageDataColorLUT from './storedPixelDataToCanvasImageDataColorLUT';
 import storedPixelDataToCanvasImageDataPseudocolorLUT from './storedPixelDataToCanvasImageDataPseudocolorLUT';
 import storedPixelDataToCanvasImageDataRGBA from './storedPixelDataToCanvasImageDataRGBA';
+
 /**
  * @module Internal
  */
 export default {
-    drawImage,
-    generateLut,
-    getDefaultViewport,
-    requestAnimationFrame,
-    setDefaultViewport,
-    storedPixelDataToCanvasImageData,
-    storedPixelDataToCanvasImageDataRGBA,
-    storedPixelDataToCanvasImageDataColorLUT,
-    storedPixelDataToCanvasImageDataPseudocolorLUT,
-    storedColorPixelDataToCanvasImageData,
-    getTransform,
-    calculateTransform,
-    Transform
+  drawImage,
+  generateLut,
+  getDefaultViewport,
+  requestAnimationFrame,
+  setDefaultViewport,
+  storedPixelDataToCanvasImageData,
+  storedPixelDataToCanvasImageDataRGBA,
+  storedPixelDataToCanvasImageDataColorLUT,
+  storedPixelDataToCanvasImageDataPseudocolorLUT,
+  storedColorPixelDataToCanvasImageData,
+  getTransform,
+  calculateTransform,
+  Transform
 };

@@ -1,6 +1,6 @@
-import { Colormap, getEnabledElement, Image } from './enabledElements';
+import { getEnabledElement, Image } from './enabledElements';
 import pixelDataToFalseColorData from './pixelDataToFalseColorData';
-import { getColormap } from './colors/colormap';
+import { getColormap, Colormap } from './colors/colormap';
 
 /**
  * Retrieves the minimum and maximum pixel values from an Array of pixel data
@@ -87,7 +87,7 @@ function ensuresColormap (colormap: string | Colormap) {
     return getColormap(colormap);
   }
 
-  return colormap as Colormap;
+  return colormap;
 }
 
 /**
@@ -121,6 +121,7 @@ function convertImageToFalseColorImage (image: Image, colormap: string | Colorma
 
   // User can pass a colormap id or a colormap object
   const ensuredColormap = ensuresColormap(colormap);
+  if (typeof ensuredColormap === "string") return;
 
   const colormapId = ensuredColormap.getId();
 

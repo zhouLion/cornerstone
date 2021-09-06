@@ -1,6 +1,7 @@
-function requestFrame(callback) {
-    window.setTimeout(callback, 1000 / 60);
+function requestFrame (callback) {
+  window.setTimeout(callback, 1000 / 60);
 }
+
 /**
  * Polyfills requestAnimationFrame for older browsers.
  *
@@ -10,7 +11,7 @@ function requestFrame(callback) {
  * @memberof Polyfills
  */
 export default function (callback) {
-    return window.requestAnimationFrame(callback) ||
+  return window.requestAnimationFrame(callback) ||
         window.webkitRequestAnimationFrame(callback) ||
         window.mozRequestAnimationFrame(callback) ||
         window.oRequestAnimationFrame(callback) ||

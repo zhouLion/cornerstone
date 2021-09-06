@@ -472,7 +472,7 @@ interface ColormapColorsType {
   name: string;
   numColors?: number;
   numOfColors?: number;
-  colors: number[][];
+  colors?: number[][];
 }
 interface SegmentedData {
   red: number[][];
@@ -481,17 +481,16 @@ interface SegmentedData {
 }
 interface ColormapSegmentedDataType {
   name: string;
-  numColors: number;
-  gamma: number;
-  segmentedData: SegmentedData;
+  numColors?: number;
+  gamma?: number;
+  segmentedData?: SegmentedData;
 }
 type ColorsTypeKeyBuildIn = 'hotIron' | 'pet' | 'hotMetalBlue' | 'pet20Step';
 type SegmentedDataTypeKeyBuildIn = 'gray' | 'jet' | 'hsv' | 'hot' | 'cool' | 'spring' | 'summer' | 'autumn' | 'winter' | 'bone' | 'copper' | 'spectral' | 'coolwarm' | 'blues';
-type OtherColormapKeys = string;
 
-type IColormapsData = { [key in ColorsTypeKeyBuildIn]: ColormapColorsType }
-  & { [key in SegmentedDataTypeKeyBuildIn]: ColormapSegmentedDataType }
-  | Partial<Record<string, ColormapColorsType | ColormapSegmentedDataType>>;
+type IColormapsData = { [key in ColorsTypeKeyBuildIn]: ColormapColorsType & ColormapSegmentedDataType }
+  & { [key in SegmentedDataTypeKeyBuildIn]: ColormapColorsType & ColormapSegmentedDataType }
+  & Record<string, ColormapColorsType & ColormapSegmentedDataType>;
 
 /**
  *  Generate linearly spaced vectors
@@ -642,12 +641,12 @@ function makeMappingArray (N: number, data: Array<number[]>, gamma: number) {
  * https://github.com/stefanv/matplotlib/blob/3f1a23755e86fef97d51e30e106195f34425c9e3/lib/matplotlib/colors.py#L663
  * @memberof Colors
  */
-function createLinearSegmentedColormap (segmentedData: SegmentedData, N: number, gamma: number) {
+function createLinearSegmentedColormap (segmentedData: SegmentedData, N: number = 255, gamma: number = 1) {
   let i;
   const lut = [];
 
-  N = N === null ? 256 : N;
-  gamma = gamma === null ? 1 : gamma;
+  // N = N === null ? 256 : N;
+  // gamma = gamma === null ? 1 : gamma;
 
   const redLut = makeMappingArray(N, segmentedData.red, gamma);
   const greenLut = makeMappingArray(N, segmentedData.green, gamma);
@@ -679,7 +678,7 @@ export function getColormapsList () {
 
   keys.forEach(function (key) {
     if (key in colormapsData) {
-      const colormap = colormapsData[key];
+      const colormap = colormapsData[key] as ColormapColorsType | ColormapSegmentedDataType;
 
       colormaps.push({
         id: key,
@@ -715,11 +714,16 @@ export function getColormap (
   id: string,
   colormapData?: (ColormapColorsType | ColormapSegmentedDataType)
 ) {
-  let colormap = colormapsData[id];
-  if (!colormap) {
-    colormapsData[id] = colormapData
-    colormap = colormapData;
+  if (!colormapsData[id]) {
+    if (colormapData) {
+      colormapsData[id] = colormapData;
+    } else {
+      throw new Error(`Colormap with id ${id} not found, please provide the colormapData`);
+    }
   }
+
+  const colormap = colormapsData[id];
+
   if (!colormap.colors && colormap.segmentedData) {
     colormap.colors = createLinearSegmentedColormap(colormap.segmentedData, colormap.numColors, colormap.gamma);
   }
@@ -738,10 +742,11 @@ export function getColormap (
     },
 
     getNumberOfColors () {
-      return colormap.colors.length;
+      return colormap.colors ? colormap.colors.length : 0;
     },
 
     setNumberOfColors (numColors: number) {
+      if (!colormap.colors) return;
       while (colormap.colors.length < numColors) {
         colormap.colors.push(COLOR_TRANSPARENT);
       }
@@ -750,7 +755,7 @@ export function getColormap (
     },
 
     getColor (index: number) {
-      if (this.isValidIndex(index)) {
+      if (colormap.colors && this.isValidIndex(index)) {
         return colormap.colors[index];
       }
 
@@ -758,6 +763,7 @@ export function getColormap (
     },
 
     getColorRepeating (index: number) {
+      if (!colormap.colors) return;
       const numColors = colormap.colors.length;
 
       index = numColors ? index % numColors : 0;
@@ -766,22 +772,26 @@ export function getColormap (
     },
 
     setColor (index: number, rgba: Array<number>) {
+      if (!colormap.colors) return;
       if (this.isValidIndex(index)) {
         colormap.colors[index] = rgba;
       }
     },
 
     addColor (rgba: Array<number>) {
+      if (!colormap.colors) return;
       colormap.colors.push(rgba);
     },
 
     insertColor (index: number, rgba: Array<number>) {
+      if (!colormap.colors) return;
       if (this.isValidIndex(index)) {
         colormap.colors.splice(index, 1, rgba);
       }
     },
 
     removeColor (index: number) {
+      if (!colormap.colors) return;
       if (this.isValidIndex(index)) {
         colormap.colors.splice(index, 1);
       }
@@ -791,11 +801,11 @@ export function getColormap (
       colormap.colors = [];
     },
 
-    buildLookupTable (lut: LUT) {
+    buildLookupTable (lut: LookupTable) {
       if (!lut) {
         return;
       }
-
+      if (!colormap.colors) return;
       const numColors = colormap.colors.length;
 
       lut.setNumberOfTableValues(numColors);
@@ -814,8 +824,10 @@ export function getColormap (
     },
 
     isValidIndex (index: number) {
+      if (!colormap.colors) return;
       return (index >= 0) && (index < colormap.colors.length);
     }
   };
 }
-getColormap("gray")
+
+export type Colormap = ReturnType <typeof getColormap>;

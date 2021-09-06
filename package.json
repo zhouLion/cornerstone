@@ -33,6 +33,7 @@
     "start": "npm run webpack",
     "start:dev": "webpack-dev-server --config ./config/webpack/webpack-dev",
     "tsc:watch": "tsc -w",
+    "tsc:build": "tsc && npm run eslint-fix",
     "test": "npm run test:chrome",
     "test:all": "npm run test:chrome && npm run test:firefox",
     "test:watch": "karma start config/karma/karma-watch.js",

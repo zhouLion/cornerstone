@@ -1,5 +1,6 @@
 import { getEnabledElement } from './enabledElements';
 import getTransform from './internal/getTransform';
+
 /**
  * Converts a point in the page coordinate system to the pixel coordinate
  * system
@@ -11,17 +12,20 @@ import getTransform from './internal/getTransform';
  * @returns {{x: Number, y: Number}} The transformed point in the pixel coordinate system
  */
 export default function (element, pageX, pageY) {
-    const enabledElement = getEnabledElement(element);
-    if (enabledElement.image === undefined) {
-        throw new Error('image has not been loaded yet');
-    }
-    // Convert the pageX and pageY to the canvas client coordinates
-    const rect = element.getBoundingClientRect();
-    const clientX = pageX - rect.left - window.pageXOffset;
-    const clientY = pageY - rect.top - window.pageYOffset;
-    const pt = { x: clientX,
-        y: clientY };
-    const transform = getTransform(enabledElement);
-    transform.invert();
-    return transform.transformPoint(pt.x, pt.y);
+  const enabledElement = getEnabledElement(element);
+
+  if (enabledElement.image === undefined) {
+    throw new Error('image has not been loaded yet');
+  }
+  // Convert the pageX and pageY to the canvas client coordinates
+  const rect = element.getBoundingClientRect();
+  const clientX = pageX - rect.left - window.pageXOffset;
+  const clientY = pageY - rect.top - window.pageYOffset;
+  const pt = { x: clientX,
+    y: clientY };
+  const transform = getTransform(enabledElement);
+
+  transform.invert();
+
+  return transform.transformPoint(pt.x, pt.y);
 }

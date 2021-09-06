@@ -27,7 +27,7 @@ export default EVENTS;
  * @class
  * @memberof Polyfills
  */
-class EventTarget {
+export class PolyfillsEventTarget {
   private namespaces: Record<string, EventListener> = {};
   private listeners: Record<string, EventListener[]>;
   constructor () {
@@ -106,4 +106,4 @@ class EventTarget {
   }
 }
 
-export const events = new EventTarget();
+export const events = new PolyfillsEventTarget();

@@ -1,4 +1,5 @@
 const uint8Shader = {};
+
 /**
  * Convert stored pixel data to image data. Here we will store
  * all data in the alpha channel.
@@ -7,12 +8,13 @@ const uint8Shader = {};
  * @returns {Uint8Array} The image data for use by the WebGL shader
  * @memberof WebGLRendering
  */
-function storedPixelDataToImageData(image) {
-    // Transfer image data to alpha channel of WebGL texture
-    return image.getPixelData();
+
+function storedPixelDataToImageData (image) {
+  // Transfer image data to alpha channel of WebGL texture
+  return image.getPixelData();
 }
 export const uint8DataUtilities = {
-    storedPixelDataToImageData
+  storedPixelDataToImageData
 };
 uint8Shader.frag = 'precision mediump float;' +
     'uniform sampler2D u_image;' +
